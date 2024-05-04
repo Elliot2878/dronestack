@@ -76,5 +76,6 @@
         "typeinfo": "cpp",
         "variant": "cpp",
         "core": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }

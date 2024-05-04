@@ -149,7 +149,8 @@ include_directories(
 # )
 
 add_executable(offb_node
-  src/offb_node.cpp
+  src/offb_node_sitl.cpp
+
 )
 
 
