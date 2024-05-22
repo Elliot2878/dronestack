@@ -15,6 +15,7 @@ int main(int argc, char **argv) {
     ros::ServiceClient waypoint_client = nh.serviceClient<dronestack::waypoint_nav>("waypoint_nav");
     dronestack::waypoint_nav srv; // the type might need to be changed according to how you created the ROS service (not done yet).
 
+    // store inputs fro terminal
     srv.request.a = atoll(argv[1]);
     srv.request.b = atoll(argv[2]);
     srv.request.c = atoll(argv[3]);

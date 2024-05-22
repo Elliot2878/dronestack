@@ -10,7 +10,7 @@
 #include <Eigen/Dense>
 
 
-// receive vicon position and orientation from vicon
+// receive position and orientation from gazebo 
 //LUO: Move these to the top, and make them global var, to make debugging easier
 // double vicon_posi_x = 1.010000;
 // double vicon_posi_y = 0.979938;
@@ -20,21 +20,32 @@
 // double vicon_orient_p = 0.0;
 // double vicon_orient_y = 0.0;
 
+
+
+// double vicon_orient_r = 0;
+// double vicon_orient_p = 0;
+// double vicon_orient_y = 0;
+
+// code for vicon. hardcode position and orientation in case callback has not executed immediately 
+// (I recommand to read the vicon data first and hardcode the values since the origin is in the corner of the vicon room)
 double vicon_posi_x = 0;
 double vicon_posi_y = 0;
 double vicon_posi_z = 0;
 
-double vicon_orient_r = 0;
-double vicon_orient_p = 0;
-double vicon_orient_y = 0;
+Eigen::Vector3d translation(-vicon_posi_x, -vicon_posi_y, -vicon_posi_z);
+
+// Extract and store orientation as an Eigen quaternion
+Eigen::Quaterniond q = Eigen::Quaterniond(0, 0, 0, 0).conjugate();
+
+
 
 int count = 0;
 
 bool data_stored = false;
 
-// define translation and rotation matrix
-Eigen::Vector3d translation;
-Eigen::Quaterniond q;
+// // define translation and rotation matrix
+// Eigen::Vector3d translation;
+// Eigen::Quaterniond q;
 
 bool handle_waypoint_nav(dronestack::waypoint_nav::Request &req, 
                          dronestack::waypoint_nav::Response &res)
@@ -90,6 +101,7 @@ void OffboardControlSITL::currentPose_cb(const geometry_msgs::PoseStamped::Const
 }
 
 void OffboardControlSITL::viconPose_cb(const geometry_msgs::TransformStamped::ConstPtr& msg) {
+    // we only want to update position and orientation once from vicon
     if (!data_stored) {
         vicon_posi_x = msg->transform.translation.x;
         vicon_posi_y = msg->transform.translation.y;
@@ -146,9 +158,9 @@ bool OffboardControlSITL::control(dronestack::waypoint_nav::Request &req, drones
     arm_cmd.request.value = true;
     ros::Time last_request = ros::Time::now();
     
+
     // Waypoints include landing by descending to z=0 after the last position
-    //LUO: why not just have a landing func that can land at whatever places and whatever heights?
-    // Liang: solved. num_of_task_to_run variable can control how many states you want to run
+    // state 0 is leanding state, state 1 is take off state, and state 2 is moving state
     int state; 
     
     if(count == 0) {
@@ -306,12 +318,13 @@ bool OffboardControlSITL::isAtPosition(double x, double y, double z, double xy_o
     // ROS_INFO("current position | x:%.2f, y:%.2f, z:%.2f", local_position.pose.position.x, local_position.pose.position.y, local_position.pose.position.z);
     Eigen::Vector2d desired_posi_xy(x, y);
     
-    // Eigen::Vector2d current_posi_xy(vicon_pose.transform.translation.x, vicon_pose.transform.translation.y);
-    // return ((desired_posi_xy - current_posi_xy).norm() < xy_offset && abs(z - vicon_pose.transform.translation.z) < z_offset);
+    // code for vicon
+    Eigen::Vector2d current_posi_xy(vicon_pose.transform.translation.x, vicon_pose.transform.translation.y);
+    return ((desired_posi_xy - current_posi_xy).norm() < xy_offset && abs(z - vicon_pose.transform.translation.z) < z_offset);
 
-
-    Eigen::Vector2d current_posi_xy(current_pose.pose.position.x, current_pose.pose.position.y);
-    return ((desired_posi_xy - current_posi_xy).norm() < xy_offset && abs(z - current_pose.pose.position.z) < z_offset);
+    // // code for gazebo
+    // Eigen::Vector2d current_posi_xy(current_pose.pose.position.x, current_pose.pose.position.y);
+    // return ((desired_posi_xy - current_posi_xy).norm() < xy_offset && abs(z - current_pose.pose.position.z) < z_offset);
 }
 
 
