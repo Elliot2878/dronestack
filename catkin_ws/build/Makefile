@@ -3032,17 +3032,212 @@ _run_tests_mavros_gtest_libmavros-quaternion-utils-test/fast:
 .PHONY : _run_tests_mavros_gtest_libmavros-quaternion-utils-test/fast
 
 #=============================================================================
-# Target rules for targets named offb_node
+# Target rules for targets named dronestack_generate_messages
 
 # Build rule for target.
-offb_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 offb_node
-.PHONY : offb_node
+dronestack_generate_messages: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack_generate_messages
+.PHONY : dronestack_generate_messages
 
 # fast build rule for target.
-offb_node/fast:
-	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/offb_node.dir/build.make dronestack/CMakeFiles/offb_node.dir/build
-.PHONY : offb_node/fast
+dronestack_generate_messages/fast:
+	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_generate_messages.dir/build.make dronestack/CMakeFiles/dronestack_generate_messages.dir/build
+.PHONY : dronestack_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named _dronestack_generate_messages_check_deps_waypoint_nav
+
+# Build rule for target.
+_dronestack_generate_messages_check_deps_waypoint_nav: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _dronestack_generate_messages_check_deps_waypoint_nav
+.PHONY : _dronestack_generate_messages_check_deps_waypoint_nav
+
+# fast build rule for target.
+_dronestack_generate_messages_check_deps_waypoint_nav/fast:
+	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/_dronestack_generate_messages_check_deps_waypoint_nav.dir/build.make dronestack/CMakeFiles/_dronestack_generate_messages_check_deps_waypoint_nav.dir/build
+.PHONY : _dronestack_generate_messages_check_deps_waypoint_nav/fast
+
+#=============================================================================
+# Target rules for targets named dronestack_generate_messages_cpp
+
+# Build rule for target.
+dronestack_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack_generate_messages_cpp
+.PHONY : dronestack_generate_messages_cpp
+
+# fast build rule for target.
+dronestack_generate_messages_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_generate_messages_cpp.dir/build.make dronestack/CMakeFiles/dronestack_generate_messages_cpp.dir/build
+.PHONY : dronestack_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named dronestack_gencpp
+
+# Build rule for target.
+dronestack_gencpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack_gencpp
+.PHONY : dronestack_gencpp
+
+# fast build rule for target.
+dronestack_gencpp/fast:
+	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_gencpp.dir/build.make dronestack/CMakeFiles/dronestack_gencpp.dir/build
+.PHONY : dronestack_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named dronestack_generate_messages_eus
+
+# Build rule for target.
+dronestack_generate_messages_eus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack_generate_messages_eus
+.PHONY : dronestack_generate_messages_eus
+
+# fast build rule for target.
+dronestack_generate_messages_eus/fast:
+	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_generate_messages_eus.dir/build.make dronestack/CMakeFiles/dronestack_generate_messages_eus.dir/build
+.PHONY : dronestack_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named dronestack_geneus
+
+# Build rule for target.
+dronestack_geneus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack_geneus
+.PHONY : dronestack_geneus
+
+# fast build rule for target.
+dronestack_geneus/fast:
+	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_geneus.dir/build.make dronestack/CMakeFiles/dronestack_geneus.dir/build
+.PHONY : dronestack_geneus/fast
+
+#=============================================================================
+# Target rules for targets named dronestack_generate_messages_lisp
+
+# Build rule for target.
+dronestack_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack_generate_messages_lisp
+.PHONY : dronestack_generate_messages_lisp
+
+# fast build rule for target.
+dronestack_generate_messages_lisp/fast:
+	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_generate_messages_lisp.dir/build.make dronestack/CMakeFiles/dronestack_generate_messages_lisp.dir/build
+.PHONY : dronestack_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named dronestack_genlisp
+
+# Build rule for target.
+dronestack_genlisp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack_genlisp
+.PHONY : dronestack_genlisp
+
+# fast build rule for target.
+dronestack_genlisp/fast:
+	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_genlisp.dir/build.make dronestack/CMakeFiles/dronestack_genlisp.dir/build
+.PHONY : dronestack_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named dronestack_generate_messages_nodejs
+
+# Build rule for target.
+dronestack_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack_generate_messages_nodejs
+.PHONY : dronestack_generate_messages_nodejs
+
+# fast build rule for target.
+dronestack_generate_messages_nodejs/fast:
+	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_generate_messages_nodejs.dir/build.make dronestack/CMakeFiles/dronestack_generate_messages_nodejs.dir/build
+.PHONY : dronestack_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named dronestack_gennodejs
+
+# Build rule for target.
+dronestack_gennodejs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack_gennodejs
+.PHONY : dronestack_gennodejs
+
+# fast build rule for target.
+dronestack_gennodejs/fast:
+	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_gennodejs.dir/build.make dronestack/CMakeFiles/dronestack_gennodejs.dir/build
+.PHONY : dronestack_gennodejs/fast
+
+#=============================================================================
+# Target rules for targets named dronestack_generate_messages_py
+
+# Build rule for target.
+dronestack_generate_messages_py: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack_generate_messages_py
+.PHONY : dronestack_generate_messages_py
+
+# fast build rule for target.
+dronestack_generate_messages_py/fast:
+	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_generate_messages_py.dir/build.make dronestack/CMakeFiles/dronestack_generate_messages_py.dir/build
+.PHONY : dronestack_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named dronestack_genpy
+
+# Build rule for target.
+dronestack_genpy: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack_genpy
+.PHONY : dronestack_genpy
+
+# fast build rule for target.
+dronestack_genpy/fast:
+	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_genpy.dir/build.make dronestack/CMakeFiles/dronestack_genpy.dir/build
+.PHONY : dronestack_genpy/fast
+
+#=============================================================================
+# Target rules for targets named offb_node_hitl
+
+# Build rule for target.
+offb_node_hitl: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 offb_node_hitl
+.PHONY : offb_node_hitl
+
+# fast build rule for target.
+offb_node_hitl/fast:
+	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/offb_node_hitl.dir/build.make dronestack/CMakeFiles/offb_node_hitl.dir/build
+.PHONY : offb_node_hitl/fast
+
+#=============================================================================
+# Target rules for targets named offb_node_sitl
+
+# Build rule for target.
+offb_node_sitl: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 offb_node_sitl
+.PHONY : offb_node_sitl
+
+# fast build rule for target.
+offb_node_sitl/fast:
+	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/offb_node_sitl.dir/build.make dronestack/CMakeFiles/offb_node_sitl.dir/build
+.PHONY : offb_node_sitl/fast
+
+#=============================================================================
+# Target rules for targets named waypoint_nav_client
+
+# Build rule for target.
+waypoint_nav_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 waypoint_nav_client
+.PHONY : waypoint_nav_client
+
+# fast build rule for target.
+waypoint_nav_client/fast:
+	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/waypoint_nav_client.dir/build.make dronestack/CMakeFiles/waypoint_nav_client.dir/build
+.PHONY : waypoint_nav_client/fast
+
+#=============================================================================
+# Target rules for targets named waypoint_nav_server
+
+# Build rule for target.
+waypoint_nav_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 waypoint_nav_server
+.PHONY : waypoint_nav_server
+
+# fast build rule for target.
+waypoint_nav_server/fast:
+	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/waypoint_nav_server.dir/build.make dronestack/CMakeFiles/waypoint_nav_server.dir/build
+.PHONY : waypoint_nav_server/fast
 
 #=============================================================================
 # Target rules for targets named tf_generate_messages_cpp
@@ -3460,6 +3655,292 @@ sitl_test_node/fast:
 	$(MAKE) $(MAKESILENT) -f mavros/test_mavros/CMakeFiles/sitl_test_node.dir/build.make mavros/test_mavros/CMakeFiles/sitl_test_node.dir/build
 .PHONY : sitl_test_node/fast
 
+#=============================================================================
+# Target rules for targets named vicon_bridge_generate_messages
+
+# Build rule for target.
+vicon_bridge_generate_messages: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vicon_bridge_generate_messages
+.PHONY : vicon_bridge_generate_messages
+
+# fast build rule for target.
+vicon_bridge_generate_messages/fast:
+	$(MAKE) $(MAKESILENT) -f vicon_bridge/CMakeFiles/vicon_bridge_generate_messages.dir/build.make vicon_bridge/CMakeFiles/vicon_bridge_generate_messages.dir/build
+.PHONY : vicon_bridge_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named _vicon_bridge_generate_messages_check_deps_Marker
+
+# Build rule for target.
+_vicon_bridge_generate_messages_check_deps_Marker: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _vicon_bridge_generate_messages_check_deps_Marker
+.PHONY : _vicon_bridge_generate_messages_check_deps_Marker
+
+# fast build rule for target.
+_vicon_bridge_generate_messages_check_deps_Marker/fast:
+	$(MAKE) $(MAKESILENT) -f vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_Marker.dir/build.make vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_Marker.dir/build
+.PHONY : _vicon_bridge_generate_messages_check_deps_Marker/fast
+
+#=============================================================================
+# Target rules for targets named _vicon_bridge_generate_messages_check_deps_Markers
+
+# Build rule for target.
+_vicon_bridge_generate_messages_check_deps_Markers: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _vicon_bridge_generate_messages_check_deps_Markers
+.PHONY : _vicon_bridge_generate_messages_check_deps_Markers
+
+# fast build rule for target.
+_vicon_bridge_generate_messages_check_deps_Markers/fast:
+	$(MAKE) $(MAKESILENT) -f vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_Markers.dir/build.make vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_Markers.dir/build
+.PHONY : _vicon_bridge_generate_messages_check_deps_Markers/fast
+
+#=============================================================================
+# Target rules for targets named _vicon_bridge_generate_messages_check_deps_TfDistortInfo
+
+# Build rule for target.
+_vicon_bridge_generate_messages_check_deps_TfDistortInfo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _vicon_bridge_generate_messages_check_deps_TfDistortInfo
+.PHONY : _vicon_bridge_generate_messages_check_deps_TfDistortInfo
+
+# fast build rule for target.
+_vicon_bridge_generate_messages_check_deps_TfDistortInfo/fast:
+	$(MAKE) $(MAKESILENT) -f vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_TfDistortInfo.dir/build.make vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_TfDistortInfo.dir/build
+.PHONY : _vicon_bridge_generate_messages_check_deps_TfDistortInfo/fast
+
+#=============================================================================
+# Target rules for targets named _vicon_bridge_generate_messages_check_deps_viconCalibrateSegment
+
+# Build rule for target.
+_vicon_bridge_generate_messages_check_deps_viconCalibrateSegment: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _vicon_bridge_generate_messages_check_deps_viconCalibrateSegment
+.PHONY : _vicon_bridge_generate_messages_check_deps_viconCalibrateSegment
+
+# fast build rule for target.
+_vicon_bridge_generate_messages_check_deps_viconCalibrateSegment/fast:
+	$(MAKE) $(MAKESILENT) -f vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_viconCalibrateSegment.dir/build.make vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_viconCalibrateSegment.dir/build
+.PHONY : _vicon_bridge_generate_messages_check_deps_viconCalibrateSegment/fast
+
+#=============================================================================
+# Target rules for targets named _vicon_bridge_generate_messages_check_deps_viconGrabPose
+
+# Build rule for target.
+_vicon_bridge_generate_messages_check_deps_viconGrabPose: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _vicon_bridge_generate_messages_check_deps_viconGrabPose
+.PHONY : _vicon_bridge_generate_messages_check_deps_viconGrabPose
+
+# fast build rule for target.
+_vicon_bridge_generate_messages_check_deps_viconGrabPose/fast:
+	$(MAKE) $(MAKESILENT) -f vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_viconGrabPose.dir/build.make vicon_bridge/CMakeFiles/_vicon_bridge_generate_messages_check_deps_viconGrabPose.dir/build
+.PHONY : _vicon_bridge_generate_messages_check_deps_viconGrabPose/fast
+
+#=============================================================================
+# Target rules for targets named vicon_bridge_generate_messages_cpp
+
+# Build rule for target.
+vicon_bridge_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vicon_bridge_generate_messages_cpp
+.PHONY : vicon_bridge_generate_messages_cpp
+
+# fast build rule for target.
+vicon_bridge_generate_messages_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_cpp.dir/build.make vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_cpp.dir/build
+.PHONY : vicon_bridge_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named vicon_bridge_gencpp
+
+# Build rule for target.
+vicon_bridge_gencpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vicon_bridge_gencpp
+.PHONY : vicon_bridge_gencpp
+
+# fast build rule for target.
+vicon_bridge_gencpp/fast:
+	$(MAKE) $(MAKESILENT) -f vicon_bridge/CMakeFiles/vicon_bridge_gencpp.dir/build.make vicon_bridge/CMakeFiles/vicon_bridge_gencpp.dir/build
+.PHONY : vicon_bridge_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named vicon_bridge_generate_messages_eus
+
+# Build rule for target.
+vicon_bridge_generate_messages_eus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vicon_bridge_generate_messages_eus
+.PHONY : vicon_bridge_generate_messages_eus
+
+# fast build rule for target.
+vicon_bridge_generate_messages_eus/fast:
+	$(MAKE) $(MAKESILENT) -f vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_eus.dir/build.make vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_eus.dir/build
+.PHONY : vicon_bridge_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named vicon_bridge_geneus
+
+# Build rule for target.
+vicon_bridge_geneus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vicon_bridge_geneus
+.PHONY : vicon_bridge_geneus
+
+# fast build rule for target.
+vicon_bridge_geneus/fast:
+	$(MAKE) $(MAKESILENT) -f vicon_bridge/CMakeFiles/vicon_bridge_geneus.dir/build.make vicon_bridge/CMakeFiles/vicon_bridge_geneus.dir/build
+.PHONY : vicon_bridge_geneus/fast
+
+#=============================================================================
+# Target rules for targets named vicon_bridge_generate_messages_lisp
+
+# Build rule for target.
+vicon_bridge_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vicon_bridge_generate_messages_lisp
+.PHONY : vicon_bridge_generate_messages_lisp
+
+# fast build rule for target.
+vicon_bridge_generate_messages_lisp/fast:
+	$(MAKE) $(MAKESILENT) -f vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_lisp.dir/build.make vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_lisp.dir/build
+.PHONY : vicon_bridge_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named vicon_bridge_genlisp
+
+# Build rule for target.
+vicon_bridge_genlisp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vicon_bridge_genlisp
+.PHONY : vicon_bridge_genlisp
+
+# fast build rule for target.
+vicon_bridge_genlisp/fast:
+	$(MAKE) $(MAKESILENT) -f vicon_bridge/CMakeFiles/vicon_bridge_genlisp.dir/build.make vicon_bridge/CMakeFiles/vicon_bridge_genlisp.dir/build
+.PHONY : vicon_bridge_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named vicon_bridge_generate_messages_nodejs
+
+# Build rule for target.
+vicon_bridge_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vicon_bridge_generate_messages_nodejs
+.PHONY : vicon_bridge_generate_messages_nodejs
+
+# fast build rule for target.
+vicon_bridge_generate_messages_nodejs/fast:
+	$(MAKE) $(MAKESILENT) -f vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_nodejs.dir/build.make vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_nodejs.dir/build
+.PHONY : vicon_bridge_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named vicon_bridge_gennodejs
+
+# Build rule for target.
+vicon_bridge_gennodejs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vicon_bridge_gennodejs
+.PHONY : vicon_bridge_gennodejs
+
+# fast build rule for target.
+vicon_bridge_gennodejs/fast:
+	$(MAKE) $(MAKESILENT) -f vicon_bridge/CMakeFiles/vicon_bridge_gennodejs.dir/build.make vicon_bridge/CMakeFiles/vicon_bridge_gennodejs.dir/build
+.PHONY : vicon_bridge_gennodejs/fast
+
+#=============================================================================
+# Target rules for targets named vicon_bridge_generate_messages_py
+
+# Build rule for target.
+vicon_bridge_generate_messages_py: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vicon_bridge_generate_messages_py
+.PHONY : vicon_bridge_generate_messages_py
+
+# fast build rule for target.
+vicon_bridge_generate_messages_py/fast:
+	$(MAKE) $(MAKESILENT) -f vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_py.dir/build.make vicon_bridge/CMakeFiles/vicon_bridge_generate_messages_py.dir/build
+.PHONY : vicon_bridge_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named vicon_bridge_genpy
+
+# Build rule for target.
+vicon_bridge_genpy: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vicon_bridge_genpy
+.PHONY : vicon_bridge_genpy
+
+# fast build rule for target.
+vicon_bridge_genpy/fast:
+	$(MAKE) $(MAKESILENT) -f vicon_bridge/CMakeFiles/vicon_bridge_genpy.dir/build.make vicon_bridge/CMakeFiles/vicon_bridge_genpy.dir/build
+.PHONY : vicon_bridge_genpy/fast
+
+#=============================================================================
+# Target rules for targets named vicon_bridge_gencfg
+
+# Build rule for target.
+vicon_bridge_gencfg: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vicon_bridge_gencfg
+.PHONY : vicon_bridge_gencfg
+
+# fast build rule for target.
+vicon_bridge_gencfg/fast:
+	$(MAKE) $(MAKESILENT) -f vicon_bridge/CMakeFiles/vicon_bridge_gencfg.dir/build.make vicon_bridge/CMakeFiles/vicon_bridge_gencfg.dir/build
+.PHONY : vicon_bridge_gencfg/fast
+
+#=============================================================================
+# Target rules for targets named vicon_sdk
+
+# Build rule for target.
+vicon_sdk: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vicon_sdk
+.PHONY : vicon_sdk
+
+# fast build rule for target.
+vicon_sdk/fast:
+	$(MAKE) $(MAKESILENT) -f vicon_bridge/CMakeFiles/vicon_sdk.dir/build.make vicon_bridge/CMakeFiles/vicon_sdk.dir/build
+.PHONY : vicon_sdk/fast
+
+#=============================================================================
+# Target rules for targets named vicon_bridge
+
+# Build rule for target.
+vicon_bridge: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vicon_bridge
+.PHONY : vicon_bridge
+
+# fast build rule for target.
+vicon_bridge/fast:
+	$(MAKE) $(MAKESILENT) -f vicon_bridge/CMakeFiles/vicon_bridge.dir/build.make vicon_bridge/CMakeFiles/vicon_bridge.dir/build
+.PHONY : vicon_bridge/fast
+
+#=============================================================================
+# Target rules for targets named calibrate
+
+# Build rule for target.
+calibrate: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 calibrate
+.PHONY : calibrate
+
+# fast build rule for target.
+calibrate/fast:
+	$(MAKE) $(MAKESILENT) -f vicon_bridge/CMakeFiles/calibrate.dir/build.make vicon_bridge/CMakeFiles/calibrate.dir/build
+.PHONY : calibrate/fast
+
+#=============================================================================
+# Target rules for targets named tf_distort
+
+# Build rule for target.
+tf_distort: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tf_distort
+.PHONY : tf_distort
+
+# fast build rule for target.
+tf_distort/fast:
+	$(MAKE) $(MAKESILENT) -f vicon_bridge/CMakeFiles/tf_distort.dir/build.make vicon_bridge/CMakeFiles/tf_distort.dir/build
+.PHONY : tf_distort/fast
+
+#=============================================================================
+# Target rules for targets named testclient
+
+# Build rule for target.
+testclient: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testclient
+.PHONY : testclient
+
+# fast build rule for target.
+testclient/fast:
+	$(MAKE) $(MAKESILENT) -f vicon_bridge/CMakeFiles/testclient.dir/build.make vicon_bridge/CMakeFiles/testclient.dir/build
+.PHONY : testclient/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -3474,6 +3955,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... _catkin_empty_exported_target"
+	@echo "... _dronestack_generate_messages_check_deps_waypoint_nav"
 	@echo "... _mavros_msgs_generate_messages_check_deps_ADSBVehicle"
 	@echo "... _mavros_msgs_generate_messages_check_deps_ActuatorControl"
 	@echo "... _mavros_msgs_generate_messages_check_deps_Altitude"
@@ -3584,6 +4066,11 @@ help:
 	@echo "... _run_tests_mavros_gtest_libmavros-frame-conversions-test"
 	@echo "... _run_tests_mavros_gtest_libmavros-quaternion-utils-test"
 	@echo "... _run_tests_mavros_gtest_libmavros-sensor-orientation-test"
+	@echo "... _vicon_bridge_generate_messages_check_deps_Marker"
+	@echo "... _vicon_bridge_generate_messages_check_deps_Markers"
+	@echo "... _vicon_bridge_generate_messages_check_deps_TfDistortInfo"
+	@echo "... _vicon_bridge_generate_messages_check_deps_viconCalibrateSegment"
+	@echo "... _vicon_bridge_generate_messages_check_deps_viconGrabPose"
 	@echo "... actionlib_generate_messages_cpp"
 	@echo "... actionlib_generate_messages_eus"
 	@echo "... actionlib_generate_messages_lisp"
@@ -3615,6 +4102,17 @@ help:
 	@echo "... diagnostic_msgs_generate_messages_py"
 	@echo "... download_extra_data"
 	@echo "... doxygen"
+	@echo "... dronestack_gencpp"
+	@echo "... dronestack_generate_messages"
+	@echo "... dronestack_generate_messages_cpp"
+	@echo "... dronestack_generate_messages_eus"
+	@echo "... dronestack_generate_messages_lisp"
+	@echo "... dronestack_generate_messages_nodejs"
+	@echo "... dronestack_generate_messages_py"
+	@echo "... dronestack_geneus"
+	@echo "... dronestack_genlisp"
+	@echo "... dronestack_gennodejs"
+	@echo "... dronestack_genpy"
 	@echo "... dynamic_reconfigure_gencfg"
 	@echo "... dynamic_reconfigure_generate_messages_cpp"
 	@echo "... dynamic_reconfigure_generate_messages_eus"
@@ -3702,11 +4200,24 @@ help:
 	@echo "... uuid_msgs_generate_messages_lisp"
 	@echo "... uuid_msgs_generate_messages_nodejs"
 	@echo "... uuid_msgs_generate_messages_py"
+	@echo "... vicon_bridge_gencfg"
+	@echo "... vicon_bridge_gencpp"
+	@echo "... vicon_bridge_generate_messages"
+	@echo "... vicon_bridge_generate_messages_cpp"
+	@echo "... vicon_bridge_generate_messages_eus"
+	@echo "... vicon_bridge_generate_messages_lisp"
+	@echo "... vicon_bridge_generate_messages_nodejs"
+	@echo "... vicon_bridge_generate_messages_py"
+	@echo "... vicon_bridge_geneus"
+	@echo "... vicon_bridge_genlisp"
+	@echo "... vicon_bridge_gennodejs"
+	@echo "... vicon_bridge_genpy"
 	@echo "... visualization_msgs_generate_messages_cpp"
 	@echo "... visualization_msgs_generate_messages_eus"
 	@echo "... visualization_msgs_generate_messages_lisp"
 	@echo "... visualization_msgs_generate_messages_nodejs"
 	@echo "... visualization_msgs_generate_messages_py"
+	@echo "... calibrate"
 	@echo "... gcs_bridge"
 	@echo "... gmock"
 	@echo "... gmock_main"
@@ -3722,10 +4233,17 @@ help:
 	@echo "... mavros_node"
 	@echo "... mavros_plugins"
 	@echo "... mavros_sitl_test"
-	@echo "... offb_node"
+	@echo "... offb_node_hitl"
+	@echo "... offb_node_sitl"
 	@echo "... servo_state_publisher"
 	@echo "... sitl_test_node"
+	@echo "... testclient"
+	@echo "... tf_distort"
+	@echo "... vicon_bridge"
+	@echo "... vicon_sdk"
 	@echo "... visualization"
+	@echo "... waypoint_nav_client"
+	@echo "... waypoint_nav_server"
 .PHONY : help
 
 

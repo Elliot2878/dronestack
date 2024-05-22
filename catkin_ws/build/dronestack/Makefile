@@ -172,25 +172,259 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-dronestack/CMakeFiles/offb_node.dir/rule:
-	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack/CMakeFiles/offb_node.dir/rule
-.PHONY : dronestack/CMakeFiles/offb_node.dir/rule
+dronestack/CMakeFiles/dronestack_generate_messages.dir/rule:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack/CMakeFiles/dronestack_generate_messages.dir/rule
+.PHONY : dronestack/CMakeFiles/dronestack_generate_messages.dir/rule
 
 # Convenience name for target.
-offb_node: dronestack/CMakeFiles/offb_node.dir/rule
-.PHONY : offb_node
+dronestack_generate_messages: dronestack/CMakeFiles/dronestack_generate_messages.dir/rule
+.PHONY : dronestack_generate_messages
 
 # fast build rule for target.
-offb_node/fast:
-	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/offb_node.dir/build.make dronestack/CMakeFiles/offb_node.dir/build
-.PHONY : offb_node/fast
+dronestack_generate_messages/fast:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_generate_messages.dir/build.make dronestack/CMakeFiles/dronestack_generate_messages.dir/build
+.PHONY : dronestack_generate_messages/fast
+
+# Convenience name for target.
+dronestack/CMakeFiles/_dronestack_generate_messages_check_deps_waypoint_nav.dir/rule:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack/CMakeFiles/_dronestack_generate_messages_check_deps_waypoint_nav.dir/rule
+.PHONY : dronestack/CMakeFiles/_dronestack_generate_messages_check_deps_waypoint_nav.dir/rule
+
+# Convenience name for target.
+_dronestack_generate_messages_check_deps_waypoint_nav: dronestack/CMakeFiles/_dronestack_generate_messages_check_deps_waypoint_nav.dir/rule
+.PHONY : _dronestack_generate_messages_check_deps_waypoint_nav
+
+# fast build rule for target.
+_dronestack_generate_messages_check_deps_waypoint_nav/fast:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/_dronestack_generate_messages_check_deps_waypoint_nav.dir/build.make dronestack/CMakeFiles/_dronestack_generate_messages_check_deps_waypoint_nav.dir/build
+.PHONY : _dronestack_generate_messages_check_deps_waypoint_nav/fast
+
+# Convenience name for target.
+dronestack/CMakeFiles/dronestack_generate_messages_cpp.dir/rule:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack/CMakeFiles/dronestack_generate_messages_cpp.dir/rule
+.PHONY : dronestack/CMakeFiles/dronestack_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+dronestack_generate_messages_cpp: dronestack/CMakeFiles/dronestack_generate_messages_cpp.dir/rule
+.PHONY : dronestack_generate_messages_cpp
+
+# fast build rule for target.
+dronestack_generate_messages_cpp/fast:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_generate_messages_cpp.dir/build.make dronestack/CMakeFiles/dronestack_generate_messages_cpp.dir/build
+.PHONY : dronestack_generate_messages_cpp/fast
+
+# Convenience name for target.
+dronestack/CMakeFiles/dronestack_gencpp.dir/rule:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack/CMakeFiles/dronestack_gencpp.dir/rule
+.PHONY : dronestack/CMakeFiles/dronestack_gencpp.dir/rule
+
+# Convenience name for target.
+dronestack_gencpp: dronestack/CMakeFiles/dronestack_gencpp.dir/rule
+.PHONY : dronestack_gencpp
+
+# fast build rule for target.
+dronestack_gencpp/fast:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_gencpp.dir/build.make dronestack/CMakeFiles/dronestack_gencpp.dir/build
+.PHONY : dronestack_gencpp/fast
+
+# Convenience name for target.
+dronestack/CMakeFiles/dronestack_generate_messages_eus.dir/rule:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack/CMakeFiles/dronestack_generate_messages_eus.dir/rule
+.PHONY : dronestack/CMakeFiles/dronestack_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+dronestack_generate_messages_eus: dronestack/CMakeFiles/dronestack_generate_messages_eus.dir/rule
+.PHONY : dronestack_generate_messages_eus
+
+# fast build rule for target.
+dronestack_generate_messages_eus/fast:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_generate_messages_eus.dir/build.make dronestack/CMakeFiles/dronestack_generate_messages_eus.dir/build
+.PHONY : dronestack_generate_messages_eus/fast
+
+# Convenience name for target.
+dronestack/CMakeFiles/dronestack_geneus.dir/rule:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack/CMakeFiles/dronestack_geneus.dir/rule
+.PHONY : dronestack/CMakeFiles/dronestack_geneus.dir/rule
+
+# Convenience name for target.
+dronestack_geneus: dronestack/CMakeFiles/dronestack_geneus.dir/rule
+.PHONY : dronestack_geneus
+
+# fast build rule for target.
+dronestack_geneus/fast:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_geneus.dir/build.make dronestack/CMakeFiles/dronestack_geneus.dir/build
+.PHONY : dronestack_geneus/fast
+
+# Convenience name for target.
+dronestack/CMakeFiles/dronestack_generate_messages_lisp.dir/rule:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack/CMakeFiles/dronestack_generate_messages_lisp.dir/rule
+.PHONY : dronestack/CMakeFiles/dronestack_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+dronestack_generate_messages_lisp: dronestack/CMakeFiles/dronestack_generate_messages_lisp.dir/rule
+.PHONY : dronestack_generate_messages_lisp
+
+# fast build rule for target.
+dronestack_generate_messages_lisp/fast:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_generate_messages_lisp.dir/build.make dronestack/CMakeFiles/dronestack_generate_messages_lisp.dir/build
+.PHONY : dronestack_generate_messages_lisp/fast
+
+# Convenience name for target.
+dronestack/CMakeFiles/dronestack_genlisp.dir/rule:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack/CMakeFiles/dronestack_genlisp.dir/rule
+.PHONY : dronestack/CMakeFiles/dronestack_genlisp.dir/rule
+
+# Convenience name for target.
+dronestack_genlisp: dronestack/CMakeFiles/dronestack_genlisp.dir/rule
+.PHONY : dronestack_genlisp
+
+# fast build rule for target.
+dronestack_genlisp/fast:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_genlisp.dir/build.make dronestack/CMakeFiles/dronestack_genlisp.dir/build
+.PHONY : dronestack_genlisp/fast
+
+# Convenience name for target.
+dronestack/CMakeFiles/dronestack_generate_messages_nodejs.dir/rule:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack/CMakeFiles/dronestack_generate_messages_nodejs.dir/rule
+.PHONY : dronestack/CMakeFiles/dronestack_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+dronestack_generate_messages_nodejs: dronestack/CMakeFiles/dronestack_generate_messages_nodejs.dir/rule
+.PHONY : dronestack_generate_messages_nodejs
+
+# fast build rule for target.
+dronestack_generate_messages_nodejs/fast:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_generate_messages_nodejs.dir/build.make dronestack/CMakeFiles/dronestack_generate_messages_nodejs.dir/build
+.PHONY : dronestack_generate_messages_nodejs/fast
+
+# Convenience name for target.
+dronestack/CMakeFiles/dronestack_gennodejs.dir/rule:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack/CMakeFiles/dronestack_gennodejs.dir/rule
+.PHONY : dronestack/CMakeFiles/dronestack_gennodejs.dir/rule
+
+# Convenience name for target.
+dronestack_gennodejs: dronestack/CMakeFiles/dronestack_gennodejs.dir/rule
+.PHONY : dronestack_gennodejs
+
+# fast build rule for target.
+dronestack_gennodejs/fast:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_gennodejs.dir/build.make dronestack/CMakeFiles/dronestack_gennodejs.dir/build
+.PHONY : dronestack_gennodejs/fast
+
+# Convenience name for target.
+dronestack/CMakeFiles/dronestack_generate_messages_py.dir/rule:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack/CMakeFiles/dronestack_generate_messages_py.dir/rule
+.PHONY : dronestack/CMakeFiles/dronestack_generate_messages_py.dir/rule
+
+# Convenience name for target.
+dronestack_generate_messages_py: dronestack/CMakeFiles/dronestack_generate_messages_py.dir/rule
+.PHONY : dronestack_generate_messages_py
+
+# fast build rule for target.
+dronestack_generate_messages_py/fast:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_generate_messages_py.dir/build.make dronestack/CMakeFiles/dronestack_generate_messages_py.dir/build
+.PHONY : dronestack_generate_messages_py/fast
+
+# Convenience name for target.
+dronestack/CMakeFiles/dronestack_genpy.dir/rule:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack/CMakeFiles/dronestack_genpy.dir/rule
+.PHONY : dronestack/CMakeFiles/dronestack_genpy.dir/rule
+
+# Convenience name for target.
+dronestack_genpy: dronestack/CMakeFiles/dronestack_genpy.dir/rule
+.PHONY : dronestack_genpy
+
+# fast build rule for target.
+dronestack_genpy/fast:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_genpy.dir/build.make dronestack/CMakeFiles/dronestack_genpy.dir/build
+.PHONY : dronestack_genpy/fast
+
+# Convenience name for target.
+dronestack/CMakeFiles/offb_node_hitl.dir/rule:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack/CMakeFiles/offb_node_hitl.dir/rule
+.PHONY : dronestack/CMakeFiles/offb_node_hitl.dir/rule
+
+# Convenience name for target.
+offb_node_hitl: dronestack/CMakeFiles/offb_node_hitl.dir/rule
+.PHONY : offb_node_hitl
+
+# fast build rule for target.
+offb_node_hitl/fast:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/offb_node_hitl.dir/build.make dronestack/CMakeFiles/offb_node_hitl.dir/build
+.PHONY : offb_node_hitl/fast
+
+# Convenience name for target.
+dronestack/CMakeFiles/offb_node_sitl.dir/rule:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack/CMakeFiles/offb_node_sitl.dir/rule
+.PHONY : dronestack/CMakeFiles/offb_node_sitl.dir/rule
+
+# Convenience name for target.
+offb_node_sitl: dronestack/CMakeFiles/offb_node_sitl.dir/rule
+.PHONY : offb_node_sitl
+
+# fast build rule for target.
+offb_node_sitl/fast:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/offb_node_sitl.dir/build.make dronestack/CMakeFiles/offb_node_sitl.dir/build
+.PHONY : offb_node_sitl/fast
+
+# Convenience name for target.
+dronestack/CMakeFiles/waypoint_nav_client.dir/rule:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack/CMakeFiles/waypoint_nav_client.dir/rule
+.PHONY : dronestack/CMakeFiles/waypoint_nav_client.dir/rule
+
+# Convenience name for target.
+waypoint_nav_client: dronestack/CMakeFiles/waypoint_nav_client.dir/rule
+.PHONY : waypoint_nav_client
+
+# fast build rule for target.
+waypoint_nav_client/fast:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/waypoint_nav_client.dir/build.make dronestack/CMakeFiles/waypoint_nav_client.dir/build
+.PHONY : waypoint_nav_client/fast
+
+# Convenience name for target.
+dronestack/CMakeFiles/waypoint_nav_server.dir/rule:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack/CMakeFiles/waypoint_nav_server.dir/rule
+.PHONY : dronestack/CMakeFiles/waypoint_nav_server.dir/rule
+
+# Convenience name for target.
+waypoint_nav_server: dronestack/CMakeFiles/waypoint_nav_server.dir/rule
+.PHONY : waypoint_nav_server
+
+# fast build rule for target.
+waypoint_nav_server/fast:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/waypoint_nav_server.dir/build.make dronestack/CMakeFiles/waypoint_nav_server.dir/build
+.PHONY : waypoint_nav_server/fast
+
+src/offb_node_hitl.o: src/offb_node_hitl.cpp.o
+.PHONY : src/offb_node_hitl.o
+
+# target to build an object file
+src/offb_node_hitl.cpp.o:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/offb_node_hitl.dir/build.make dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o
+.PHONY : src/offb_node_hitl.cpp.o
+
+src/offb_node_hitl.i: src/offb_node_hitl.cpp.i
+.PHONY : src/offb_node_hitl.i
+
+# target to preprocess a source file
+src/offb_node_hitl.cpp.i:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/offb_node_hitl.dir/build.make dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.i
+.PHONY : src/offb_node_hitl.cpp.i
+
+src/offb_node_hitl.s: src/offb_node_hitl.cpp.s
+.PHONY : src/offb_node_hitl.s
+
+# target to generate assembly for a file
+src/offb_node_hitl.cpp.s:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/offb_node_hitl.dir/build.make dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.s
+.PHONY : src/offb_node_hitl.cpp.s
 
 src/offb_node_sitl.o: src/offb_node_sitl.cpp.o
 .PHONY : src/offb_node_sitl.o
 
 # target to build an object file
 src/offb_node_sitl.cpp.o:
-	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/offb_node.dir/build.make dronestack/CMakeFiles/offb_node.dir/src/offb_node_sitl.cpp.o
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/offb_node_sitl.dir/build.make dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o
 .PHONY : src/offb_node_sitl.cpp.o
 
 src/offb_node_sitl.i: src/offb_node_sitl.cpp.i
@@ -198,7 +432,7 @@ src/offb_node_sitl.i: src/offb_node_sitl.cpp.i
 
 # target to preprocess a source file
 src/offb_node_sitl.cpp.i:
-	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/offb_node.dir/build.make dronestack/CMakeFiles/offb_node.dir/src/offb_node_sitl.cpp.i
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/offb_node_sitl.dir/build.make dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.i
 .PHONY : src/offb_node_sitl.cpp.i
 
 src/offb_node_sitl.s: src/offb_node_sitl.cpp.s
@@ -206,8 +440,56 @@ src/offb_node_sitl.s: src/offb_node_sitl.cpp.s
 
 # target to generate assembly for a file
 src/offb_node_sitl.cpp.s:
-	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/offb_node.dir/build.make dronestack/CMakeFiles/offb_node.dir/src/offb_node_sitl.cpp.s
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/offb_node_sitl.dir/build.make dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.s
 .PHONY : src/offb_node_sitl.cpp.s
+
+src/offb_node_sitl_client.o: src/offb_node_sitl_client.cpp.o
+.PHONY : src/offb_node_sitl_client.o
+
+# target to build an object file
+src/offb_node_sitl_client.cpp.o:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/waypoint_nav_client.dir/build.make dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o
+.PHONY : src/offb_node_sitl_client.cpp.o
+
+src/offb_node_sitl_client.i: src/offb_node_sitl_client.cpp.i
+.PHONY : src/offb_node_sitl_client.i
+
+# target to preprocess a source file
+src/offb_node_sitl_client.cpp.i:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/waypoint_nav_client.dir/build.make dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.i
+.PHONY : src/offb_node_sitl_client.cpp.i
+
+src/offb_node_sitl_client.s: src/offb_node_sitl_client.cpp.s
+.PHONY : src/offb_node_sitl_client.s
+
+# target to generate assembly for a file
+src/offb_node_sitl_client.cpp.s:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/waypoint_nav_client.dir/build.make dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.s
+.PHONY : src/offb_node_sitl_client.cpp.s
+
+src/offb_node_sitl_server.o: src/offb_node_sitl_server.cpp.o
+.PHONY : src/offb_node_sitl_server.o
+
+# target to build an object file
+src/offb_node_sitl_server.cpp.o:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/waypoint_nav_server.dir/build.make dronestack/CMakeFiles/waypoint_nav_server.dir/src/offb_node_sitl_server.cpp.o
+.PHONY : src/offb_node_sitl_server.cpp.o
+
+src/offb_node_sitl_server.i: src/offb_node_sitl_server.cpp.i
+.PHONY : src/offb_node_sitl_server.i
+
+# target to preprocess a source file
+src/offb_node_sitl_server.cpp.i:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/waypoint_nav_server.dir/build.make dronestack/CMakeFiles/waypoint_nav_server.dir/src/offb_node_sitl_server.cpp.i
+.PHONY : src/offb_node_sitl_server.cpp.i
+
+src/offb_node_sitl_server.s: src/offb_node_sitl_server.cpp.s
+.PHONY : src/offb_node_sitl_server.s
+
+# target to generate assembly for a file
+src/offb_node_sitl_server.cpp.s:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/waypoint_nav_server.dir/build.make dronestack/CMakeFiles/waypoint_nav_server.dir/src/offb_node_sitl_server.cpp.s
+.PHONY : src/offb_node_sitl_server.cpp.s
 
 # Help Target
 help:
@@ -222,10 +504,34 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... offb_node"
+	@echo "... _dronestack_generate_messages_check_deps_waypoint_nav"
+	@echo "... dronestack_gencpp"
+	@echo "... dronestack_generate_messages"
+	@echo "... dronestack_generate_messages_cpp"
+	@echo "... dronestack_generate_messages_eus"
+	@echo "... dronestack_generate_messages_lisp"
+	@echo "... dronestack_generate_messages_nodejs"
+	@echo "... dronestack_generate_messages_py"
+	@echo "... dronestack_geneus"
+	@echo "... dronestack_genlisp"
+	@echo "... dronestack_gennodejs"
+	@echo "... dronestack_genpy"
+	@echo "... offb_node_hitl"
+	@echo "... offb_node_sitl"
+	@echo "... waypoint_nav_client"
+	@echo "... waypoint_nav_server"
+	@echo "... src/offb_node_hitl.o"
+	@echo "... src/offb_node_hitl.i"
+	@echo "... src/offb_node_hitl.s"
 	@echo "... src/offb_node_sitl.o"
 	@echo "... src/offb_node_sitl.i"
 	@echo "... src/offb_node_sitl.s"
+	@echo "... src/offb_node_sitl_client.o"
+	@echo "... src/offb_node_sitl_client.i"
+	@echo "... src/offb_node_sitl_client.s"
+	@echo "... src/offb_node_sitl_server.o"
+	@echo "... src/offb_node_sitl_server.i"
+	@echo "... src/offb_node_sitl_server.s"
 .PHONY : help
 
 

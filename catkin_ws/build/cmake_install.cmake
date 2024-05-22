@@ -142,6 +142,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/cpsl/catkin_ws/build/dronestack/cmake_install.cmake")
   include("/home/cpsl/catkin_ws/build/mavros/mavros_extras/cmake_install.cmake")
   include("/home/cpsl/catkin_ws/build/mavros/test_mavros/cmake_install.cmake")
+  include("/home/cpsl/catkin_ws/build/vicon_bridge/cmake_install.cmake")
 
 endif()
 
