@@ -1,8 +1,7 @@
 dronestack/CMakeFiles/waypoint_nav_server.dir/src/offb_node_sitl_server.cpp.o: \
  /home/cpsl/catkin_ws/src/dronestack/src/offb_node_sitl_server.cpp \
- /usr/include/stdc-predef.h \
- /home/cpsl/catkin_ws/src/dronestack/include/dronestack/offb_node_sitl.h \
- /opt/ros/noetic/include/ros/ros.h /opt/ros/noetic/include/ros/time.h \
+ /usr/include/stdc-predef.h /opt/ros/noetic/include/ros/ros.h \
+ /opt/ros/noetic/include/ros/time.h \
  /opt/ros/noetic/include/ros/platform.h /usr/include/c++/9/stdlib.h \
  /usr/include/c++/9/cstdlib \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
@@ -1097,6 +1096,7 @@ dronestack/CMakeFiles/waypoint_nav_server.dir/src/offb_node_sitl_server.cpp.o: \
  /opt/ros/noetic/include/ros/this_node.h \
  /opt/ros/noetic/include/ros/param.h /opt/ros/noetic/include/ros/topic.h \
  /opt/ros/noetic/include/ros/node_handle.h \
+ /home/cpsl/catkin_ws/src/dronestack/include/dronestack/offb_node_sitl.h \
  /opt/ros/noetic/include/geometry_msgs/PoseStamped.h \
  /opt/ros/noetic/include/ros/message_operations.h \
  /opt/ros/noetic/include/std_msgs/Header.h \

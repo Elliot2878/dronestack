@@ -5,24 +5,6 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
   /home/cpsl/catkin_ws/devel/include/dronestack/waypoint_nav.h \
   /home/cpsl/catkin_ws/devel/include/dronestack/waypoint_navRequest.h \
   /home/cpsl/catkin_ws/devel/include/dronestack/waypoint_navResponse.h \
-  /home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandBool.h \
-  /home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandBoolRequest.h \
-  /home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandBoolResponse.h \
-  /home/cpsl/catkin_ws/devel/include/mavros_msgs/SetMode.h \
-  /home/cpsl/catkin_ws/devel/include/mavros_msgs/SetModeRequest.h \
-  /home/cpsl/catkin_ws/devel/include/mavros_msgs/SetModeResponse.h \
-  /home/cpsl/catkin_ws/devel/include/mavros_msgs/State.h \
-  /home/cpsl/catkin_ws/src/dronestack/include/dronestack/offb_node_sitl.h \
-  /opt/ros/noetic/include/gazebo_msgs/ModelStates.h \
-  /opt/ros/noetic/include/geometry_msgs/Point.h \
-  /opt/ros/noetic/include/geometry_msgs/Pose.h \
-  /opt/ros/noetic/include/geometry_msgs/PoseStamped.h \
-  /opt/ros/noetic/include/geometry_msgs/Quaternion.h \
-  /opt/ros/noetic/include/geometry_msgs/Transform.h \
-  /opt/ros/noetic/include/geometry_msgs/TransformStamped.h \
-  /opt/ros/noetic/include/geometry_msgs/Twist.h \
-  /opt/ros/noetic/include/geometry_msgs/TwistStamped.h \
-  /opt/ros/noetic/include/geometry_msgs/Vector3.h \
   /opt/ros/noetic/include/ros/advertise_options.h \
   /opt/ros/noetic/include/ros/advertise_service_options.h \
   /opt/ros/noetic/include/ros/assert.h \
@@ -79,7 +61,6 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
   /opt/ros/noetic/include/ros/wall_timer.h \
   /opt/ros/noetic/include/ros/wall_timer_options.h \
   /opt/ros/noetic/include/rosconsole/macros_generated.h \
-  /opt/ros/noetic/include/std_msgs/Header.h \
   /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h \
   /opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h \
   /usr/include/alloca.h \
@@ -1102,181 +1083,6 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
   /usr/include/c++/9/utility \
   /usr/include/c++/9/vector \
   /usr/include/ctype.h \
-  /usr/include/eigen3/Eigen/Cholesky \
-  /usr/include/eigen3/Eigen/Core \
-  /usr/include/eigen3/Eigen/Dense \
-  /usr/include/eigen3/Eigen/Eigenvalues \
-  /usr/include/eigen3/Eigen/Geometry \
-  /usr/include/eigen3/Eigen/Householder \
-  /usr/include/eigen3/Eigen/Jacobi \
-  /usr/include/eigen3/Eigen/LU \
-  /usr/include/eigen3/Eigen/QR \
-  /usr/include/eigen3/Eigen/SVD \
-  /usr/include/eigen3/Eigen/src/Cholesky/LDLT.h \
-  /usr/include/eigen3/Eigen/src/Cholesky/LLT.h \
-  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h \
-  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h \
-  /usr/include/eigen3/Eigen/src/plugins/BlockMethods.h \
-  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h \
-  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h \
-  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h \
-  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h \
-  /usr/include/eigen3/Eigen/src/Core/Array.h \
-  /usr/include/eigen3/Eigen/src/Core/ArrayBase.h \
-  /usr/include/eigen3/Eigen/src/Core/ArrayWrapper.h \
-  /usr/include/eigen3/Eigen/src/Core/Assign.h \
-  /usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h \
-  /usr/include/eigen3/Eigen/src/Core/BandMatrix.h \
-  /usr/include/eigen3/Eigen/src/Core/Block.h \
-  /usr/include/eigen3/Eigen/src/Core/BooleanRedux.h \
-  /usr/include/eigen3/Eigen/src/Core/CommaInitializer.h \
-  /usr/include/eigen3/Eigen/src/Core/ConditionEstimator.h \
-  /usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h \
-  /usr/include/eigen3/Eigen/src/Core/CoreIterators.h \
-  /usr/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h \
-  /usr/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h \
-  /usr/include/eigen3/Eigen/src/Core/CwiseTernaryOp.h \
-  /usr/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h \
-  /usr/include/eigen3/Eigen/src/Core/CwiseUnaryView.h \
-  /usr/include/eigen3/Eigen/src/Core/DenseBase.h \
-  /usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h \
-  /usr/include/eigen3/Eigen/src/Core/DenseStorage.h \
-  /usr/include/eigen3/Eigen/src/Core/Diagonal.h \
-  /usr/include/eigen3/Eigen/src/Core/DiagonalMatrix.h \
-  /usr/include/eigen3/Eigen/src/Core/DiagonalProduct.h \
-  /usr/include/eigen3/Eigen/src/Core/Dot.h \
-  /usr/include/eigen3/Eigen/src/Core/EigenBase.h \
-  /usr/include/eigen3/Eigen/src/Core/Fuzzy.h \
-  /usr/include/eigen3/Eigen/src/Core/GeneralProduct.h \
-  /usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h \
-  /usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h \
-  /usr/include/eigen3/Eigen/src/Core/IO.h \
-  /usr/include/eigen3/Eigen/src/Core/Inverse.h \
-  /usr/include/eigen3/Eigen/src/Core/Map.h \
-  /usr/include/eigen3/Eigen/src/Core/MapBase.h \
-  /usr/include/eigen3/Eigen/src/Core/MathFunctions.h \
-  /usr/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h \
-  /usr/include/eigen3/Eigen/src/Core/Matrix.h \
-  /usr/include/eigen3/Eigen/src/Core/MatrixBase.h \
-  /usr/include/eigen3/Eigen/src/Core/NestByValue.h \
-  /usr/include/eigen3/Eigen/src/Core/NoAlias.h \
-  /usr/include/eigen3/Eigen/src/Core/NumTraits.h \
-  /usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h \
-  /usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h \
-  /usr/include/eigen3/Eigen/src/Core/Product.h \
-  /usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h \
-  /usr/include/eigen3/Eigen/src/Core/Random.h \
-  /usr/include/eigen3/Eigen/src/Core/Redux.h \
-  /usr/include/eigen3/Eigen/src/Core/Ref.h \
-  /usr/include/eigen3/Eigen/src/Core/Replicate.h \
-  /usr/include/eigen3/Eigen/src/Core/ReturnByValue.h \
-  /usr/include/eigen3/Eigen/src/Core/Reverse.h \
-  /usr/include/eigen3/Eigen/src/Core/Select.h \
-  /usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h \
-  /usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h \
-  /usr/include/eigen3/Eigen/src/Core/Solve.h \
-  /usr/include/eigen3/Eigen/src/Core/SolveTriangular.h \
-  /usr/include/eigen3/Eigen/src/Core/SolverBase.h \
-  /usr/include/eigen3/Eigen/src/Core/StableNorm.h \
-  /usr/include/eigen3/Eigen/src/Core/Stride.h \
-  /usr/include/eigen3/Eigen/src/Core/Swap.h \
-  /usr/include/eigen3/Eigen/src/Core/Transpose.h \
-  /usr/include/eigen3/Eigen/src/Core/Transpositions.h \
-  /usr/include/eigen3/Eigen/src/Core/TriangularMatrix.h \
-  /usr/include/eigen3/Eigen/src/Core/VectorBlock.h \
-  /usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h \
-  /usr/include/eigen3/Eigen/src/Core/Visitor.h \
-  /usr/include/eigen3/Eigen/src/Core/arch/CUDA/Complex.h \
-  /usr/include/eigen3/Eigen/src/Core/arch/CUDA/Half.h \
-  /usr/include/eigen3/Eigen/src/Core/arch/CUDA/PacketMathHalf.h \
-  /usr/include/eigen3/Eigen/src/Core/arch/CUDA/TypeCasting.h \
-  /usr/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h \
-  /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h \
-  /usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h \
-  /usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h \
-  /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h \
-  /usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h \
-  /usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h \
-  /usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h \
-  /usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h \
-  /usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h \
-  /usr/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h \
-  /usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h \
-  /usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
-  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h \
-  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h \
-  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h \
-  /usr/include/eigen3/Eigen/src/Core/products/Parallelizer.h \
-  /usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h \
-  /usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h \
-  /usr/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h \
-  /usr/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h \
-  /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h \
-  /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h \
-  /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h \
-  /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h \
-  /usr/include/eigen3/Eigen/src/Core/util/BlasUtil.h \
-  /usr/include/eigen3/Eigen/src/Core/util/Constants.h \
-  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
-  /usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h \
-  /usr/include/eigen3/Eigen/src/Core/util/MKL_support.h \
-  /usr/include/eigen3/Eigen/src/Core/util/Macros.h \
-  /usr/include/eigen3/Eigen/src/Core/util/Memory.h \
-  /usr/include/eigen3/Eigen/src/Core/util/Meta.h \
-  /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h \
-  /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h \
-  /usr/include/eigen3/Eigen/src/Core/util/XprHelper.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h \
-  /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
-  /usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h \
-  /usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h \
-  /usr/include/eigen3/Eigen/src/Geometry/EulerAngles.h \
-  /usr/include/eigen3/Eigen/src/Geometry/Homogeneous.h \
-  /usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h \
-  /usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h \
-  /usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h \
-  /usr/include/eigen3/Eigen/src/Geometry/Quaternion.h \
-  /usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h \
-  /usr/include/eigen3/Eigen/src/Geometry/RotationBase.h \
-  /usr/include/eigen3/Eigen/src/Geometry/Scaling.h \
-  /usr/include/eigen3/Eigen/src/Geometry/Transform.h \
-  /usr/include/eigen3/Eigen/src/Geometry/Translation.h \
-  /usr/include/eigen3/Eigen/src/Geometry/Umeyama.h \
-  /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SSE.h \
-  /usr/include/eigen3/Eigen/src/Householder/BlockHouseholder.h \
-  /usr/include/eigen3/Eigen/src/Householder/Householder.h \
-  /usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h \
-  /usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h \
-  /usr/include/eigen3/Eigen/src/LU/Determinant.h \
-  /usr/include/eigen3/Eigen/src/LU/FullPivLU.h \
-  /usr/include/eigen3/Eigen/src/LU/InverseImpl.h \
-  /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h \
-  /usr/include/eigen3/Eigen/src/LU/arch/Inverse_SSE.h \
-  /usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h \
-  /usr/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h \
-  /usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h \
-  /usr/include/eigen3/Eigen/src/QR/HouseholderQR.h \
-  /usr/include/eigen3/Eigen/src/SVD/BDCSVD.h \
-  /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h \
-  /usr/include/eigen3/Eigen/src/SVD/SVDBase.h \
-  /usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h \
-  /usr/include/eigen3/Eigen/src/misc/Image.h \
-  /usr/include/eigen3/Eigen/src/misc/Kernel.h \
-  /usr/include/eigen3/Eigen/src/misc/RealSvd2x2.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
   /usr/include/features.h \
@@ -1406,20 +1212,14 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/time.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/lib/gcc/x86_64-linux-gnu/9/include/emmintrin.h \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/float.h \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/limits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/9/include/mm_malloc.h \
-  /usr/lib/gcc/x86_64-linux-gnu/9/include/mmintrin.h \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/quadmath.h \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h \
-  /usr/lib/gcc/x86_64-linux-gnu/9/include/syslimits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/9/include/xmmintrin.h
+  /usr/lib/gcc/x86_64-linux-gnu/9/include/syslimits.h
 
-
-/usr/lib/gcc/x86_64-linux-gnu/9/include/xmmintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h:
 
@@ -1427,15 +1227,13 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/lib/gcc/x86_64-linux-gnu/9/include/quadmath.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/9/include/mmintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/9/include/mm_malloc.h:
+/usr/lib/gcc/x86_64-linux-gnu/9/include/limits.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/9/include/float.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/9/include/emmintrin.h:
-
 /usr/include/x86_64-linux-gnu/sys/types.h:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
@@ -1493,6 +1291,8 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
@@ -1527,6 +1327,8 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
@@ -1555,245 +1357,37 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
-/usr/include/time.h:
+/usr/include/boost/date_time/gregorian/gregorian_types.hpp:
 
-/usr/include/strings.h:
+/usr/include/boost/predef/library/std/_prefix.h:
 
-/usr/include/string.h:
+/usr/include/c++/9/bits/predefined_ops.h:
 
-/usr/include/stdlib.h:
+/usr/include/boost/mpl/aux_/preprocessed/gcc/reverse_fold_impl.hpp:
 
-/usr/include/stdio.h:
+/usr/include/boost/smart_ptr/detail/local_counted_base.hpp:
 
-/usr/include/log4cxx/level.h:
+/usr/include/c++/9/bits/unique_lock.h:
 
-/usr/include/log4cxx/helpers/transcoder.h:
+/usr/include/boost/numeric/conversion/int_float_mixture_enum.hpp:
 
-/usr/include/log4cxx/helpers/objectptr.h:
+/usr/include/boost/numeric/conversion/detail/udt_builtin_mixture.hpp:
 
-/usr/include/log4cxx/helpers/objectimpl.h:
+/usr/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_common.hpp:
 
-/usr/include/log4cxx/helpers/class.h:
+/usr/include/boost/numeric/conversion/detail/numeric_cast_traits.hpp:
 
-/usr/include/locale.h:
+/opt/ros/noetic/include/ros/steady_timer_options.h:
 
-/usr/include/linux/limits.h:
+/usr/include/boost/numeric/conversion/detail/is_subranged.hpp:
 
-/usr/include/linux/errno.h:
+/usr/include/boost/numeric/conversion/detail/conversion_traits.hpp:
 
-/usr/include/limits.h:
+/usr/include/boost/mpl/vector.hpp:
 
-/usr/include/features.h:
+/usr/include/c++/9/cwchar:
 
-/usr/include/errno.h:
-
-/usr/include/eigen3/Eigen/src/misc/Kernel.h:
-
-/usr/include/eigen3/Eigen/src/misc/Image.h:
-
-/usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/9/include/limits.h:
-
-/usr/include/eigen3/Eigen/src/SVD/SVDBase.h:
-
-/usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h:
-
-/usr/include/eigen3/Eigen/src/SVD/BDCSVD.h:
-
-/usr/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h:
-
-/usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h:
-
-/usr/include/eigen3/Eigen/src/LU/arch/Inverse_SSE.h:
-
-/usr/include/eigen3/Eigen/src/LU/PartialPivLU.h:
-
-/usr/include/eigen3/Eigen/src/LU/InverseImpl.h:
-
-/usr/include/eigen3/Eigen/src/LU/FullPivLU.h:
-
-/usr/include/eigen3/Eigen/src/LU/Determinant.h:
-
-/usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h:
-
-/usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h:
-
-/usr/include/eigen3/Eigen/src/Householder/Householder.h:
-
-/usr/include/eigen3/Eigen/src/Householder/BlockHouseholder.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SSE.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/Umeyama.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/Transform.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/Scaling.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/RotationBase.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/EulerAngles.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:
-
-/usr/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h:
-
-/usr/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h:
-
-/usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h:
-
-/usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/Meta.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/Memory.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/Macros.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/Constants.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/BlasUtil.h:
-
-/usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h:
-
-/usr/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h:
-
-/usr/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h:
-
-/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h:
-
-/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/usr/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h:
-
-/usr/include/log4cxx/helpers/classregistration.h:
-
-/usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h:
-
-/usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h:
-
-/usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h:
-
-/usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h:
-
-/usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h:
-
-/usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h:
-
-/usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:
-
-/usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h:
-
-/usr/include/x86_64-linux-gnu/bits/local_lim.h:
-
-/usr/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h:
-
-/usr/include/eigen3/Eigen/src/Core/arch/CUDA/Half.h:
-
-/usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h:
-
-/usr/include/eigen3/Eigen/src/Core/Swap.h:
-
-/usr/include/eigen3/Eigen/src/Core/Stride.h:
-
-/usr/include/eigen3/Eigen/src/Core/StableNorm.h:
-
-/usr/include/eigen3/Eigen/src/Core/SolveTriangular.h:
-
-/usr/include/eigen3/Eigen/src/Core/Solve.h:
-
-/usr/include/eigen3/Eigen/src/Core/Reverse.h:
-
-/usr/include/eigen3/Eigen/src/Core/ReturnByValue.h:
-
-/usr/include/eigen3/Eigen/src/Core/Ref.h:
-
-/usr/include/eigen3/Eigen/src/Core/Redux.h:
-
-/usr/include/eigen3/Eigen/src/Core/Random.h:
-
-/usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h:
-
-/usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h:
-
-/usr/include/eigen3/Eigen/src/Core/NumTraits.h:
-
-/usr/include/eigen3/Eigen/src/Core/NoAlias.h:
-
-/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:
-
-/usr/include/eigen3/Eigen/src/Core/Matrix.h:
-
-/usr/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h:
-
-/usr/include/eigen3/Eigen/src/Core/MathFunctions.h:
-
-/usr/include/eigen3/Eigen/src/Core/Inverse.h:
-
-/usr/include/eigen3/Eigen/src/Core/IO.h:
-
-/usr/include/eigen3/Eigen/src/Core/Fuzzy.h:
-
-/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:
-
-/usr/include/eigen3/Eigen/src/Core/DiagonalProduct.h:
-
-/usr/include/eigen3/Eigen/src/Core/DiagonalMatrix.h:
-
-/usr/include/eigen3/Eigen/src/Core/EigenBase.h:
-
-/usr/include/eigen3/Eigen/src/Core/Diagonal.h:
-
-/usr/include/eigen3/Eigen/src/Core/DenseStorage.h:
-
-/usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:
-
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
-/usr/include/eigen3/Eigen/src/Core/DenseBase.h:
-
-/usr/include/eigen3/Eigen/src/Core/CwiseUnaryView.h:
-
-/usr/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h:
-
-/usr/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h:
-
-/usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h:
-
-/usr/include/eigen3/Eigen/src/Core/CommaInitializer.h:
-
-/usr/include/eigen3/Eigen/src/Core/BooleanRedux.h:
-
-/usr/include/eigen3/Eigen/src/Core/Assign.h:
-
-/usr/include/eigen3/Eigen/src/Core/ArrayBase.h:
-
-/usr/include/log4cxx/log4cxx.h:
-
-/usr/include/eigen3/Eigen/src/Core/Array.h:
-
-/usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h:
-
-/usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h:
-
-/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h:
-
-/usr/include/eigen3/Eigen/src/Cholesky/LDLT.h:
-
-/usr/include/eigen3/Eigen/SVD:
-
-/usr/include/eigen3/Eigen/QR:
+/usr/include/boost/numeric/conversion/detail/bounds.hpp:
 
 /usr/include/boost/numeric/conversion/cast.hpp:
 
@@ -1805,11 +1399,13 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/mpl/bool.hpp:
 
+/usr/include/boost/mpl/vector/aux_/push_front.hpp:
+
+/usr/include/boost/mpl/less.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
 /usr/include/boost/mpl/vector/aux_/preprocessed/typeof_based/vector10.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h:
 
 /usr/include/boost/mpl/aux_/config/dependent_nttp.hpp:
 
@@ -1829,12 +1425,6 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/bind/bind_cc.hpp:
 
-/usr/include/boost/mpl/vector.hpp:
-
-/usr/include/boost/numeric/conversion/detail/conversion_traits.hpp:
-
-/usr/include/c++/9/cwchar:
-
 /usr/include/boost/mpl/size.hpp:
 
 /usr/include/boost/mpl/reverse_fold.hpp:
@@ -1843,21 +1433,13 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/preprocessor/identity.hpp:
 
-/home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandBoolRequest.h:
-
 /usr/include/boost/mpl/plus.hpp:
 
 /usr/include/boost/mpl/numeric_cast.hpp:
 
 /usr/include/boost/mpl/iterator_tags.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/Map.h:
-
 /usr/include/boost/utility.hpp:
-
-/usr/include/sched.h:
-
-/usr/include/boost/mpl/times.hpp:
 
 /usr/include/boost/mpl/multiplies.hpp:
 
@@ -1871,6 +1453,8 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/mpl/list/aux_/push_back.hpp:
 
+/usr/include/boost/config/detail/suffix.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
 /usr/include/boost/mpl/list/aux_/include_preprocessed.hpp:
@@ -1879,15 +1463,13 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/c++/9/stdlib.h:
 
-/usr/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h:
-
 /usr/include/boost/mpl/list/aux_/empty.hpp:
 
 /usr/include/boost/smart_ptr/allocate_shared_array.hpp:
 
-/usr/include/boost/mpl/list/list20.hpp:
+/usr/include/limits.h:
 
-/usr/include/eigen3/Eigen/src/Core/Dot.h:
+/usr/include/boost/mpl/list/list20.hpp:
 
 /usr/include/boost/predef/os/bsd/net.h:
 
@@ -1897,21 +1479,11 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/bind.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/CwiseTernaryOp.h:
-
 /usr/include/boost/mpl/limits/list.hpp:
 
 /usr/include/boost/core/ignore_unused.hpp:
 
-/usr/include/eigen3/Eigen/src/plugins/BlockMethods.h:
-
 /usr/include/boost/mem_fn.hpp:
-
-/usr/include/boost/mpl/less.hpp:
-
-/usr/include/boost/mpl/vector/aux_/push_front.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h:
 
 /usr/include/boost/mpl/vector/aux_/include_preprocessed.hpp:
 
@@ -1955,21 +1527,15 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /opt/ros/noetic/include/ros/master.h:
 
-/usr/include/eigen3/Eigen/src/Core/Product.h:
-
 /usr/include/boost/mpl/find_if.hpp:
 
 /usr/include/boost/mpl/list/aux_/front.hpp:
 
 /usr/include/boost/predef/compiler/compaq.h:
 
-/usr/include/eigen3/Eigen/src/QR/HouseholderQR.h:
-
 /usr/include/boost/mpl/distance.hpp:
 
 /usr/include/boost/mpl/list/aux_/O1_size.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/arch/CUDA/PacketMathHalf.h:
 
 /usr/include/boost/predef/architecture/sparc.h:
 
@@ -1991,6 +1557,8 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/c++/9/bits/cxxabi_init_exception.h:
 
+/usr/include/boost/mpl/aux_/traits_lambda_spec.hpp:
+
 /usr/include/boost/mpl/aux_/template_arity_fwd.hpp:
 
 /usr/include/boost/mpl/aux_/static_cast.hpp:
@@ -2003,8 +1571,6 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/predef/architecture/arm.h:
 
-/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:
-
 /usr/include/boost/mpl/aux_/push_front_impl.hpp:
 
 /usr/include/boost/mpl/aux_/push_back_impl.hpp:
@@ -2015,8 +1581,6 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/mpl/aux_/config/intel.hpp:
 
-/usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h:
-
 /usr/include/boost/mpl/vector/vector0.hpp:
 
 /usr/include/boost/date_time/gregorian_calendar.ipp:
@@ -2024,6 +1588,10 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 /usr/include/c++/9/bits/exception.h:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/plus.hpp:
+
+/usr/include/boost/mpl/aux_/numeric_cast_utils.hpp:
+
+/usr/include/boost/checked_delete.hpp:
 
 /usr/include/boost/mpl/aux_/size_impl.hpp:
 
@@ -2035,29 +1603,21 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/predef/compiler/intel.h:
 
-/usr/include/endian.h:
+/usr/include/boost/numeric/conversion/detail/sign_mixture.hpp:
 
-/usr/include/boost/mpl/minus.hpp:
+/usr/include/boost/iterator/detail/facade_iterator_category.hpp:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/iter_fold_impl.hpp:
+/usr/include/c++/9/bits/exception_defines.h:
 
-/usr/include/eigen3/Eigen/src/Core/util/MKL_support.h:
+/usr/include/boost/mpl/aux_/preprocessed/gcc/less.hpp:
 
 /usr/include/boost/core/ref.hpp:
 
 /opt/ros/noetic/include/ros/wall_timer_options.h:
 
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/libintl.h:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/greater.hpp:
-
 /usr/include/boost/math/special_functions/detail/fp_traits.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/full_lambda.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/ArrayWrapper.h:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/fold_impl.hpp:
 
@@ -2071,11 +1631,17 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/mpl/aux_/arg_typedef.hpp:
 
+/usr/include/boost/predef/hardware/simd/x86_amd.h:
+
 /usr/include/boost/preprocessor/comma_if.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/apply_fwd.hpp:
 
 /usr/include/boost/predef/architecture/parisc.h:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/apply.hpp:
+
+/usr/include/c++/9/bits/stl_algo.h:
 
 /usr/include/boost/type_traits/is_float.hpp:
 
@@ -2089,7 +1655,9 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/mpl/prior.hpp:
 
-/usr/include/eigen3/Eigen/Geometry:
+/usr/include/boost/mpl/aux_/preprocessed/gcc/placeholders.hpp:
+
+/usr/include/boost/mpl/aux_/na_assert.hpp:
 
 /usr/include/boost/mpl/aux_/msvc_eti_base.hpp:
 
@@ -2100,8 +1668,6 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 /usr/include/boost/mpl/aux_/iter_fold_if_impl.hpp:
 
 /usr/include/boost/mpl/aux_/iter_apply.hpp:
-
-/usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h:
 
 /usr/include/boost/mpl/aux_/integral_wrapper.hpp:
 
@@ -2127,8 +1693,6 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/mpl/aux_/has_size.hpp:
 
-/opt/ros/noetic/include/geometry_msgs/TwistStamped.h:
-
 /usr/include/boost/mpl/aux_/full_lambda.hpp:
 
 /usr/include/boost/mpl/aux_/fold_impl.hpp:
@@ -2138,8 +1702,6 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 /usr/include/boost/mpl/aux_/contains_impl.hpp:
 
 /usr/include/boost/mpl/aux_/config/typeof.hpp:
-
-/usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h:
 
 /usr/include/boost/date_time/gregorian/greg_duration.hpp:
 
@@ -2159,6 +1721,8 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/thread/mutex.hpp:
 
+/usr/include/boost/numeric/conversion/detail/meta.hpp:
+
 /usr/include/boost/mpl/void.hpp:
 
 /usr/include/boost/mpl/aux_/config/ctps.hpp:
@@ -2177,13 +1741,33 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/mpl/aux_/comparison_op.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h:
-
 /usr/include/boost/mpl/list/aux_/size.hpp:
 
 /usr/include/boost/mpl/aux_/arity_spec.hpp:
 
 /usr/include/boost/mpl/aux_/arity.hpp:
+
+/usr/include/boost/mpl/vector/aux_/item.hpp:
+
+/usr/include/boost/type_traits/is_floating_point.hpp:
+
+/usr/include/boost/mpl/inserter.hpp:
+
+/usr/include/boost/smart_ptr/detail/sp_counted_base_std_atomic.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/or.hpp:
+
+/usr/include/boost/thread/lock_types.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessor/params.hpp:
+
+/usr/include/boost/mpl/aux_/arithmetic_op.hpp:
+
+/usr/include/boost/numeric/conversion/detail/converter.hpp:
+
+/usr/include/boost/type_traits/is_const.hpp:
+
+/usr/include/boost/mpl/aux_/adl_barrier.hpp:
 
 /usr/include/boost/mpl/aux_/O1_size_impl.hpp:
 
@@ -2203,8 +1787,6 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/integer_traits.hpp:
 
-/usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h:
-
 /usr/include/boost/range/rend.hpp:
 
 /usr/include/boost/mpl/arg.hpp:
@@ -2219,13 +1801,19 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/c++/9/math.h:
 
-/usr/include/boost/mpl/O1_size_fwd.hpp:
+/usr/include/linux/limits.h:
 
-/usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h:
+/usr/include/boost/mpl/O1_size_fwd.hpp:
 
 /usr/include/boost/preprocessor/tuple/elem.hpp:
 
 /usr/include/boost/move/utility_core.hpp:
+
+/usr/include/boost/predef/architecture/alpha.h:
+
+/usr/include/c++/9/bits/stringfwd.h:
+
+/usr/include/boost/math/special_functions/sign.hpp:
 
 /usr/include/boost/move/utility.hpp:
 
@@ -2235,65 +1823,89 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/type_traits/remove_reference.hpp:
 
-/usr/include/boost/mpl/list/aux_/preprocessed/plain/list10.hpp:
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
-/usr/include/boost/utility/binary.hpp:
+/usr/include/boost/mpl/aux_/lambda_spec.hpp:
 
-/usr/include/boost/move/detail/std_ns_end.hpp:
+/usr/include/boost/preprocessor/detail/auto_rec.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h:
+/usr/include/boost/mpl/aux_/has_begin.hpp:
 
-/usr/include/boost/move/detail/std_ns_begin.hpp:
+/usr/include/boost/smart_ptr/make_shared.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/time64.h:
+/opt/ros/noetic/include/ros/roscpp_serialization_macros.h:
 
-/usr/include/boost/bind/mem_fn_template.hpp:
+/usr/include/boost/config/platform/linux.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+/usr/include/boost/smart_ptr/detail/sp_convertible.hpp:
 
-/usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h:
+/opt/ros/noetic/include/ros/service.h:
 
-/usr/include/boost/date_time/date_clock_device.hpp:
+/usr/include/boost/predef/compiler/sunpro.h:
 
-/usr/include/boost/mpl/aux_/type_wrapper.hpp:
+/usr/include/boost/mpl/limits/arity.hpp:
 
-/usr/include/boost/chrono/duration.hpp:
-
-/usr/include/boost/preprocessor/list/adt.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h:
-
-/usr/include/boost/move/detail/config_begin.hpp:
-
-/usr/include/boost/lexical_cast/detail/converter_numeric.hpp:
-
-/usr/include/boost/mpl/long_fwd.hpp:
-
-/opt/ros/noetic/include/ros/spinner.h:
-
-/usr/include/x86_64-linux-gnu/sys/select.h:
-
-/usr/include/boost/math/tools/real_cast.hpp:
-
-/usr/include/boost/smart_ptr/detail/yield_k.hpp:
-
-/usr/include/boost/numeric/conversion/converter.hpp:
-
-/usr/include/boost/mpl/apply.hpp:
+/usr/include/boost/mpl/same_as.hpp:
 
 /usr/include/boost/detail/select_type.hpp:
 
 /usr/include/boost/config/detail/select_compiler_config.hpp:
 
+/usr/include/boost/mpl/apply.hpp:
+
+/usr/include/boost/config.hpp:
+
+/opt/ros/noetic/include/ros/types.h:
+
+/usr/include/boost/core/use_default.hpp:
+
 /opt/ros/noetic/include/ros/macros.h:
 
-/usr/include/boost/math/special_functions/math_fwd.hpp:
+/usr/include/boost/concept/detail/has_constraints.hpp:
 
-/usr/include/boost/mpl/aux_/yes_no.hpp:
+/usr/include/boost/concept/detail/backward_compatibility.hpp:
+
+/usr/include/boost/mpl/vector/aux_/empty.hpp:
+
+/usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:
+
+/usr/include/boost/chrono/duration.hpp:
+
+/usr/include/boost/mpl/aux_/type_wrapper.hpp:
+
+/usr/include/boost/preprocessor/list/adt.hpp:
+
+/usr/include/boost/mpl/vector/aux_/pop_front.hpp:
+
+/usr/include/boost/container/container_fwd.hpp:
+
+/usr/include/boost/predef/library/std/modena.h:
+
+/usr/include/c++/9/cmath:
+
+/usr/include/boost/mpl/back_inserter.hpp:
 
 /usr/include/boost/mpl/list/aux_/clear.hpp:
 
 /usr/include/boost/concept/assert.hpp:
+
+/usr/include/boost/mpl/aux_/config/gcc.hpp:
+
+/usr/include/boost/numeric/conversion/bounds.hpp:
+
+/usr/include/boost/mpl/aux_/config/integral.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h:
+
+/usr/include/c++/9/bits/stl_map.h:
+
+/usr/include/boost/concept/detail/concept_undef.hpp:
+
+/usr/include/boost/math/policies/policy.hpp:
+
+/usr/include/boost/mpl/aux_/config/gpu.hpp:
+
+/usr/include/boost/lexical_cast/try_lexical_convert.hpp:
 
 /usr/include/boost/chrono/time_point.hpp:
 
@@ -2302,14 +1914,6 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 /usr/include/boost/smart_ptr/detail/sp_forward.hpp:
 
 /usr/include/boost/date_time/gregorian/greg_ymd.hpp:
-
-/usr/include/boost/detail/lcast_precision.hpp:
-
-/usr/include/boost/concept/detail/backward_compatibility.hpp:
-
-/usr/include/boost/mpl/vector/aux_/empty.hpp:
-
-/usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:
 
 /opt/ros/noetic/include/ros/timer_options.h:
 
@@ -2321,11 +1925,23 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/thread/xtime.hpp:
 
-/usr/include/math.h:
+/usr/include/boost/mpl/void_fwd.hpp:
 
-/usr/include/c++/9/streambuf:
+/usr/include/boost/core/noinit_adaptor.hpp:
+
+/usr/include/boost/preprocessor/list/fold_left.hpp:
+
+/usr/include/boost/chrono/config.hpp:
+
+/usr/include/boost/numeric/conversion/converter.hpp:
 
 /usr/include/boost/cerrno.hpp:
+
+/usr/include/boost/config/no_tr1/functional.hpp:
+
+/usr/include/c++/9/bits/std_abs.h:
+
+/usr/include/boost/predef/architecture.h:
 
 /usr/include/boost/call_traits.hpp:
 
@@ -2339,9 +1955,17 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/core/noncopyable.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h:
-
 /usr/include/boost/mpl/aux_/config/msvc.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/time64.h:
+
+/usr/include/boost/bind/mem_fn_template.hpp:
+
+/usr/include/boost/move/detail/std_ns_begin.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+
+/usr/include/boost/date_time/date_clock_device.hpp:
 
 /usr/include/boost/mpl/aux_/na_spec.hpp:
 
@@ -2353,15 +1977,33 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/c++/9/debug/debug.h:
 
-/usr/include/boost/config/platform/linux.hpp:
+/usr/include/boost/mpl/advance_fwd.hpp:
 
-/usr/include/boost/smart_ptr/detail/sp_convertible.hpp:
+/usr/include/boost/mpl/distance_fwd.hpp:
+
+/usr/include/boost/predef/architecture/sys370.h:
+
+/usr/include/boost/mpl/aux_/config/arrays.hpp:
+
+/usr/include/boost/date_time/constrained_value.hpp:
+
+/usr/include/boost/lexical_cast/detail/lcast_unsigned_converters.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessor/enum.hpp:
+
+/usr/include/boost/config/workaround.hpp:
+
+/usr/include/boost/bind/bind_mf_cc.hpp:
+
+/usr/include/boost/predef/compiler/iar.h:
+
+/usr/include/boost/mpl/aux_/msvc_never_true.hpp:
+
+/usr/include/boost/predef/library/c.h:
 
 /usr/include/boost/mpl/aux_/config/compiler.hpp:
 
 /usr/include/boost/date_time/posix_time/time_period.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h:
 
 /usr/include/boost/concept/detail/general.hpp:
 
@@ -2399,13 +2041,7 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/mpl/aux_/common_name_wknd.hpp:
 
-/usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h:
-
 /usr/include/boost/lexical_cast/bad_lexical_cast.hpp:
-
-/usr/include/boost/mpl/aux_/has_apply.hpp:
-
-/usr/include/boost/mpl/aux_/clear_impl.hpp:
 
 /usr/include/boost/config/helper_macros.hpp:
 
@@ -2415,19 +2051,45 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/c++/9/bits/stl_multimap.h:
 
-/opt/ros/noetic/include/ros/service.h:
-
-/usr/include/boost/predef/compiler/sunpro.h:
-
-/usr/include/boost/math/special_functions/fpclassify.hpp:
-
-/usr/include/boost/predef/detail/os_detected.h:
-
-/usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h:
-
 /usr/include/alloca.h:
 
 /usr/include/c++/9/type_traits:
+
+/usr/include/boost/preprocessor/punctuation/comma.hpp:
+
+/opt/ros/noetic/include/ros/parameter_adapter.h:
+
+/usr/include/boost/mpl/aux_/config/eti.hpp:
+
+/usr/include/boost/config/compiler/gcc.hpp:
+
+/usr/include/boost/iterator/interoperable.hpp:
+
+/usr/include/boost/type_traits/enable_if.hpp:
+
+/usr/include/boost/date_time/gregorian/greg_year.hpp:
+
+/usr/include/boost/container_hash/hash_fwd.hpp:
+
+/usr/include/boost/range/empty.hpp:
+
+/usr/include/boost/mpl/push_back_fwd.hpp:
+
+/usr/include/boost/mpl/aux_/config/nttp.hpp:
+
+/usr/include/boost/detail/basic_pointerbuf.hpp:
+
+/usr/include/boost/range/config.hpp:
+
+/usr/include/c++/9/set:
+
+/usr/include/wctype.h:
+
+/usr/include/boost/container/detail/std_fwd.hpp:
+
+/usr/include/c++/9/cstdio:
+
+/usr/include/c++/9/stdexcept:
 
 /usr/include/boost/mpl/list/aux_/begin_end.hpp:
 
@@ -2437,89 +2099,41 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/assert.hpp:
 
-/opt/ros/noetic/include/std_msgs/Header.h:
+/opt/ros/noetic/include/ros/param.h:
 
-/opt/ros/noetic/include/geometry_msgs/Quaternion.h:
+/usr/include/boost/date_time/date_defs.hpp:
 
-/opt/ros/noetic/include/ros/subscription_callback_helper.h:
+/usr/include/c++/9/cstdint:
 
-/usr/include/boost/predef/compiler/ekopath.h:
+/usr/include/boost/mpl/aux_/config/workaround.hpp:
 
-/usr/include/boost/preprocessor/list/reverse.hpp:
+/usr/include/boost/core/addressof.hpp:
 
-/usr/include/boost/chrono/system_clocks.hpp:
+/usr/include/boost/chrono/clock_string.hpp:
 
-/home/cpsl/catkin_ws/devel/include/mavros_msgs/SetModeResponse.h:
+/usr/include/boost/mpl/protect.hpp:
 
-/usr/include/boost/predef/compiler/visualc.h:
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
-/usr/include/boost/mpl/limits/vector.hpp:
+/opt/ros/noetic/include/ros/message_operations.h:
 
-/usr/include/boost/date_time/gregorian/greg_weekday.hpp:
+/usr/include/boost/mpl/vector/aux_/begin_end.hpp:
 
-/usr/include/boost/core/demangle.hpp:
+/usr/include/boost/config/abi_suffix.hpp:
 
-/opt/ros/noetic/include/ros/steady_timer_options.h:
+/usr/include/boost/mpl/vector/aux_/size.hpp:
 
-/usr/include/boost/numeric/conversion/detail/numeric_cast_traits.hpp:
+/usr/include/boost/ref.hpp:
 
-/usr/include/boost/mpl/back_inserter.hpp:
+/usr/include/boost/mpl/aux_/preprocessor/default_params.hpp:
 
-/usr/include/boost/mpl/vector/aux_/pop_front.hpp:
+/usr/include/boost/range/iterator_range_core.hpp:
 
-/usr/include/boost/container/container_fwd.hpp:
-
-/usr/include/boost/predef/library/std/modena.h:
-
-/usr/include/c++/9/cmath:
-
-/usr/include/boost/mpl/push_front.hpp:
-
-/opt/ros/noetic/include/ros/steady_timer.h:
-
-/usr/include/boost/preprocessor/slot/slot.hpp:
-
-/usr/include/boost/type_traits/has_plus_assign.hpp:
-
-/usr/include/boost/bind/storage.hpp:
-
-/usr/include/boost/config.hpp:
-
-/opt/ros/noetic/include/ros/types.h:
-
-/usr/include/eigen3/Eigen/src/Core/VectorBlock.h:
-
-/usr/include/boost/core/use_default.hpp:
-
-/opt/ros/noetic/include/ros/builtin_message_traits.h:
-
-/usr/include/boost/function/function_base.hpp:
-
-/usr/include/boost/mpl/vector/vector10.hpp:
-
-/usr/include/boost/preprocessor/seq/size.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/Transpositions.h:
-
-/usr/include/boost/mpl/list/aux_/pop_front.hpp:
-
-/opt/ros/noetic/include/ros/console_backend.h:
-
-/usr/include/boost/mpl/greater_equal.hpp:
-
-/opt/ros/noetic/include/ros/message.h:
+/usr/include/boost/noncopyable.hpp:
 
 /opt/ros/noetic/include/ros/advertise_options.h:
 
 /usr/include/c++/9/mutex:
-
-/usr/include/boost/mpl/void_fwd.hpp:
-
-/usr/include/boost/core/noinit_adaptor.hpp:
-
-/usr/include/boost/preprocessor/list/fold_left.hpp:
-
-/usr/include/boost/chrono/config.hpp:
 
 /usr/include/boost/mpl/pop_back_fwd.hpp:
 
@@ -2533,19 +2147,89 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/config/stdlib/libstdcpp3.hpp:
 
-/usr/include/ctype.h:
+/usr/include/boost/mpl/vector/aux_/iterator.hpp:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/apply.hpp:
+/usr/include/boost/lexical_cast.hpp:
 
-/usr/include/c++/9/bits/stl_algo.h:
+/opt/ros/noetic/include/ros/builtin_message_traits.h:
 
-/usr/include/boost/mpl/aux_/traits_lambda_spec.hpp:
+/usr/include/boost/function/function_base.hpp:
 
-/opt/ros/noetic/include/geometry_msgs/PoseStamped.h:
+/usr/include/boost/mpl/vector/vector10.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/BandMatrix.h:
+/usr/include/boost/preprocessor/seq/size.hpp:
 
-/opt/ros/noetic/include/ros/transport_hints.h:
+/usr/include/boost/mpl/list/aux_/pop_front.hpp:
+
+/opt/ros/noetic/include/ros/console_backend.h:
+
+/usr/include/boost/bind/mem_fn_cc.hpp:
+
+/usr/include/boost/mpl/greater.hpp:
+
+/usr/include/boost/numeric/conversion/conversion_traits.hpp:
+
+/usr/include/boost/mpl/aux_/config/pp_counter.hpp:
+
+/usr/include/boost/mpl/vector/aux_/front.hpp:
+
+/usr/include/boost/bind.hpp:
+
+/usr/include/boost/smart_ptr/detail/sp_typeinfo_.hpp:
+
+/usr/include/c++/9/bits/locale_classes.tcc:
+
+/opt/ros/noetic/include/ros/timer.h:
+
+/usr/include/c++/9/cctype:
+
+/home/cpsl/catkin_ws/devel/include/dronestack/waypoint_navResponse.h:
+
+/usr/include/boost/mpl/aux_/na.hpp:
+
+/usr/include/boost/mpl/greater_equal.hpp:
+
+/opt/ros/noetic/include/ros/message.h:
+
+/opt/ros/noetic/include/ros/subscription_callback_helper.h:
+
+/usr/include/boost/predef/compiler/ekopath.h:
+
+/usr/include/boost/preprocessor/list/reverse.hpp:
+
+/usr/include/boost/mpl/back_fwd.hpp:
+
+/opt/ros/noetic/include/ros/subscriber.h:
+
+/usr/include/boost/thread/lockable_traits.hpp:
+
+/opt/ros/noetic/include/ros/serialization.h:
+
+/usr/include/boost/date_time/posix_time/conversion.hpp:
+
+/usr/include/boost/function/function_fwd.hpp:
+
+/usr/include/boost/preprocessor/slot/detail/def.hpp:
+
+/usr/include/boost/mpl/aux_/config/msvc_typename.hpp:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/boost/mpl/aux_/largest_int.hpp:
+
+/usr/include/boost/preprocessor/control/iif.hpp:
+
+/opt/ros/noetic/include/ros/service_traits.h:
+
+/opt/ros/noetic/include/ros/single_subscriber_publisher.h:
+
+/usr/include/boost/predef/hardware/simd/arm/versions.h:
+
+/usr/include/c++/9/bits/localefwd.h:
+
+/usr/include/boost/date_time/date_duration.hpp:
+
+/opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -2557,79 +2241,13 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/c++/9/ext/aligned_buffer.h:
 
-/usr/include/boost/mpl/aux_/na.hpp:
-
-/home/cpsl/catkin_ws/devel/include/dronestack/waypoint_navResponse.h:
-
-/opt/ros/noetic/include/ros/single_subscriber_publisher.h:
-
-/opt/ros/noetic/include/ros/service_traits.h:
-
-/usr/include/boost/mpl/aux_/na_assert.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/placeholders.hpp:
-
-/opt/ros/noetic/include/geometry_msgs/Pose.h:
-
-/usr/include/boost/mpl/aux_/advance_forward.hpp:
-
-/usr/include/boost/noncopyable.hpp:
-
-/usr/include/log4cxx/helpers/object.h:
-
-/opt/ros/noetic/include/ros/exception.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/Translation.h:
-
-/usr/include/boost/mpl/aux_/config/gcc.hpp:
-
-/usr/include/boost/numeric/conversion/bounds.hpp:
-
-/usr/include/boost/math/tools/user.hpp:
-
-/usr/include/boost/type_traits/decay.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/reverse_fold_impl.hpp:
-
-/usr/include/boost/smart_ptr/detail/local_counted_base.hpp:
-
-/usr/include/c++/9/bits/unique_lock.h:
-
-/usr/include/eigen3/Eigen/Dense:
-
-/usr/include/asm-generic/errno.h:
-
-/opt/ros/noetic/include/geometry_msgs/Transform.h:
-
-/home/cpsl/catkin_ws/devel/include/dronestack/waypoint_navRequest.h:
-
-/usr/include/boost/mpl/empty_fwd.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:
-
 /opt/ros/noetic/include/ros/console.h:
 
-/usr/include/boost/mpl/aux_/adl_barrier.hpp:
-
-/home/cpsl/catkin_ws/devel/include/mavros_msgs/SetModeRequest.h:
-
-/opt/ros/noetic/include/rosconsole/macros_generated.h:
-
-/usr/include/boost/predef/language/cuda.h:
-
-/usr/include/c++/9/cxxabi.h:
-
-/usr/include/boost/mpl/aux_/begin_end_impl.hpp:
-
-/opt/ros/noetic/include/ros/service_client_options.h:
-
-/usr/include/boost/date_time/gregorian/greg_duration_types.hpp:
-
-/usr/include/boost/predef/compiler/edg.h:
-
-/usr/include/c++/9/atomic:
-
 /usr/include/boost/mpl/vector/aux_/tag.hpp:
+
+/usr/include/boost/function/detail/prologue.hpp:
+
+/usr/include/c++/9/bits/list.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
 
@@ -2641,39 +2259,31 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/predef/library/std/dinkumware.h:
 
-/usr/include/boost/function/detail/prologue.hpp:
+/usr/include/boost/type_traits/is_reference.hpp:
 
-/usr/include/c++/9/bits/list.tcc:
+/usr/include/boost/function/function_template.hpp:
 
-/usr/include/boost/mpl/vector/aux_/size.hpp:
+/home/cpsl/catkin_ws/devel/include/dronestack/waypoint_navRequest.h:
 
-/usr/include/boost/ref.hpp:
+/usr/include/boost/mpl/empty_fwd.hpp:
 
-/usr/include/boost/mpl/aux_/preprocessor/default_params.hpp:
+/usr/include/boost/bind/storage.hpp:
 
-/usr/include/boost/range/iterator_range_core.hpp:
+/opt/ros/noetic/include/ros/spinner.h:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/less.hpp:
+/usr/include/boost/type_traits/decay.hpp:
 
-/home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandBool.h:
+/usr/include/boost/math/tools/user.hpp:
 
-/usr/include/boost/mpl/advance_fwd.hpp:
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
 
-/usr/include/stdint.h:
+/opt/ros/noetic/include/ros/datatypes.h:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/vector.hpp:
+/usr/include/boost/mpl/list/aux_/push_front.hpp:
 
-/usr/include/boost/core/default_allocator.hpp:
+/usr/include/boost/core/is_same.hpp:
 
-/usr/include/boost/mpl/distance_fwd.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/MapBase.h:
-
-/usr/include/boost/predef/architecture/sys370.h:
-
-/usr/include/boost/mpl/aux_/config/arrays.hpp:
-
-/usr/include/boost/date_time/constrained_value.hpp:
+/usr/include/boost/preprocessor/logical/not.hpp:
 
 /opt/ros/noetic/include/ros/rate.h:
 
@@ -2683,81 +2293,71 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/smart_ptr/bad_weak_ptr.hpp:
 
-/home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandBoolResponse.h:
+/usr/include/boost/chrono/system_clocks.hpp:
 
-/usr/include/boost/predef/platform/windows_runtime.h:
+/usr/include/boost/predef/compiler/visualc.h:
 
-/usr/include/boost/preprocessor/repetition/enum_params.hpp:
+/usr/include/boost/mpl/limits/vector.hpp:
 
-/usr/include/boost/iterator/detail/facade_iterator_category.hpp:
+/usr/include/boost/date_time/gregorian/greg_weekday.hpp:
 
-/usr/include/boost/numeric/conversion/detail/sign_mixture.hpp:
+/usr/include/boost/core/demangle.hpp:
 
-/usr/include/c++/9/bits/exception_defines.h:
+/usr/include/boost/mpl/tag.hpp:
 
-/usr/include/boost/mpl/aux_/config/integral.hpp:
+/opt/ros/noetic/include/ros/message_forward.h:
 
-/usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h:
+/opt/ros/noetic/include/ros/rostime_decl.h:
 
-/usr/include/c++/9/bits/stl_map.h:
+/usr/include/boost/iterator/detail/enable_if.hpp:
 
-/usr/include/boost/math/policies/policy.hpp:
+/usr/include/boost/chrono/detail/static_assert.hpp:
 
-/usr/include/boost/concept/detail/concept_undef.hpp:
+/usr/include/boost/mpl/list/aux_/item.hpp:
 
-/usr/include/boost/mpl/limits/arity.hpp:
+/usr/include/boost/mpl/bind_fwd.hpp:
 
-/usr/include/boost/mpl/same_as.hpp:
+/usr/include/c++/9/istream:
 
-/usr/include/boost/lexical_cast/detail/lcast_unsigned_converters.hpp:
+/usr/include/boost/predef/architecture/z.h:
 
-/usr/include/boost/mpl/protect.hpp:
+/usr/include/c++/9/list:
 
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+/usr/include/boost/smart_ptr/detail/sp_has_sync.hpp:
 
-/opt/ros/noetic/include/ros/message_operations.h:
+/usr/include/boost/mpl/aux_/find_if_pred.hpp:
 
-/usr/include/pthread.h:
+/usr/include/boost/bind/mem_fn.hpp:
 
-/usr/include/boost/date_time/period.hpp:
+/usr/include/boost/mpl/aux_/begin_end_impl.hpp:
 
-/usr/include/boost/mpl/vector/aux_/begin_end.hpp:
+/usr/include/boost/date_time/gregorian/greg_duration_types.hpp:
 
-/usr/include/boost/config/abi_suffix.hpp:
+/usr/include/boost/predef/compiler/edg.h:
 
-/usr/include/boost/config/detail/suffix.hpp:
+/usr/include/c++/9/atomic:
 
-/home/cpsl/catkin_ws/devel/include/mavros_msgs/State.h:
+/opt/ros/noetic/include/ros/service_client_options.h:
 
-/usr/include/boost/predef/compiler/iar.h:
+/usr/include/boost/mpl/aux_/clear_impl.hpp:
 
-/usr/include/boost/mpl/aux_/msvc_never_true.hpp:
+/usr/include/boost/mpl/aux_/has_apply.hpp:
 
-/usr/include/boost/predef/library/c.h:
+/usr/include/boost/mpl/push_front.hpp:
 
-/usr/include/boost/mpl/aux_/iter_fold_impl.hpp:
+/opt/ros/noetic/include/ros/steady_timer.h:
 
-/usr/include/boost/math/special_functions/detail/round_fwd.hpp:
+/usr/include/boost/preprocessor/slot/slot.hpp:
 
-/usr/include/boost/date_time/posix_time/posix_time_config.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/CoreIterators.h:
-
-/usr/include/boost/date_time/posix_time/posix_time_types.hpp:
-
-/usr/include/c++/9/bits/ostream.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
-
-/opt/ros/noetic/include/ros/datatypes.h:
+/usr/include/boost/type_traits/has_plus_assign.hpp:
 
 /usr/include/boost/bind/bind.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:
 
 /usr/include/boost/mpl/sequence_tag_fwd.hpp:
 
 /usr/include/boost/predef/os/haiku.h:
+
+/usr/include/boost/date_time/gregorian/greg_day_of_year.hpp:
 
 /usr/include/boost/mpl/O1_size.hpp:
 
@@ -2777,225 +2377,19 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/type_traits/remove_cv.hpp:
 
+/usr/include/boost/mpl/aux_/iter_fold_impl.hpp:
+
 /usr/include/boost/date_time/posix_time/date_duration_operators.hpp:
 
-/usr/include/boost/date_time/gregorian/greg_day_of_year.hpp:
-
-/opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h:
-
-/usr/include/boost/date_time/posix_time/conversion.hpp:
-
-/usr/include/boost/function/function_fwd.hpp:
-
-/usr/include/boost/preprocessor/slot/detail/def.hpp:
-
-/usr/include/boost/mpl/aux_/config/msvc_typename.hpp:
-
-/usr/include/boost/bind/mem_fn_cc.hpp:
-
-/usr/include/boost/mpl/greater.hpp:
-
-/usr/include/boost/detail/indirect_traits.hpp:
-
-/usr/include/boost/mpl/aux_/include_preprocessed.hpp:
-
-/opt/ros/noetic/include/ros/serialized_message.h:
-
-/usr/include/boost/numeric/conversion/detail/int_float_mixture.hpp:
-
-/usr/include/boost/range/range_fwd.hpp:
-
-/usr/include/boost/mpl/vector/aux_/front.hpp:
-
-/usr/include/boost/bind.hpp:
-
-/usr/include/boost/smart_ptr/detail/sp_typeinfo_.hpp:
-
-/usr/include/c++/9/bits/locale_classes.tcc:
-
-/opt/ros/noetic/include/ros/timer.h:
-
-/usr/include/c++/9/cctype:
-
-/usr/include/boost/numeric/conversion/conversion_traits.hpp:
-
-/usr/include/boost/mpl/aux_/config/pp_counter.hpp:
-
-/usr/include/boost/predef/hardware/simd/x86_amd.h:
-
-/opt/ros/noetic/include/geometry_msgs/Vector3.h:
-
-/usr/include/boost/mpl/aux_/config/eti.hpp:
-
-/usr/include/boost/config/compiler/gcc.hpp:
-
-/usr/include/eigen3/Eigen/src/misc/RealSvd2x2.h:
-
-/usr/include/boost/iterator/interoperable.hpp:
-
-/usr/include/boost/type_traits/enable_if.hpp:
-
-/usr/include/boost/mpl/back_fwd.hpp:
-
-/opt/ros/noetic/include/ros/subscriber.h:
-
-/usr/include/boost/thread/lockable_traits.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessor/enum.hpp:
-
-/usr/include/boost/bind/bind_mf_cc.hpp:
-
-/usr/include/boost/config/workaround.hpp:
-
-/opt/ros/noetic/include/ros/serialization.h:
-
-/usr/include/boost/date_time/gregorian/greg_year.hpp:
-
-/usr/include/boost/container_hash/hash_fwd.hpp:
-
-/usr/include/boost/range/empty.hpp:
-
-/usr/include/boost/preprocessor/punctuation/comma.hpp:
-
-/opt/ros/noetic/include/ros/parameter_adapter.h:
-
-/usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h:
-
-/usr/include/boost/mpl/vector/aux_/iterator.hpp:
-
-/usr/include/boost/lexical_cast.hpp:
-
-/usr/include/boost/mpl/vector/aux_/item.hpp:
-
-/usr/include/boost/type_traits/is_floating_point.hpp:
-
-/usr/include/boost/mpl/inserter.hpp:
-
-/usr/include/boost/smart_ptr/detail/sp_counted_base_std_atomic.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/or.hpp:
-
-/usr/include/boost/thread/lock_types.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessor/params.hpp:
-
-/usr/include/boost/mpl/aux_/arithmetic_op.hpp:
-
-/opt/ros/noetic/include/geometry_msgs/TransformStamped.h:
-
-/usr/include/boost/type_traits/is_signed.hpp:
-
-/usr/include/boost/mpl/list/aux_/push_front.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/ConditionEstimator.h:
-
-/usr/include/boost/core/is_same.hpp:
-
-/usr/include/boost/preprocessor/logical/not.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
-
-/usr/include/boost/mpl/aux_/lambda_spec.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/Replicate.h:
-
-/usr/include/boost/preprocessor/detail/auto_rec.hpp:
-
-/usr/include/boost/mpl/aux_/has_begin.hpp:
-
-/usr/include/boost/smart_ptr/make_shared.hpp:
-
-/opt/ros/noetic/include/ros/roscpp_serialization_macros.h:
-
-/usr/include/boost/mpl/aux_/config/workaround.hpp:
-
-/usr/include/boost/chrono/clock_string.hpp:
-
-/usr/include/boost/core/addressof.hpp:
-
-/usr/include/boost/mpl/tag.hpp:
-
-/usr/include/boost/mpl/aux_/numeric_cast_utils.hpp:
-
-/usr/include/boost/checked_delete.hpp:
-
-/opt/ros/noetic/include/ros/message_forward.h:
-
-/opt/ros/noetic/include/geometry_msgs/Twist.h:
-
-/opt/ros/noetic/include/ros/rostime_decl.h:
-
-/usr/include/boost/iterator/detail/enable_if.hpp:
-
-/usr/include/boost/chrono/detail/static_assert.hpp:
-
-/usr/include/boost/mpl/list/aux_/item.hpp:
-
-/usr/include/boost/mpl/bind_fwd.hpp:
-
-/usr/include/c++/9/istream:
-
-/usr/include/boost/predef/architecture/z.h:
-
-/usr/include/c++/9/list:
-
-/usr/include/boost/bind/mem_fn.hpp:
-
-/opt/ros/noetic/include/ros/param.h:
-
-/usr/include/boost/date_time/date_defs.hpp:
-
-/usr/include/c++/9/cstdint:
-
-/usr/include/boost/config/no_tr1/functional.hpp:
-
-/usr/include/c++/9/bits/std_abs.h:
-
-/usr/include/boost/date_time/posix_time/ptime.hpp:
-
-/usr/include/boost/mpl/aux_/largest_int.hpp:
-
-/usr/include/boost/preprocessor/control/iif.hpp:
-
-/usr/include/boost/predef/hardware/simd/arm/versions.h:
-
-/usr/include/c++/9/bits/localefwd.h:
-
-/usr/include/boost/date_time/date_duration.hpp:
-
-/usr/include/boost/function/function_template.hpp:
-
-/usr/include/boost/type_traits/is_reference.hpp:
-
-/usr/include/boost/mpl/aux_/config/gpu.hpp:
-
-/usr/include/boost/lexical_cast/try_lexical_convert.hpp:
-
-/usr/include/boost/mpl/push_back_fwd.hpp:
-
-/usr/include/boost/mpl/aux_/config/nttp.hpp:
-
-/usr/include/boost/detail/basic_pointerbuf.hpp:
-
-/usr/include/boost/range/config.hpp:
-
-/usr/include/c++/9/set:
-
-/usr/include/wctype.h:
-
-/usr/include/boost/container/detail/std_fwd.hpp:
-
-/opt/ros/noetic/include/geometry_msgs/Point.h:
-
-/usr/include/c++/9/cstdio:
-
-/usr/include/c++/9/stdexcept:
+/usr/include/boost/mpl/aux_/advance_forward.hpp:
 
 /usr/include/boost/core/no_exceptions_support.hpp:
 
-/usr/include/boost/iterator/iterator_categories.hpp:
+/usr/include/boost/lexical_cast/detail/converter_numeric.hpp:
 
-/usr/include/boost/detail/workaround.hpp:
+/usr/include/boost/mpl/long_fwd.hpp:
+
+/usr/include/boost/move/detail/config_begin.hpp:
 
 /usr/include/boost/mpl/aux_/is_msvc_eti_arg.hpp:
 
@@ -3023,25 +2417,13 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/date_time/compiler_config.hpp:
 
-/usr/include/boost/preprocessor/tuple/detail/is_single_return.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-/usr/include/boost/move/detail/config_end.hpp:
-
-/usr/include/boost/smart_ptr/detail/spinlock.hpp:
-
-/usr/include/boost/date_time/date.hpp:
-
-/usr/include/boost/preprocessor/config/config.hpp:
-
-/usr/include/c++/9/initializer_list:
-
 /usr/include/boost/date_time/date_generators.hpp:
 
 /opt/ros/noetic/include/ros/names.h:
 
 /usr/include/boost/thread/detail/config.hpp:
+
+/usr/include/c++/9/ext/type_traits.h:
 
 /usr/include/boost/config/user.hpp:
 
@@ -3085,8 +2467,6 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/is_placeholder.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h:
-
 /usr/include/boost/date_time/gregorian/greg_date.hpp:
 
 /opt/ros/noetic/include/ros/advertise_service_options.h:
@@ -3100,10 +2480,6 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 /usr/include/boost/current_function.hpp:
 
 /usr/include/boost/date_time/gregorian/greg_month.hpp:
-
-/usr/include/log4cxx/logstring.h:
-
-/usr/include/boost/date_time/special_defs.hpp:
 
 /usr/include/boost/thread/detail/platform.hpp:
 
@@ -3125,19 +2501,11 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/c++/9/bits/stl_uninitialized.h:
 
-/usr/include/boost/date_time/gregorian/gregorian_types.hpp:
+/usr/include/boost/numeric/conversion/detail/int_float_mixture.hpp:
 
-/usr/include/c++/9/bits/stringfwd.h:
+/opt/ros/noetic/include/ros/serialized_message.h:
 
-/usr/include/boost/math/special_functions/sign.hpp:
-
-/usr/include/boost/predef/architecture/alpha.h:
-
-/usr/include/boost/predef/library/std/_prefix.h:
-
-/usr/include/c++/9/bits/predefined_ops.h:
-
-/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h:
+/usr/include/boost/range/range_fwd.hpp:
 
 /usr/include/boost/date_time/gregorian_calendar.hpp:
 
@@ -3148,10 +2516,6 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 /usr/include/boost/core/alloc_construct.hpp:
 
 /usr/include/boost/predef/library/c/_prefix.h:
-
-/usr/include/c++/9/ext/type_traits.h:
-
-/usr/include/eigen3/Eigen/LU:
 
 /usr/include/boost/iterator/advance.hpp:
 
@@ -3165,8 +2529,6 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/move/detail/meta_utils.hpp:
 
-/home/cpsl/catkin_ws/src/dronestack/include/dronestack/offb_node_sitl.h:
-
 /opt/ros/noetic/include/ros/platform.h:
 
 /usr/include/c++/9/bits/functexcept.h:
@@ -3179,7 +2541,15 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/type_traits/remove_pointer.hpp:
 
+/usr/include/stdlib.h:
+
+/usr/include/boost/date_time/posix_time/posix_time_config.hpp:
+
+/usr/include/boost/math/special_functions/detail/round_fwd.hpp:
+
 /usr/include/boost/date_time/posix_time/posix_time_system.hpp:
+
+/usr/include/boost/date_time/posix_time/ptime.hpp:
 
 /usr/include/boost/date_time/time_defs.hpp:
 
@@ -3197,15 +2567,13 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/date_time/time_duration.hpp:
 
-/usr/include/eigen3/Eigen/Core:
-
 /usr/include/boost/mpl/aux_/preprocessed/gcc/quote.hpp:
+
+/usr/include/linux/errno.h:
 
 /usr/include/boost/config/detail/posix_features.hpp:
 
 /usr/include/boost/preprocessor/arithmetic/add.hpp:
-
-/usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h:
 
 /usr/include/boost/mpl/sequence_tag.hpp:
 
@@ -3219,9 +2587,23 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/date_time/wrapping_int.hpp:
 
+/usr/include/unistd.h:
+
+/usr/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_long_long.hpp:
+
 /usr/include/boost/range/detail/safe_bool.hpp:
 
 /usr/include/boost/detail/call_traits.hpp:
+
+/opt/ros/noetic/include/ros/transport_hints.h:
+
+/usr/include/boost/detail/lcast_precision.hpp:
+
+/usr/include/stdio.h:
+
+/usr/include/boost/iterator/iterator_categories.hpp:
+
+/usr/include/boost/detail/workaround.hpp:
 
 /usr/include/boost/exception/exception.hpp:
 
@@ -3248,6 +2630,12 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 /usr/include/boost/integer.hpp:
 
 /usr/include/boost/ratio/ratio_fwd.hpp:
+
+/usr/include/boost/mpl/aux_/yes_no.hpp:
+
+/usr/include/boost/math/special_functions/math_fwd.hpp:
+
+/usr/include/boost/smart_ptr/detail/yield_k.hpp:
 
 /usr/include/boost/mpl/placeholders.hpp:
 
@@ -3281,8 +2669,6 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/iterator/reverse_iterator.hpp:
 
-/opt/ros/noetic/include/gazebo_msgs/ModelStates.h:
-
 /usr/include/c++/9/bits/shared_ptr_atomic.h:
 
 /usr/include/boost/lexical_cast/detail/inf_nan.hpp:
@@ -3295,17 +2681,19 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/mpl/list/list10.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/Visitor.h:
-
 /usr/include/boost/range/has_range_iterator.hpp:
 
-/usr/include/boost/iterator/iterator_concepts.hpp:
-
 /usr/include/boost/predef/compiler/borland.h:
+
+/usr/include/boost/iterator/iterator_concepts.hpp:
 
 /usr/include/boost/config/auto_link.hpp:
 
 /opt/ros/noetic/include/ros/service_callback_helper.h:
+
+/usr/include/c++/9/streambuf:
+
+/usr/include/math.h:
 
 /usr/include/x86_64-linux-gnu/sys/time.h:
 
@@ -3329,31 +2717,47 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/math/policies/error_handling.hpp:
 
-/usr/include/boost/numeric/conversion/detail/bounds.hpp:
+/usr/include/boost/date_time/posix_time/posix_time_types.hpp:
 
-/usr/include/boost/type_traits/is_const.hpp:
+/usr/include/c++/9/bits/ostream.tcc:
 
-/usr/include/boost/numeric/conversion/detail/converter.hpp:
+/usr/include/boost/predef/detail/os_detected.h:
 
-/usr/include/boost/numeric/conversion/detail/is_subranged.hpp:
+/usr/include/boost/math/special_functions/fpclassify.hpp:
 
-/usr/include/boost/numeric/conversion/detail/meta.hpp:
+/usr/include/boost/detail/indirect_traits.hpp:
 
-/usr/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_common.hpp:
+/usr/include/boost/mpl/aux_/include_preprocessed.hpp:
 
-/usr/include/unistd.h:
+/usr/include/x86_64-linux-gnu/sys/select.h:
 
-/usr/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_long_long.hpp:
+/usr/include/boost/math/tools/real_cast.hpp:
 
-/usr/include/boost/numeric/conversion/detail/udt_builtin_mixture.hpp:
+/opt/ros/noetic/include/rosconsole/macros_generated.h:
 
-/usr/include/boost/mpl/aux_/find_if_pred.hpp:
+/usr/include/boost/predef/language/cuda.h:
 
-/usr/include/boost/smart_ptr/detail/sp_has_sync.hpp:
+/usr/include/c++/9/cxxabi.h:
 
-/usr/include/boost/numeric/conversion/int_float_mixture_enum.hpp:
+/usr/include/boost/date_time/date.hpp:
 
-/usr/include/boost/predef/architecture.h:
+/usr/include/boost/preprocessor/config/config.hpp:
+
+/usr/include/c++/9/initializer_list:
+
+/usr/include/boost/preprocessor/tuple/detail/is_single_return.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/boost/move/detail/config_end.hpp:
+
+/usr/include/boost/smart_ptr/detail/spinlock.hpp:
+
+/usr/include/boost/mpl/list/aux_/preprocessed/plain/list10.hpp:
+
+/usr/include/boost/utility/binary.hpp:
+
+/usr/include/boost/move/detail/std_ns_end.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_inline.h:
 
@@ -3381,10 +2785,6 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/predef/architecture/pyramid.h:
 
-/usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h:
-
-/usr/include/eigen3/Eigen/src/Core/Select.h:
-
 /usr/include/boost/smart_ptr/make_shared_object.hpp:
 
 /usr/include/boost/config/no_tr1/complex.hpp:
@@ -3402,8 +2802,6 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 /usr/include/boost/type_traits/type_identity.hpp:
 
 /usr/include/boost/predef/compiler.h:
-
-/usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h:
 
 /usr/include/boost/predef/compiler/clang.h:
 
@@ -3427,13 +2825,15 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/type_traits/conditional.hpp:
 
-/usr/include/boost/system/detail/generic_category.hpp:
-
 /usr/include/boost/range/detail/msvc_has_iterator_workaround.hpp:
+
+/usr/include/boost/system/detail/generic_category.hpp:
 
 /usr/include/boost/predef/compiler/gcc_xml.h:
 
 /usr/include/boost/predef/language/stdcpp.h:
+
+/usr/include/string.h:
 
 /usr/include/boost/predef/compiler/palm.h:
 
@@ -3453,11 +2853,9 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/predef/compiler/kai.h:
 
-/usr/include/eigen3/Eigen/src/Cholesky/LLT.h:
+/usr/include/c++/9/ext/new_allocator.h:
 
 /usr/include/boost/mpl/next_prior.hpp:
-
-/usr/include/c++/9/ext/new_allocator.h:
 
 /usr/include/boost/predef/compiler/llvm.h:
 
@@ -3478,8 +2876,6 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 /usr/include/boost/preprocessor/list/detail/fold_left.hpp:
 
 /usr/include/boost/predef/compiler/pgi.h:
-
-/usr/include/eigen3/Eigen/src/Core/arch/CUDA/Complex.h:
 
 /usr/include/boost/predef/compiler/sgi_mipspro.h:
 
@@ -3531,6 +2927,8 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/type_traits/remove_extent.hpp:
 
+/usr/include/log4cxx/helpers/class.h:
+
 /usr/include/boost/predef/library/c/vms.h:
 
 /usr/include/boost/predef/library/c/zos.h:
@@ -3541,6 +2939,8 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/predef/library/std/libcomo.h:
 
+/usr/include/log4cxx/helpers/objectptr.h:
+
 /usr/include/boost/mpl/aux_/inserter_algorithm.hpp:
 
 /usr/include/boost/predef/library/std/msl.h:
@@ -3548,8 +2948,6 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 /usr/include/boost/predef/library/std/roguewave.h:
 
 /usr/include/boost/predef/library/std/sgi.h:
-
-/usr/include/eigen3/Eigen/src/Core/Transpose.h:
 
 /usr/include/boost/next_prior.hpp:
 
@@ -3562,8 +2960,6 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 /usr/include/boost/predef/library/std/vacpp.h:
 
 /usr/include/boost/predef/make.h:
-
-/usr/include/eigen3/Eigen/src/Core/TriangularMatrix.h:
 
 /usr/include/boost/predef/os.h:
 
@@ -3580,8 +2976,6 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 /usr/include/boost/move/core.hpp:
 
 /usr/include/boost/predef/os/amigaos.h:
-
-/usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/advance_backward.hpp:
 
@@ -3604,6 +2998,10 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 /usr/include/boost/predef/os/hpux.h:
 
 /usr/include/boost/predef/os/macos.h:
+
+/opt/ros/noetic/include/ros/exception.h:
+
+/usr/include/log4cxx/helpers/object.h:
 
 /usr/include/c++/9/bits/postypes.h:
 
@@ -3637,6 +3035,10 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/predef/platform/mingw64.h:
 
+/usr/include/boost/predef/platform/windows_runtime.h:
+
+/usr/include/boost/preprocessor/repetition/enum_params.hpp:
+
 /usr/include/boost/predef/platform/windows_system.h:
 
 /usr/include/boost/thread/exceptions.hpp:
@@ -3651,6 +3053,8 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/preprocessor/arithmetic/detail/div_base.hpp:
 
+/usr/include/time.h:
+
 /usr/include/boost/preprocessor/arithmetic/inc.hpp:
 
 /usr/include/boost/preprocessor/arithmetic/mod.hpp:
@@ -3662,8 +3066,6 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 /usr/include/c++/9/bits/move.h:
 
 /usr/include/boost/preprocessor/cat.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/arch/CUDA/TypeCasting.h:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/list.hpp:
 
@@ -3677,9 +3079,9 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/preprocessor/control/detail/while.hpp:
 
-/usr/include/boost/preprocessor/debug/error.hpp:
+/usr/include/boost/preprocessor/control/expr_iif.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h:
+/usr/include/boost/preprocessor/debug/error.hpp:
 
 /usr/include/c++/9/bits/std_function.h:
 
@@ -3707,9 +3109,9 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/preprocessor/iteration/detail/bounds/upper1.hpp:
 
-/usr/include/boost/preprocessor/iteration/iterate.hpp:
+/usr/include/features.h:
 
-/usr/include/eigen3/Eigen/src/Core/products/Parallelizer.h:
+/usr/include/boost/preprocessor/iteration/iterate.hpp:
 
 /usr/include/boost/predef/library/std/cxx.h:
 
@@ -3759,6 +3161,8 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/range/algorithm/equal.hpp:
 
+/usr/include/log4cxx/log4cxx.h:
+
 /usr/include/boost/predef/platform/windows_uwp.h:
 
 /usr/include/boost/range/begin.hpp:
@@ -3769,9 +3173,9 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/range/detail/implementation_help.hpp:
 
-/usr/include/stdc-predef.h:
-
 /usr/include/c++/9/backward/auto_ptr.h:
+
+/usr/include/stdc-predef.h:
 
 /usr/include/boost/range/detail/misc_concept.hpp:
 
@@ -3796,8 +3200,6 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 /usr/include/boost/range/rbegin.hpp:
 
 /usr/include/boost/range/reverse_iterator.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/NestByValue.h:
 
 /usr/include/boost/range/size.hpp:
 
@@ -3871,6 +3273,12 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/thread/detail/move.hpp:
 
+/usr/include/boost/mpl/minus.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/iter_fold_impl.hpp:
+
+/usr/include/endian.h:
+
 /usr/include/boost/thread/detail/platform_time.hpp:
 
 /usr/include/c++/9/bits/stl_multiset.h:
@@ -3943,13 +3351,9 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/c++/9/bits/vector.tcc:
 
-/usr/include/eigen3/Eigen/src/Core/Block.h:
-
 /usr/include/boost/core/swap.hpp:
 
 /usr/include/boost/type_traits/has_left_shift.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/SolverBase.h:
 
 /opt/ros/noetic/include/ros/publisher.h:
 
@@ -3973,15 +3377,9 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/type_traits/is_arithmetic.hpp:
 
-/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h:
-
 /usr/include/boost/type_traits/is_array.hpp:
 
 /usr/include/boost/type_traits/is_base_and_derived.hpp:
-
-/usr/include/boost/concept/detail/has_constraints.hpp:
-
-/usr/include/eigen3/Eigen/Householder:
 
 /opt/ros/noetic/include/ros/topic.h:
 
@@ -3991,9 +3389,9 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/type_traits/is_bounded_array.hpp:
 
-/usr/include/boost/lexical_cast/detail/widest_char.hpp:
-
 /usr/include/boost/predef/platform/windows_phone.h:
+
+/usr/include/boost/lexical_cast/detail/widest_char.hpp:
 
 /usr/include/boost/type_traits/is_constructible.hpp:
 
@@ -4015,6 +3413,8 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/type_traits/is_pointer.hpp:
 
+/usr/include/boost/type_traits/is_signed.hpp:
+
 /usr/include/boost/type_traits/is_unbounded_array.hpp:
 
 /usr/include/boost/type_traits/is_unsigned.hpp:
@@ -4031,15 +3431,11 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/boost/type_traits/type_with_alignment.hpp:
 
-/usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h:
-
 /usr/include/boost/version.hpp:
 
 /usr/include/boost/visit_each.hpp:
 
 /usr/include/boost/weak_ptr.hpp:
-
-/usr/include/eigen3/Eigen/src/Geometry/Homogeneous.h:
 
 /usr/include/boost/move/detail/type_traits.hpp:
 
@@ -4063,8 +3459,6 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/c++/9/bits/cxxabi_forced.h:
 
-/usr/include/eigen3/Eigen/src/Core/GeneralProduct.h:
-
 /usr/include/c++/9/bits/basic_string.h:
 
 /usr/include/c++/9/bits/char_traits.h:
@@ -4076,6 +3470,8 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 /usr/include/boost/smart_ptr/detail/sp_disable_deprecated.hpp:
 
 /usr/include/c++/9/bits/exception_ptr.h:
+
+/usr/include/log4cxx/helpers/transcoder.h:
 
 /usr/include/boost/mpl/fold.hpp:
 
@@ -4090,6 +3486,8 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 /usr/include/c++/9/bits/locale_facets.h:
 
 /usr/include/c++/9/bits/locale_facets.tcc:
+
+/usr/include/strings.h:
 
 /usr/include/c++/9/bits/locale_facets_nonio.h:
 
@@ -4120,8 +3518,6 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 /usr/include/c++/9/bits/stl_construct.h:
 
 /usr/include/c++/9/bits/stl_function.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:
 
 /usr/include/c++/9/bits/stl_iterator_base_funcs.h:
 
@@ -4163,8 +3559,6 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/c++/9/bits/uses_allocator.h:
 
-/usr/include/eigen3/Eigen/src/Core/util/XprHelper.h:
-
 /usr/include/c++/9/cassert:
 
 /usr/include/c++/9/utility:
@@ -4179,21 +3573,15 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/c++/9/chrono:
 
-/home/cpsl/catkin_ws/devel/include/mavros_msgs/SetMode.h:
-
 /usr/include/c++/9/complex:
 
 /usr/lib/gcc/x86_64-linux-gnu/9/include/syslimits.h:
 
 /usr/include/c++/9/cstring:
 
-/usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h:
-
 /usr/include/boost/date_time/time_system_split.hpp:
 
 /usr/include/c++/9/ctime:
-
-/usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h:
 
 /usr/include/c++/9/debug/assertions.h:
 
@@ -4233,10 +3621,38 @@ dronestack/CMakeFiles/waypoint_nav_client.dir/src/offb_node_sitl_client.cpp.o: /
 
 /usr/include/c++/9/vector:
 
-/usr/include/boost/preprocessor/control/expr_iif.hpp:
+/usr/include/ctype.h:
 
-/usr/include/eigen3/Eigen/Cholesky:
+/usr/include/errno.h:
 
-/usr/include/eigen3/Eigen/Eigenvalues:
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
 
-/usr/include/eigen3/Eigen/Jacobi:
+/usr/include/boost/mpl/aux_/preprocessed/gcc/greater.hpp:
+
+/usr/include/libintl.h:
+
+/usr/include/locale.h:
+
+/usr/include/log4cxx/helpers/classregistration.h:
+
+/usr/include/log4cxx/helpers/objectimpl.h:
+
+/usr/include/log4cxx/level.h:
+
+/usr/include/boost/date_time/special_defs.hpp:
+
+/usr/include/log4cxx/logstring.h:
+
+/usr/include/boost/date_time/period.hpp:
+
+/usr/include/pthread.h:
+
+/usr/include/boost/mpl/times.hpp:
+
+/usr/include/sched.h:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/vector.hpp:
+
+/usr/include/boost/core/default_allocator.hpp:
+
+/usr/include/stdint.h:

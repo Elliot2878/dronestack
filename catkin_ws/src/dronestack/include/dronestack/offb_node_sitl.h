@@ -17,12 +17,12 @@ class OffboardControlSITL {
 public:
     OffboardControlSITL();
     bool control(dronestack::waypoint_nav::Request &req, dronestack::waypoint_nav::Response &res);
+    void control(const Eigen::Vector3d target_point);
     void control();
     Eigen::Quaterniond rpyToQuaternion(double roll, double pitch, double yaw);
     ros::NodeHandle nh;
     ros::ServiceServer waypoint_server;
 
-private:
     ros::Subscriber state_sub, current_pose_sub, current_vel_sub, vicon_pose_sub;
     ros::Publisher pos_pub, vel_pub;
     ros::ServiceClient arming_client, set_mode_client;
@@ -31,6 +31,8 @@ private:
     geometry_msgs::Pose global_position;
     geometry_msgs::TwistStamped vel_msg;
     geometry_msgs::TransformStamped vicon_pose;
+
+    
 
     Eigen::Vector3d desired;
     Eigen::Vector3d target_point;
@@ -42,11 +44,13 @@ private:
     void currentPose_cb(const geometry_msgs::PoseStamped::ConstPtr& msg);
     void currentVelocity_cb(const geometry_msgs::TwistStamped::ConstPtr& msg);
     void viconPose_cb(const geometry_msgs::TransformStamped::ConstPtr& msg);
+    bool set_waypoint(dronestack::waypoint_nav::Request &req, dronestack::waypoint_nav::Response &res);
     void handle_mode_switch(mavros_msgs::SetMode& mode_cmd, ros::Time& last_request);
     void handle_arm_command(mavros_msgs::CommandBool& arm_cmd, ros::Time& last_request);
     void publish_clamped_velocity(ros::Publisher& vel_pub); 
     bool isAtPosition(double x, double y, double z, double xy_offset, double z_offset);
     Eigen::Vector3d transformPoint(const Eigen::Vector3d &translation, const Eigen::Quaterniond &rotation, const Eigen::Vector3d &point);
+private:
 
 };
 
