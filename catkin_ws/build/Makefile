@@ -3240,6 +3240,19 @@ waypoint_nav_server/fast:
 .PHONY : waypoint_nav_server/fast
 
 #=============================================================================
+# Target rules for targets named set_home_node
+
+# Build rule for target.
+set_home_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 set_home_node
+.PHONY : set_home_node
+
+# fast build rule for target.
+set_home_node/fast:
+	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/set_home_node.dir/build.make dronestack/CMakeFiles/set_home_node.dir/build
+.PHONY : set_home_node/fast
+
+#=============================================================================
 # Target rules for targets named tf_generate_messages_cpp
 
 # Build rule for target.
@@ -4236,6 +4249,7 @@ help:
 	@echo "... offb_node_hitl"
 	@echo "... offb_node_sitl"
 	@echo "... servo_state_publisher"
+	@echo "... set_home_node"
 	@echo "... sitl_test_node"
 	@echo "... testclient"
 	@echo "... tf_distort"

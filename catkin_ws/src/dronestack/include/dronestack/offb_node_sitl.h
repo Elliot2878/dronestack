@@ -24,10 +24,11 @@ public:
     ros::ServiceServer waypoint_server;
 
     ros::Subscriber state_sub, current_pose_sub, current_vel_sub, vicon_pose_sub;
-    ros::Publisher pos_pub, vel_pub;
-    ros::ServiceClient arming_client, set_mode_client;
+    ros::Publisher pos_pub, vel_pub, px4_vision_pose_pub, px4_vision_vel_pub;
+    ros::ServiceClient arming_client, set_mode_client, set_home_client;
     mavros_msgs::State current_state;
-    geometry_msgs::PoseStamped target, current_pose;
+    geometry_msgs::PoseStamped target, current_pose, vision_pose_msg;
+    geometry_msgs::TwistStamped vision_twist_msg;
     geometry_msgs::Pose global_position;
     geometry_msgs::TwistStamped vel_msg;
     geometry_msgs::TransformStamped vicon_pose;
@@ -40,6 +41,7 @@ public:
     int state;
     // int task_indicator;
 
+    void initialization();
     void state_cb(const mavros_msgs::State::ConstPtr& msg);
     void currentPose_cb(const geometry_msgs::PoseStamped::ConstPtr& msg);
     void currentVelocity_cb(const geometry_msgs::TwistStamped::ConstPtr& msg);

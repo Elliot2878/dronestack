@@ -109,6 +109,7 @@ dronestack/all: dronestack/CMakeFiles/offb_node_hitl.dir/all
 dronestack/all: dronestack/CMakeFiles/offb_node_sitl.dir/all
 dronestack/all: dronestack/CMakeFiles/waypoint_nav_client.dir/all
 dronestack/all: dronestack/CMakeFiles/waypoint_nav_server.dir/all
+dronestack/all: dronestack/CMakeFiles/set_home_node.dir/all
 .PHONY : dronestack/all
 
 # Recursive "preinstall" directory target.
@@ -132,6 +133,7 @@ dronestack/clean: dronestack/CMakeFiles/offb_node_hitl.dir/clean
 dronestack/clean: dronestack/CMakeFiles/offb_node_sitl.dir/clean
 dronestack/clean: dronestack/CMakeFiles/waypoint_nav_client.dir/clean
 dronestack/clean: dronestack/CMakeFiles/waypoint_nav_server.dir/clean
+dronestack/clean: dronestack/CMakeFiles/set_home_node.dir/clean
 .PHONY : dronestack/clean
 
 #=============================================================================
@@ -6441,12 +6443,12 @@ mavros/mavros/CMakeFiles/mavros_plugins.dir/all: mavros/libmavconn/CMakeFiles/ma
 mavros/mavros/CMakeFiles/mavros_plugins.dir/all: mavros/mavros/CMakeFiles/mavros.dir/all
 	$(MAKE) $(MAKESILENT) -f mavros/mavros/CMakeFiles/mavros_plugins.dir/build.make mavros/mavros/CMakeFiles/mavros_plugins.dir/depend
 	$(MAKE) $(MAKESILENT) -f mavros/mavros/CMakeFiles/mavros_plugins.dir/build.make mavros/mavros/CMakeFiles/mavros_plugins.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cpsl/catkin_ws/build/CMakeFiles --progress-num=86,87,88,89 "Built target mavros_plugins"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cpsl/catkin_ws/build/CMakeFiles --progress-num=85,86,87,88,89 "Built target mavros_plugins"
 .PHONY : mavros/mavros/CMakeFiles/mavros_plugins.dir/all
 
 # Build rule for subdir invocation for target.
 mavros/mavros/CMakeFiles/mavros_plugins.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cpsl/catkin_ws/build/CMakeFiles 80
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cpsl/catkin_ws/build/CMakeFiles 81
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros/mavros/CMakeFiles/mavros_plugins.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cpsl/catkin_ws/build/CMakeFiles 0
 .PHONY : mavros/mavros/CMakeFiles/mavros_plugins.dir/rule
@@ -6468,12 +6470,12 @@ mavros/mavros/CMakeFiles/mavros_node.dir/all: mavros/libmavconn/CMakeFiles/mavco
 mavros/mavros/CMakeFiles/mavros_node.dir/all: mavros/mavros/CMakeFiles/mavros.dir/all
 	$(MAKE) $(MAKESILENT) -f mavros/mavros/CMakeFiles/mavros_node.dir/build.make mavros/mavros/CMakeFiles/mavros_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f mavros/mavros/CMakeFiles/mavros_node.dir/build.make mavros/mavros/CMakeFiles/mavros_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cpsl/catkin_ws/build/CMakeFiles --progress-num=85 "Built target mavros_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cpsl/catkin_ws/build/CMakeFiles --progress-num= "Built target mavros_node"
 .PHONY : mavros/mavros/CMakeFiles/mavros_node.dir/all
 
 # Build rule for subdir invocation for target.
 mavros/mavros/CMakeFiles/mavros_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cpsl/catkin_ws/build/CMakeFiles 77
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cpsl/catkin_ws/build/CMakeFiles 76
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros/mavros/CMakeFiles/mavros_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cpsl/catkin_ws/build/CMakeFiles 0
 .PHONY : mavros/mavros/CMakeFiles/mavros_node.dir/rule
@@ -7281,12 +7283,12 @@ dronestack/CMakeFiles/offb_node_hitl.dir/all: dronestack/CMakeFiles/dronestack_g
 dronestack/CMakeFiles/offb_node_hitl.dir/all: dronestack/CMakeFiles/dronestack_generate_messages_py.dir/all
 	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/offb_node_hitl.dir/build.make dronestack/CMakeFiles/offb_node_hitl.dir/depend
 	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/offb_node_hitl.dir/build.make dronestack/CMakeFiles/offb_node_hitl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cpsl/catkin_ws/build/CMakeFiles --progress-num= "Built target offb_node_hitl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cpsl/catkin_ws/build/CMakeFiles --progress-num=90 "Built target offb_node_hitl"
 .PHONY : dronestack/CMakeFiles/offb_node_hitl.dir/all
 
 # Build rule for subdir invocation for target.
 dronestack/CMakeFiles/offb_node_hitl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cpsl/catkin_ws/build/CMakeFiles 74
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cpsl/catkin_ws/build/CMakeFiles 75
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack/CMakeFiles/offb_node_hitl.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cpsl/catkin_ws/build/CMakeFiles 0
 .PHONY : dronestack/CMakeFiles/offb_node_hitl.dir/rule
@@ -7554,6 +7556,91 @@ waypoint_nav_server: dronestack/CMakeFiles/waypoint_nav_server.dir/rule
 dronestack/CMakeFiles/waypoint_nav_server.dir/clean:
 	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/waypoint_nav_server.dir/build.make dronestack/CMakeFiles/waypoint_nav_server.dir/clean
 .PHONY : dronestack/CMakeFiles/waypoint_nav_server.dir/clean
+
+#=============================================================================
+# Target rules for target dronestack/CMakeFiles/set_home_node.dir
+
+# All Build rule for target.
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/geographic_msgs_generate_messages_eus.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/geographic_msgs_generate_messages_py.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/uuid_msgs_generate_messages_eus.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/uuid_msgs_generate_messages_py.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/mavros_msgs_generate_messages_eus.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros_msgs/CMakeFiles/mavros_msgs_generate_messages_py.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros/CMakeFiles/roscpp_generate_messages_eus.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros/CMakeFiles/roscpp_generate_messages_py.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros/CMakeFiles/tf2_msgs_generate_messages_eus.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros/CMakeFiles/actionlib_generate_messages_cpp.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros/CMakeFiles/actionlib_generate_messages_eus.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros/CMakeFiles/actionlib_generate_messages_lisp.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros/CMakeFiles/actionlib_generate_messages_nodejs.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: mavros/mavros/CMakeFiles/actionlib_generate_messages_py.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: dronestack/CMakeFiles/dronestack_generate_messages_cpp.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: dronestack/CMakeFiles/dronestack_generate_messages_eus.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: dronestack/CMakeFiles/dronestack_generate_messages_lisp.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: dronestack/CMakeFiles/dronestack_generate_messages_nodejs.dir/all
+dronestack/CMakeFiles/set_home_node.dir/all: dronestack/CMakeFiles/dronestack_generate_messages_py.dir/all
+	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/set_home_node.dir/build.make dronestack/CMakeFiles/set_home_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/set_home_node.dir/build.make dronestack/CMakeFiles/set_home_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cpsl/catkin_ws/build/CMakeFiles --progress-num= "Built target set_home_node"
+.PHONY : dronestack/CMakeFiles/set_home_node.dir/all
+
+# Build rule for subdir invocation for target.
+dronestack/CMakeFiles/set_home_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cpsl/catkin_ws/build/CMakeFiles 74
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack/CMakeFiles/set_home_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cpsl/catkin_ws/build/CMakeFiles 0
+.PHONY : dronestack/CMakeFiles/set_home_node.dir/rule
+
+# Convenience name for target.
+set_home_node: dronestack/CMakeFiles/set_home_node.dir/rule
+.PHONY : set_home_node
+
+# clean rule for target.
+dronestack/CMakeFiles/set_home_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/set_home_node.dir/build.make dronestack/CMakeFiles/set_home_node.dir/clean
+.PHONY : dronestack/CMakeFiles/set_home_node.dir/clean
 
 #=============================================================================
 # Target rules for target mavros/mavros_extras/CMakeFiles/tf_generate_messages_cpp.dir
@@ -8426,12 +8513,12 @@ mavros/test_mavros/CMakeFiles/mavros_sitl_test.dir/all: mavros/libmavconn/CMakeF
 mavros/test_mavros/CMakeFiles/mavros_sitl_test.dir/all: mavros/mavros/CMakeFiles/mavros.dir/all
 	$(MAKE) $(MAKESILENT) -f mavros/test_mavros/CMakeFiles/mavros_sitl_test.dir/build.make mavros/test_mavros/CMakeFiles/mavros_sitl_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f mavros/test_mavros/CMakeFiles/mavros_sitl_test.dir/build.make mavros/test_mavros/CMakeFiles/mavros_sitl_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cpsl/catkin_ws/build/CMakeFiles --progress-num=90 "Built target mavros_sitl_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cpsl/catkin_ws/build/CMakeFiles --progress-num= "Built target mavros_sitl_test"
 .PHONY : mavros/test_mavros/CMakeFiles/mavros_sitl_test.dir/all
 
 # Build rule for subdir invocation for target.
 mavros/test_mavros/CMakeFiles/mavros_sitl_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cpsl/catkin_ws/build/CMakeFiles 77
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cpsl/catkin_ws/build/CMakeFiles 76
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros/test_mavros/CMakeFiles/mavros_sitl_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cpsl/catkin_ws/build/CMakeFiles 0
 .PHONY : mavros/test_mavros/CMakeFiles/mavros_sitl_test.dir/rule
@@ -8459,7 +8546,7 @@ mavros/test_mavros/CMakeFiles/sitl_test_node.dir/all: mavros/test_mavros/CMakeFi
 
 # Build rule for subdir invocation for target.
 mavros/test_mavros/CMakeFiles/sitl_test_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cpsl/catkin_ws/build/CMakeFiles 78
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cpsl/catkin_ws/build/CMakeFiles 77
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mavros/test_mavros/CMakeFiles/sitl_test_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cpsl/catkin_ws/build/CMakeFiles 0
 .PHONY : mavros/test_mavros/CMakeFiles/sitl_test_node.dir/rule

@@ -769,6 +769,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "dronestack/CMakeFiles/offb_node_sitl.dir/DependInfo.cmake"
   "dronestack/CMakeFiles/waypoint_nav_client.dir/DependInfo.cmake"
   "dronestack/CMakeFiles/waypoint_nav_server.dir/DependInfo.cmake"
+  "dronestack/CMakeFiles/set_home_node.dir/DependInfo.cmake"
   "mavros/mavros_extras/CMakeFiles/tf_generate_messages_cpp.dir/DependInfo.cmake"
   "mavros/mavros_extras/CMakeFiles/tf_generate_messages_eus.dir/DependInfo.cmake"
   "mavros/mavros_extras/CMakeFiles/tf_generate_messages_lisp.dir/DependInfo.cmake"

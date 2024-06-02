@@ -243,3 +243,8 @@ target_link_libraries(waypoint_nav_client ${catkin_LIBRARIES})
 add_executable(waypoint_nav_server src/offb_node_sitl_server.cpp)
 add_dependencies(waypoint_nav_server ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(waypoint_nav_server ${catkin_LIBRARIES})
+
+add_executable(set_home_node src/set_home.cpp)
+add_dependencies(set_home_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(set_home_node ${catkin_LIBRARIES})
+

@@ -8,6 +8,9 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
   /home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandBool.h \
   /home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandBoolRequest.h \
   /home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandBoolResponse.h \
+  /home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandHome.h \
+  /home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandHomeRequest.h \
+  /home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandHomeResponse.h \
   /home/cpsl/catkin_ws/devel/include/mavros_msgs/SetMode.h \
   /home/cpsl/catkin_ws/devel/include/mavros_msgs/SetModeRequest.h \
   /home/cpsl/catkin_ws/devel/include/mavros_msgs/SetModeResponse.h \
@@ -1795,6 +1798,8 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 
 /usr/include/eigen3/Eigen/QR:
 
+/usr/include/eigen3/Eigen/Jacobi:
+
 /usr/include/boost/numeric/conversion/cast.hpp:
 
 /usr/include/boost/smart_ptr/detail/spinlock_std_atomic.hpp:
@@ -2195,6 +2200,8 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/mpl/equal_to.hpp:
 
+/home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandHomeResponse.h:
+
 /usr/include/boost/mpl/at_fwd.hpp:
 
 /usr/include/boost/mpl/has_xxx.hpp:
@@ -2220,8 +2227,6 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 /usr/include/boost/mpl/aux_/config/overload_resolution.hpp:
 
 /usr/include/c++/9/math.h:
-
-/usr/include/boost/move/utility_core.hpp:
 
 /usr/include/boost/move/utility.hpp:
 
@@ -2271,9 +2276,9 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/math/tools/real_cast.hpp:
 
-/usr/include/boost/smart_ptr/detail/yield_k.hpp:
+/usr/include/boost/move/utility_core.hpp:
 
-/usr/include/boost/numeric/conversion/converter.hpp:
+/usr/include/boost/smart_ptr/detail/yield_k.hpp:
 
 /usr/include/boost/mpl/apply.hpp:
 
@@ -2283,9 +2288,9 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 
 /opt/ros/noetic/include/ros/macros.h:
 
-/usr/include/boost/math/special_functions/math_fwd.hpp:
+/usr/include/eigen3/Eigen/Householder:
 
-/usr/include/boost/mpl/aux_/yes_no.hpp:
+/usr/include/boost/concept/detail/has_constraints.hpp:
 
 /usr/include/boost/mpl/list/aux_/clear.hpp:
 
@@ -2317,11 +2322,29 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/thread/xtime.hpp:
 
+/usr/include/boost/make_shared.hpp:
+
+/usr/include/boost/date_time/posix_time/time_period.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/usr/include/boost/numeric/conversion/converter_policies.hpp:
+
+/usr/include/boost/type_traits/is_union.hpp:
+
 /usr/include/math.h:
 
 /usr/include/c++/9/streambuf:
 
+/usr/include/boost/numeric/conversion/converter.hpp:
+
 /usr/include/boost/cerrno.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h:
+
+/usr/include/boost/predef/os/irix.h:
+
+/usr/include/boost/concept/detail/general.hpp:
 
 /usr/include/boost/call_traits.hpp:
 
@@ -2355,20 +2378,6 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/mpl/aux_/config/compiler.hpp:
 
-/usr/include/boost/date_time/posix_time/time_period.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h:
-
-/usr/include/boost/concept/detail/general.hpp:
-
-/usr/include/boost/predef/os/irix.h:
-
-/usr/include/x86_64-linux-gnu/bits/confname.h:
-
-/usr/include/boost/numeric/conversion/converter_policies.hpp:
-
-/usr/include/boost/type_traits/is_union.hpp:
-
 /usr/include/boost/mpl/vector/aux_/O1_size.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
@@ -2398,6 +2407,10 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h:
 
 /usr/include/boost/lexical_cast/bad_lexical_cast.hpp:
+
+/usr/include/boost/math/special_functions/math_fwd.hpp:
+
+/usr/include/boost/mpl/aux_/yes_no.hpp:
 
 /usr/include/boost/mpl/aux_/has_apply.hpp:
 
@@ -2436,6 +2449,8 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 /opt/ros/noetic/include/std_msgs/Header.h:
 
 /opt/ros/noetic/include/geometry_msgs/Quaternion.h:
+
+/opt/ros/noetic/include/ros/this_node.h:
 
 /opt/ros/noetic/include/ros/subscription_callback_helper.h:
 
@@ -2487,9 +2502,15 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/core/use_default.hpp:
 
-/opt/ros/noetic/include/ros/builtin_message_traits.h:
+/opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h:
 
-/usr/include/boost/function/function_base.hpp:
+/usr/include/boost/mpl/list/aux_/item.hpp:
+
+/usr/include/boost/predef/architecture/z.h:
+
+/usr/include/c++/9/list:
+
+/usr/include/boost/bind/mem_fn.hpp:
 
 /usr/include/boost/mpl/vector/vector10.hpp:
 
@@ -2524,8 +2545,6 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
 /usr/include/boost/config/stdlib/libstdcpp3.hpp:
-
-/usr/include/ctype.h:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/apply.hpp:
 
@@ -2565,9 +2584,25 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/mpl/aux_/advance_forward.hpp:
 
-/usr/include/boost/mpl/greater_equal.hpp:
+/usr/include/boost/predef/compiler/iar.h:
 
-/opt/ros/noetic/include/ros/message.h:
+/usr/include/boost/mpl/aux_/msvc_never_true.hpp:
+
+/usr/include/boost/predef/library/c.h:
+
+/usr/include/boost/mpl/aux_/iter_fold_impl.hpp:
+
+/usr/include/boost/math/special_functions/detail/round_fwd.hpp:
+
+/usr/include/boost/date_time/posix_time/posix_time_config.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/CoreIterators.h:
+
+/usr/include/boost/date_time/posix_time/posix_time_types.hpp:
+
+/usr/include/c++/9/bits/ostream.tcc:
+
+/usr/include/ctype.h:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/reverse_fold_impl.hpp:
 
@@ -2578,12 +2613,6 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 /usr/include/eigen3/Eigen/Dense:
 
 /usr/include/asm-generic/errno.h:
-
-/opt/ros/noetic/include/geometry_msgs/Transform.h:
-
-/home/cpsl/catkin_ws/devel/include/dronestack/waypoint_navRequest.h:
-
-/usr/include/boost/mpl/empty_fwd.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:
 
@@ -2675,6 +2704,18 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 
 /usr/include/c++/9/bits/exception_defines.h:
 
+/opt/ros/noetic/include/geometry_msgs/Transform.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/9/include/stdarg.h:
+
+/usr/include/boost/concept/usage.hpp:
+
+/usr/include/boost/predef/compiler/mpw.h:
+
+/usr/include/boost/preprocessor/punctuation/comma.hpp:
+
+/opt/ros/noetic/include/ros/parameter_adapter.h:
+
 /usr/include/eigen3/Eigen/src/Geometry/Translation.h:
 
 /usr/include/boost/mpl/aux_/config/gcc.hpp:
@@ -2723,23 +2764,17 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 
 /home/cpsl/catkin_ws/devel/include/mavros_msgs/State.h:
 
-/usr/include/boost/predef/compiler/iar.h:
+/usr/include/boost/mpl/greater_equal.hpp:
 
-/usr/include/boost/mpl/aux_/msvc_never_true.hpp:
+/opt/ros/noetic/include/ros/message.h:
 
-/usr/include/boost/predef/library/c.h:
+/home/cpsl/catkin_ws/devel/include/dronestack/waypoint_navRequest.h:
 
-/usr/include/boost/mpl/aux_/iter_fold_impl.hpp:
+/usr/include/boost/mpl/empty_fwd.hpp:
 
-/usr/include/boost/math/special_functions/detail/round_fwd.hpp:
+/opt/ros/noetic/include/ros/builtin_message_traits.h:
 
-/usr/include/boost/date_time/posix_time/posix_time_config.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/CoreIterators.h:
-
-/usr/include/boost/date_time/posix_time/posix_time_types.hpp:
-
-/usr/include/c++/9/bits/ostream.tcc:
+/usr/include/boost/function/function_base.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
 
@@ -2775,8 +2810,6 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/date_time/gregorian/greg_day_of_year.hpp:
 
-/opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h:
-
 /usr/include/boost/mpl/O1_size_fwd.hpp:
 
 /usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h:
@@ -2807,6 +2840,22 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/range/range_fwd.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+
+/usr/include/boost/date_time/time_clock.hpp:
+
+/usr/include/boost/mpl/find.hpp:
+
+/usr/include/boost/iterator/advance.hpp:
+
+/usr/include/boost/utility/identity_type.hpp:
+
+/usr/include/boost/date_time/posix_time/posix_time_system.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/times.hpp:
+
+/opt/ros/noetic/include/ros/message_traits.h:
+
 /usr/include/boost/mpl/vector/aux_/front.hpp:
 
 /usr/include/boost/bind.hpp:
@@ -2815,13 +2864,13 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 
 /usr/include/c++/9/bits/locale_classes.tcc:
 
+/usr/include/c++/9/istream:
+
+/usr/include/boost/mpl/bind_fwd.hpp:
+
 /opt/ros/noetic/include/ros/timer.h:
 
 /usr/include/c++/9/cctype:
-
-/usr/include/boost/numeric/conversion/conversion_traits.hpp:
-
-/usr/include/boost/mpl/aux_/config/pp_counter.hpp:
 
 /usr/include/boost/predef/hardware/simd/x86_amd.h:
 
@@ -2856,10 +2905,6 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 /usr/include/boost/container_hash/hash_fwd.hpp:
 
 /usr/include/boost/range/empty.hpp:
-
-/usr/include/boost/preprocessor/punctuation/comma.hpp:
-
-/opt/ros/noetic/include/ros/parameter_adapter.h:
 
 /usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h:
 
@@ -2903,6 +2948,10 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/preprocessor/detail/auto_rec.hpp:
 
+/usr/include/boost/math/policies/error_handling.hpp:
+
+/usr/include/boost/type_traits/is_complete.hpp:
+
 /usr/include/boost/mpl/aux_/has_begin.hpp:
 
 /usr/include/boost/smart_ptr/make_shared.hpp:
@@ -2930,18 +2979,6 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 /usr/include/boost/iterator/detail/enable_if.hpp:
 
 /usr/include/boost/chrono/detail/static_assert.hpp:
-
-/usr/include/boost/mpl/list/aux_/item.hpp:
-
-/usr/include/boost/mpl/bind_fwd.hpp:
-
-/usr/include/c++/9/istream:
-
-/usr/include/boost/predef/architecture/z.h:
-
-/usr/include/c++/9/list:
-
-/usr/include/boost/bind/mem_fn.hpp:
 
 /opt/ros/noetic/include/ros/param.h:
 
@@ -3045,6 +3082,10 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/thread/detail/config.hpp:
 
+/usr/include/eigen3/Eigen/LU:
+
+/usr/include/c++/9/ext/type_traits.h:
+
 /usr/include/boost/config/user.hpp:
 
 /usr/include/boost/iterator/detail/config_def.hpp:
@@ -3064,6 +3105,10 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 /usr/include/boost/mpl/aux_/value_wknd.hpp:
 
 /usr/include/boost/date_time/filetime_functions.hpp:
+
+/usr/include/c++/9/bits/exception_ptr.h:
+
+/usr/include/boost/smart_ptr/detail/sp_disable_deprecated.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
@@ -3115,12 +3160,6 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/type_traits/is_convertible.hpp:
 
-/usr/lib/gcc/x86_64-linux-gnu/9/include/stdarg.h:
-
-/usr/include/boost/concept/usage.hpp:
-
-/usr/include/boost/predef/compiler/mpw.h:
-
 /usr/include/boost/config/no_tr1/cmath.hpp:
 
 /usr/include/c++/9/bits/stl_uninitialized.h:
@@ -3149,20 +3188,6 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/predef/library/c/_prefix.h:
 
-/usr/include/c++/9/ext/type_traits.h:
-
-/usr/include/eigen3/Eigen/LU:
-
-/usr/include/boost/iterator/advance.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
-
-/usr/include/boost/date_time/time_clock.hpp:
-
-/usr/include/boost/mpl/find.hpp:
-
-/usr/include/boost/utility/identity_type.hpp:
-
 /usr/include/boost/move/detail/meta_utils.hpp:
 
 /home/cpsl/catkin_ws/src/dronestack/include/dronestack/offb_node_sitl.h:
@@ -3178,8 +3203,6 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 /usr/include/boost/lexical_cast/detail/converter_lexical.hpp:
 
 /usr/include/boost/type_traits/remove_pointer.hpp:
-
-/usr/include/boost/date_time/posix_time/posix_time_system.hpp:
 
 /usr/include/boost/date_time/time_defs.hpp:
 
@@ -3251,13 +3274,13 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/mpl/placeholders.hpp:
 
-/usr/include/boost/mpl/aux_/config/has_xxx.hpp:
-
-/usr/include/assert.h:
-
 /usr/include/boost/mpl/clear_fwd.hpp:
 
 /usr/include/boost/bind/placeholders.hpp:
+
+/usr/include/boost/mpl/aux_/config/has_xxx.hpp:
+
+/usr/include/assert.h:
 
 /usr/include/boost/integer_fwd.hpp:
 
@@ -3317,17 +3340,9 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 
 /usr/include/c++/9/cstdlib:
 
-/usr/include/boost/make_shared.hpp:
+/usr/include/boost/mpl/aux_/config/pp_counter.hpp:
 
-/opt/ros/noetic/include/ros/message_traits.h:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/times.hpp:
-
-/opt/ros/noetic/include/ros/this_node.h:
-
-/usr/include/boost/type_traits/is_complete.hpp:
-
-/usr/include/boost/math/policies/error_handling.hpp:
+/usr/include/boost/numeric/conversion/conversion_traits.hpp:
 
 /usr/include/boost/numeric/conversion/detail/bounds.hpp:
 
@@ -3420,6 +3435,8 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
 /usr/include/boost/predef/os/cygwin.h:
+
+/home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandHomeRequest.h:
 
 /usr/include/boost/predef/compiler/dignus.h:
 
@@ -3658,6 +3675,8 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 /usr/include/boost/preprocessor/array/elem.hpp:
 
 /usr/include/boost/numeric/conversion/udt_builtin_mixture_enum.hpp:
+
+/home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandHome.h:
 
 /usr/include/c++/9/bits/move.h:
 
@@ -3979,10 +3998,6 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/type_traits/is_base_and_derived.hpp:
 
-/usr/include/boost/concept/detail/has_constraints.hpp:
-
-/usr/include/eigen3/Eigen/Householder:
-
 /opt/ros/noetic/include/ros/topic.h:
 
 /usr/include/boost/type_traits/detail/mp_defer.hpp:
@@ -4072,10 +4087,6 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 /usr/include/c++/9/bits/codecvt.h:
 
 /usr/include/c++/9/bits/concept_check.h:
-
-/usr/include/boost/smart_ptr/detail/sp_disable_deprecated.hpp:
-
-/usr/include/c++/9/bits/exception_ptr.h:
 
 /usr/include/boost/mpl/fold.hpp:
 
@@ -4238,5 +4249,3 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: /home/cpsl/ca
 /usr/include/eigen3/Eigen/Cholesky:
 
 /usr/include/eigen3/Eigen/Eigenvalues:
-
-/usr/include/eigen3/Eigen/Jacobi:

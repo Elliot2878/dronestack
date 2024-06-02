@@ -1292,4 +1292,7 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: \
  /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
  /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
  /usr/include/eigen3/Eigen/src/Eigenvalues/./RealQZ.h \
- /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
+ /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
+ /home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandHome.h \
+ /home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandHomeRequest.h \
+ /home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandHomeResponse.h

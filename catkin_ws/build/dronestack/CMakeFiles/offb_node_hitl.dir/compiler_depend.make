@@ -5,6 +5,9 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
   /home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandBool.h \
   /home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandBoolRequest.h \
   /home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandBoolResponse.h \
+  /home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandHome.h \
+  /home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandHomeRequest.h \
+  /home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandHomeResponse.h \
   /home/cpsl/catkin_ws/devel/include/mavros_msgs/SetMode.h \
   /home/cpsl/catkin_ws/devel/include/mavros_msgs/SetModeRequest.h \
   /home/cpsl/catkin_ws/devel/include/mavros_msgs/SetModeResponse.h \
@@ -1792,7 +1795,9 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 
 /usr/include/eigen3/Eigen/SVD:
 
-/usr/include/boost/numeric/conversion/detail/bounds.hpp:
+/usr/include/eigen3/Eigen/QR:
+
+/usr/include/eigen3/Eigen/Jacobi:
 
 /usr/include/boost/numeric/conversion/cast.hpp:
 
@@ -2122,9 +2127,9 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/mpl/aux_/has_size.hpp:
 
-/opt/ros/noetic/include/geometry_msgs/TwistStamped.h:
-
 /home/cpsl/catkin_ws/src/dronestack/src/offb_node_hitl.cpp:
+
+/opt/ros/noetic/include/geometry_msgs/TwistStamped.h:
 
 /usr/include/boost/mpl/aux_/full_lambda.hpp:
 
@@ -2216,6 +2221,8 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 
 /opt/ros/noetic/include/gazebo_msgs/SetModelState.h:
 
+/home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandHomeResponse.h:
+
 /usr/include/boost/mpl/at_fwd.hpp:
 
 /usr/include/boost/mpl/has_xxx.hpp:
@@ -2249,8 +2256,6 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 /usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h:
 
 /usr/include/boost/preprocessor/tuple/elem.hpp:
-
-/usr/include/boost/move/utility_core.hpp:
 
 /usr/include/boost/move/utility.hpp:
 
@@ -2302,9 +2307,9 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/math/tools/real_cast.hpp:
 
-/usr/include/boost/smart_ptr/detail/yield_k.hpp:
+/usr/include/boost/move/utility_core.hpp:
 
-/usr/include/boost/numeric/conversion/converter.hpp:
+/usr/include/boost/smart_ptr/detail/yield_k.hpp:
 
 /usr/include/boost/mpl/apply.hpp:
 
@@ -2312,19 +2317,7 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/config/detail/select_compiler_config.hpp:
 
-/usr/include/boost/config/detail/select_platform_config.hpp:
-
-/usr/include/c++/9/debug/debug.h:
-
-/usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h:
-
-/usr/include/boost/mpl/aux_/config/msvc.hpp:
-
 /opt/ros/noetic/include/ros/macros.h:
-
-/usr/include/boost/math/special_functions/math_fwd.hpp:
-
-/usr/include/boost/mpl/aux_/yes_no.hpp:
 
 /usr/include/boost/mpl/list/aux_/clear.hpp:
 
@@ -2360,6 +2353,8 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 
 /usr/include/c++/9/streambuf:
 
+/usr/include/boost/numeric/conversion/converter.hpp:
+
 /usr/include/boost/cerrno.hpp:
 
 /usr/include/boost/call_traits.hpp:
@@ -2373,6 +2368,14 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 /usr/include/boost/mpl/aux_/at_impl.hpp:
 
 /usr/include/boost/core/noncopyable.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h:
+
+/usr/include/boost/mpl/aux_/config/msvc.hpp:
+
+/usr/include/boost/config/detail/select_platform_config.hpp:
+
+/usr/include/c++/9/debug/debug.h:
 
 /usr/include/boost/mpl/aux_/config/compiler.hpp:
 
@@ -2420,6 +2423,10 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/lexical_cast/bad_lexical_cast.hpp:
 
+/usr/include/boost/math/special_functions/math_fwd.hpp:
+
+/usr/include/boost/mpl/aux_/yes_no.hpp:
+
 /usr/include/boost/mpl/aux_/has_apply.hpp:
 
 /usr/include/boost/mpl/aux_/clear_impl.hpp:
@@ -2457,6 +2464,8 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 /opt/ros/noetic/include/std_msgs/Header.h:
 
 /opt/ros/noetic/include/geometry_msgs/Quaternion.h:
+
+/opt/ros/noetic/include/ros/this_node.h:
 
 /opt/ros/noetic/include/ros/subscription_callback_helper.h:
 
@@ -2500,9 +2509,21 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/bind/storage.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+/usr/include/boost/config.hpp:
 
-/opt/ros/noetic/include/ros/datatypes.h:
+/opt/ros/noetic/include/ros/types.h:
+
+/usr/include/eigen3/Eigen/src/Core/VectorBlock.h:
+
+/usr/include/boost/core/use_default.hpp:
+
+/usr/include/boost/mpl/list/aux_/item.hpp:
+
+/usr/include/boost/predef/architecture/z.h:
+
+/usr/include/c++/9/list:
+
+/usr/include/boost/bind/mem_fn.hpp:
 
 /usr/include/boost/mpl/void_fwd.hpp:
 
@@ -2511,10 +2532,6 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 /usr/include/boost/preprocessor/list/fold_left.hpp:
 
 /usr/include/boost/chrono/config.hpp:
-
-/opt/ros/noetic/include/ros/builtin_message_traits.h:
-
-/usr/include/boost/function/function_base.hpp:
 
 /usr/include/boost/mpl/vector/vector10.hpp:
 
@@ -2525,10 +2542,6 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 /usr/include/boost/mpl/list/aux_/pop_front.hpp:
 
 /opt/ros/noetic/include/ros/console_backend.h:
-
-/usr/include/boost/mpl/greater_equal.hpp:
-
-/opt/ros/noetic/include/ros/message.h:
 
 /opt/ros/noetic/include/ros/advertise_options.h:
 
@@ -2548,91 +2561,11 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/mpl/aux_/advance_forward.hpp:
 
-/usr/include/boost/mpl/aux_/adl_barrier.hpp:
-
-/home/cpsl/catkin_ws/devel/include/mavros_msgs/SetModeRequest.h:
-
-/opt/ros/noetic/include/rosconsole/macros_generated.h:
-
-/usr/include/boost/predef/language/cuda.h:
-
-/usr/include/c++/9/cxxabi.h:
-
 /usr/include/boost/mpl/aux_/preprocessed/gcc/reverse_fold_impl.hpp:
 
 /usr/include/boost/smart_ptr/detail/local_counted_base.hpp:
 
 /usr/include/c++/9/bits/unique_lock.h:
-
-/usr/include/boost/config/detail/suffix.hpp:
-
-/usr/include/c++/9/cstdint:
-
-/usr/include/eigen3/Eigen/src/Geometry/Translation.h:
-
-/usr/include/boost/mpl/aux_/config/gcc.hpp:
-
-/usr/include/boost/numeric/conversion/bounds.hpp:
-
-/usr/include/log4cxx/helpers/object.h:
-
-/opt/ros/noetic/include/ros/exception.h:
-
-/usr/include/boost/math/tools/user.hpp:
-
-/usr/include/boost/type_traits/decay.hpp:
-
-/usr/include/boost/mpl/aux_/config/integral.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h:
-
-/usr/include/c++/9/bits/stl_map.h:
-
-/usr/include/boost/math/policies/policy.hpp:
-
-/usr/include/boost/concept/detail/concept_undef.hpp:
-
-/usr/include/boost/mpl/limits/arity.hpp:
-
-/usr/include/boost/mpl/same_as.hpp:
-
-/usr/include/boost/mpl/aux_/arithmetic_op.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessor/params.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/less.hpp:
-
-/usr/include/boost/mpl/protect.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-/opt/ros/noetic/include/ros/message_operations.h:
-
-/usr/include/pthread.h:
-
-/usr/include/boost/date_time/period.hpp:
-
-/usr/include/boost/mpl/vector/aux_/begin_end.hpp:
-
-/usr/include/boost/config/abi_suffix.hpp:
-
-/usr/include/boost/lexical_cast/detail/lcast_unsigned_converters.hpp:
-
-/home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandBoolResponse.h:
-
-/usr/include/boost/predef/platform/windows_runtime.h:
-
-/usr/include/boost/preprocessor/repetition/enum_params.hpp:
-
-/usr/include/boost/iterator/detail/facade_iterator_category.hpp:
-
-/usr/include/boost/numeric/conversion/detail/sign_mixture.hpp:
-
-/usr/include/c++/9/bits/exception_defines.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:
-
-/opt/ros/noetic/include/ros/console.h:
 
 /usr/include/boost/bind/bind.hpp:
 
@@ -2682,36 +2615,6 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 
 /usr/include/c++/9/bits/ostream.tcc:
 
-/usr/include/eigen3/Eigen/Dense:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/boost/mpl/aux_/na_spec.hpp:
-
-/usr/include/c++/9/bits/erase_if.h:
-
-/opt/ros/noetic/include/ros/subscribe_options.h:
-
-/usr/include/boost/mpl/next.hpp:
-
-/usr/include/boost/mpl/vector/aux_/push_back.hpp:
-
-/usr/include/eigen3/Eigen/QR:
-
-/usr/include/boost/core/alloc_construct.hpp:
-
-/usr/include/boost/predef/library/c/_prefix.h:
-
-/usr/include/boost/iterator/advance.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
-
-/usr/include/boost/date_time/time_clock.hpp:
-
-/usr/include/boost/mpl/find.hpp:
-
-/usr/include/boost/utility/identity_type.hpp:
-
 /usr/include/boost/mpl/push_back_fwd.hpp:
 
 /usr/include/boost/mpl/aux_/config/nttp.hpp:
@@ -2732,35 +2635,57 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 
 /usr/include/c++/9/stdexcept:
 
-/usr/include/asm-generic/errno-base.h:
+/usr/include/eigen3/Eigen/Dense:
 
-/usr/include/boost/predef/architecture/rs6k.h:
+/usr/include/asm-generic/errno.h:
 
-/usr/include/boost/date_time/gregorian/greg_day.hpp:
+/usr/include/boost/mpl/aux_/na_spec.hpp:
 
-/usr/include/boost/date_time/time_system_counted.hpp:
+/usr/include/c++/9/bits/erase_if.h:
 
-/usr/include/c++/9/ext/aligned_buffer.h:
+/opt/ros/noetic/include/ros/subscribe_options.h:
 
-/usr/include/boost/mpl/aux_/na.hpp:
+/usr/include/boost/mpl/next.hpp:
 
-/opt/ros/noetic/include/ros/single_subscriber_publisher.h:
+/usr/include/boost/mpl/vector/aux_/push_back.hpp:
 
-/opt/ros/noetic/include/ros/service_traits.h:
+/usr/include/boost/core/alloc_construct.hpp:
 
-/usr/include/boost/mpl/aux_/na_assert.hpp:
+/usr/include/boost/predef/library/c/_prefix.h:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/placeholders.hpp:
+/usr/include/boost/iterator/advance.hpp:
 
-/opt/ros/noetic/include/geometry_msgs/Pose.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
-/home/cpsl/catkin_ws/devel/include/mavros_msgs/State.h:
+/usr/include/boost/date_time/time_clock.hpp:
 
-/usr/include/boost/move/detail/meta_utils.hpp:
+/usr/include/boost/mpl/find.hpp:
 
-/usr/include/boost/date_time/locale_config.hpp:
+/usr/include/boost/utility/identity_type.hpp:
 
-/usr/include/boost/type_traits/remove_pointer.hpp:
+/usr/include/boost/mpl/aux_/adl_barrier.hpp:
+
+/home/cpsl/catkin_ws/devel/include/mavros_msgs/SetModeRequest.h:
+
+/opt/ros/noetic/include/rosconsole/macros_generated.h:
+
+/usr/include/boost/predef/language/cuda.h:
+
+/usr/include/c++/9/cxxabi.h:
+
+/usr/include/boost/config/platform/linux.hpp:
+
+/usr/include/boost/smart_ptr/detail/sp_convertible.hpp:
+
+/opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h:
+
+/usr/include/boost/range/mutable_iterator.hpp:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h:
+
+/usr/include/boost/mpl/vector/aux_/iterator.hpp:
+
+/usr/include/boost/lexical_cast.hpp:
 
 /usr/include/boost/mpl/aux_/begin_end_impl.hpp:
 
@@ -2772,22 +2697,6 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 
 /usr/include/c++/9/atomic:
 
-/usr/include/boost/mpl/vector/aux_/tag.hpp:
-
-/opt/ros/noetic/include/ros/exceptions.h:
-
-/opt/ros/noetic/include/ros/forwards.h:
-
-/usr/include/boost/predef/library/std/dinkumware.h:
-
-/usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
-
-/opt/ros/noetic/include/ros/assert.h:
-
-/usr/include/boost/function/detail/prologue.hpp:
-
-/usr/include/c++/9/bits/list.tcc:
-
 /usr/include/boost/mpl/vector/aux_/size.hpp:
 
 /usr/include/boost/ref.hpp:
@@ -2795,6 +2704,12 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 /usr/include/boost/mpl/aux_/preprocessor/default_params.hpp:
 
 /usr/include/boost/range/iterator_range_core.hpp:
+
+/usr/include/boost/mpl/aux_/arithmetic_op.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessor/params.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/less.hpp:
 
 /home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandBool.h:
 
@@ -2824,23 +2739,139 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/smart_ptr/bad_weak_ptr.hpp:
 
-/usr/include/boost/config/platform/linux.hpp:
+/usr/include/boost/mpl/greater_equal.hpp:
 
-/usr/include/boost/smart_ptr/detail/sp_convertible.hpp:
+/opt/ros/noetic/include/ros/message.h:
 
-/opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h:
+/opt/ros/noetic/include/ros/builtin_message_traits.h:
 
-/usr/include/boost/range/mutable_iterator.hpp:
+/usr/include/boost/function/function_base.hpp:
 
-/usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h:
+/usr/include/eigen3/Eigen/src/Geometry/Translation.h:
 
-/usr/include/boost/mpl/vector/aux_/iterator.hpp:
+/usr/include/boost/mpl/aux_/config/gcc.hpp:
 
-/usr/include/boost/lexical_cast.hpp:
+/usr/include/boost/numeric/conversion/bounds.hpp:
+
+/usr/include/log4cxx/helpers/object.h:
+
+/opt/ros/noetic/include/ros/exception.h:
+
+/usr/include/boost/math/tools/user.hpp:
+
+/usr/include/boost/type_traits/decay.hpp:
+
+/usr/include/boost/mpl/aux_/config/integral.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h:
+
+/usr/include/c++/9/bits/stl_map.h:
+
+/usr/include/boost/math/policies/policy.hpp:
+
+/usr/include/boost/concept/detail/concept_undef.hpp:
+
+/usr/include/boost/mpl/limits/arity.hpp:
+
+/usr/include/boost/mpl/same_as.hpp:
+
+/usr/include/boost/lexical_cast/detail/lcast_unsigned_converters.hpp:
+
+/usr/include/boost/mpl/protect.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/opt/ros/noetic/include/ros/message_operations.h:
+
+/usr/include/pthread.h:
+
+/usr/include/boost/date_time/period.hpp:
+
+/usr/include/boost/mpl/vector/aux_/begin_end.hpp:
+
+/usr/include/boost/config/abi_suffix.hpp:
+
+/home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandBoolResponse.h:
+
+/usr/include/boost/predef/platform/windows_runtime.h:
+
+/usr/include/boost/preprocessor/repetition/enum_params.hpp:
+
+/usr/include/boost/iterator/detail/facade_iterator_category.hpp:
+
+/usr/include/boost/numeric/conversion/detail/sign_mixture.hpp:
+
+/usr/include/c++/9/bits/exception_defines.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/boost/predef/architecture/rs6k.h:
+
+/usr/include/boost/date_time/gregorian/greg_day.hpp:
+
+/usr/include/boost/date_time/time_system_counted.hpp:
+
+/usr/include/c++/9/ext/aligned_buffer.h:
+
+/usr/include/boost/mpl/aux_/na.hpp:
+
+/opt/ros/noetic/include/ros/single_subscriber_publisher.h:
+
+/opt/ros/noetic/include/ros/service_traits.h:
+
+/usr/include/boost/mpl/aux_/na_assert.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/placeholders.hpp:
+
+/opt/ros/noetic/include/geometry_msgs/Pose.h:
+
+/usr/include/boost/config/detail/suffix.hpp:
+
+/home/cpsl/catkin_ws/devel/include/mavros_msgs/State.h:
+
+/usr/include/boost/move/detail/meta_utils.hpp:
+
+/opt/ros/noetic/include/ros/platform.h:
 
 /usr/include/c++/9/bits/functexcept.h:
 
-/opt/ros/noetic/include/ros/platform.h:
+/usr/include/boost/date_time/locale_config.hpp:
+
+/usr/include/boost/type_traits/remove_pointer.hpp:
+
+/usr/include/boost/mpl/vector/aux_/tag.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
+
+/opt/ros/noetic/include/ros/assert.h:
+
+/usr/include/boost/function/detail/prologue.hpp:
+
+/usr/include/c++/9/bits/list.tcc:
+
+/opt/ros/noetic/include/ros/exceptions.h:
+
+/opt/ros/noetic/include/ros/forwards.h:
+
+/usr/include/boost/predef/library/std/dinkumware.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:
+
+/opt/ros/noetic/include/ros/console.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/9/include/stdarg.h:
+
+/usr/include/boost/concept/usage.hpp:
+
+/usr/include/boost/predef/compiler/mpw.h:
+
+/usr/include/boost/preprocessor/punctuation/comma.hpp:
+
+/opt/ros/noetic/include/ros/parameter_adapter.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/opt/ros/noetic/include/ros/datatypes.h:
 
 /usr/include/boost/date_time/posix_time/conversion.hpp:
 
@@ -2864,6 +2895,12 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/range/range_fwd.hpp:
 
+/usr/include/boost/date_time/posix_time/posix_time_system.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/times.hpp:
+
+/opt/ros/noetic/include/ros/message_traits.h:
+
 /usr/include/boost/mpl/vector/aux_/front.hpp:
 
 /usr/include/boost/bind.hpp:
@@ -2872,13 +2909,9 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 
 /usr/include/c++/9/bits/locale_classes.tcc:
 
-/opt/ros/noetic/include/ros/types.h:
+/usr/include/c++/9/istream:
 
-/usr/include/boost/config.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/VectorBlock.h:
-
-/usr/include/boost/core/use_default.hpp:
+/usr/include/boost/mpl/bind_fwd.hpp:
 
 /opt/ros/noetic/include/ros/timer.h:
 
@@ -2912,10 +2945,6 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/thread/lockable_traits.hpp:
 
-/usr/include/boost/date_time/date_defs.hpp:
-
-/opt/ros/noetic/include/ros/param.h:
-
 /usr/include/boost/mpl/aux_/preprocessor/enum.hpp:
 
 /usr/include/boost/bind/bind_mf_cc.hpp:
@@ -2929,10 +2958,6 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 /usr/include/boost/container_hash/hash_fwd.hpp:
 
 /usr/include/boost/range/empty.hpp:
-
-/usr/include/boost/preprocessor/punctuation/comma.hpp:
-
-/opt/ros/noetic/include/ros/parameter_adapter.h:
 
 /usr/include/boost/mpl/list/aux_/push_front.hpp:
 
@@ -2949,6 +2974,10 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 /usr/include/eigen3/Eigen/src/Core/Replicate.h:
 
 /usr/include/boost/preprocessor/detail/auto_rec.hpp:
+
+/usr/include/boost/math/policies/error_handling.hpp:
+
+/usr/include/boost/type_traits/is_complete.hpp:
 
 /usr/include/boost/mpl/aux_/has_begin.hpp:
 
@@ -2978,17 +3007,11 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/chrono/detail/static_assert.hpp:
 
-/usr/include/boost/mpl/list/aux_/item.hpp:
+/opt/ros/noetic/include/ros/param.h:
 
-/usr/include/boost/mpl/bind_fwd.hpp:
+/usr/include/boost/date_time/date_defs.hpp:
 
-/usr/include/c++/9/istream:
-
-/usr/include/boost/predef/architecture/z.h:
-
-/usr/include/c++/9/list:
-
-/usr/include/boost/bind/mem_fn.hpp:
+/usr/include/c++/9/cstdint:
 
 /usr/include/boost/config/no_tr1/functional.hpp:
 
@@ -3034,9 +3057,9 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/mpl/aux_/nttp_decl.hpp:
 
-/usr/include/boost/date_time/date_duration_types.hpp:
-
 /usr/include/boost/type_traits/has_plus.hpp:
+
+/usr/include/boost/date_time/date_duration_types.hpp:
 
 /usr/include/boost/type_traits/is_convertible.hpp:
 
@@ -3112,6 +3135,10 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/date_time/filetime_functions.hpp:
 
+/usr/include/c++/9/bits/exception_ptr.h:
+
+/usr/include/boost/smart_ptr/detail/sp_disable_deprecated.hpp:
+
 /usr/include/boost/mpl/empty_fwd.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
@@ -3146,12 +3173,6 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/range/iterator.hpp:
 
-/usr/lib/gcc/x86_64-linux-gnu/9/include/stdarg.h:
-
-/usr/include/boost/concept/usage.hpp:
-
-/usr/include/boost/predef/compiler/mpw.h:
-
 /usr/include/boost/config/no_tr1/cmath.hpp:
 
 /usr/include/c++/9/bits/stl_uninitialized.h:
@@ -3171,8 +3192,6 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h:
 
 /usr/include/boost/date_time/gregorian_calendar.hpp:
-
-/usr/include/boost/date_time/posix_time/posix_time_system.hpp:
 
 /usr/include/boost/date_time/time_defs.hpp:
 
@@ -3246,13 +3265,13 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/mpl/placeholders.hpp:
 
-/usr/include/boost/mpl/aux_/config/has_xxx.hpp:
-
-/usr/include/assert.h:
-
 /usr/include/boost/mpl/clear_fwd.hpp:
 
 /usr/include/boost/bind/placeholders.hpp:
+
+/usr/include/boost/mpl/aux_/config/has_xxx.hpp:
+
+/usr/include/assert.h:
 
 /usr/include/boost/integer_fwd.hpp:
 
@@ -3314,15 +3333,7 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/make_shared.hpp:
 
-/opt/ros/noetic/include/ros/message_traits.h:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/times.hpp:
-
-/opt/ros/noetic/include/ros/this_node.h:
-
-/usr/include/boost/type_traits/is_complete.hpp:
-
-/usr/include/boost/math/policies/error_handling.hpp:
+/usr/include/boost/numeric/conversion/detail/bounds.hpp:
 
 /usr/include/boost/type_traits/is_const.hpp:
 
@@ -3418,6 +3429,8 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/predef/os/cygwin.h:
 
+/home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandHomeRequest.h:
+
 /usr/include/boost/predef/compiler/dignus.h:
 
 /usr/include/boost/predef/compiler/gcc.h:
@@ -3440,9 +3453,9 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 
 /usr/include/boost/predef/compiler/hp_acc.h:
 
-/usr/include/boost/move/detail/workaround.hpp:
-
 /usr/include/boost/bind/bind_mf2_cc.hpp:
+
+/usr/include/boost/move/detail/workaround.hpp:
 
 /usr/include/boost/predef/compiler/ibm.h:
 
@@ -3655,6 +3668,8 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 /usr/include/boost/preprocessor/array/elem.hpp:
 
 /usr/include/boost/numeric/conversion/udt_builtin_mixture_enum.hpp:
+
+/home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandHome.h:
 
 /usr/include/c++/9/bits/move.h:
 
@@ -4068,10 +4083,6 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 
 /usr/include/c++/9/bits/concept_check.h:
 
-/usr/include/boost/smart_ptr/detail/sp_disable_deprecated.hpp:
-
-/usr/include/c++/9/bits/exception_ptr.h:
-
 /usr/include/boost/mpl/fold.hpp:
 
 /usr/include/c++/9/bits/hash_bytes.h:
@@ -4235,5 +4246,3 @@ dronestack/CMakeFiles/offb_node_hitl.dir/src/offb_node_hitl.cpp.o: /home/cpsl/ca
 /usr/include/eigen3/Eigen/Cholesky:
 
 /usr/include/eigen3/Eigen/Eigenvalues:
-
-/usr/include/eigen3/Eigen/Jacobi:

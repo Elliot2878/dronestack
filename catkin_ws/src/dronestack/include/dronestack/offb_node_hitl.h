@@ -21,7 +21,7 @@ private:
     ros::NodeHandle nh;
     ros::Subscriber state_sub, local_pos_sub, gazebo_sub;
     ros::Publisher local_pos_pub, px4_vision_pose_pub, px4_vision_vel_pub;
-    ros::ServiceClient arming_client, set_mode_client;
+    ros::ServiceClient arming_client, set_mode_client, set_home_client;
     mavros_msgs::State current_state;
     geometry_msgs::PoseStamped target;
     geometry_msgs::PoseStamped local_position, gazebo_position, pose_msg;

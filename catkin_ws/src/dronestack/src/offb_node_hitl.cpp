@@ -5,6 +5,7 @@
 #include <geometry_msgs/TwistStamped.h>
 #include <gazebo_msgs/ModelStates.h>
 #include <mavros_msgs/CommandBool.h>
+#include <mavros_msgs/CommandHome.h>
 #include <mavros_msgs/SetMode.h>
 #include <mavros_msgs/State.h>
 #include <gazebo_msgs/SetModelState.h>
@@ -23,6 +24,9 @@ OffboardControl::OffboardControl() {
     px4_vision_vel_pub = nh.advertise<geometry_msgs::TwistStamped>("mavros/vision_pose/twist", 1);
 
     // client service initialization (arming and mode)
+    set_home_client = nh.serviceClient<mavros_msgs::CommandHome>("/mavros/cmd/set_home");
+    // ros::ServiceServer server =  nh.advertiseService<mavros_msgs::CommandHomeRequest, mavros_msgs::CommandHomeResponse>("mavros/cmd/set_home", request_handler);
+
     arming_client = nh.serviceClient<mavros_msgs::CommandBool>("mavros/cmd/arming");
     set_mode_client = nh.serviceClient<mavros_msgs::SetMode>("mavros/set_mode");
 
@@ -41,7 +45,7 @@ void OffboardControl::run() {
     initialize_setpoint();
     main_loop();
 }
-    
+
 
 // Callback functions
 void OffboardControl::state_cb(const mavros_msgs::State::ConstPtr& msg) {
@@ -79,12 +83,31 @@ void OffboardControl::gazebo_cb(const gazebo_msgs::ModelStates::ConstPtr& msg) {
 
 
 void OffboardControl::initialize_setpoint() {
+    ROS_INFO("set home");
+    mavros_msgs::CommandHome srv;
+
+    srv.request.current_gps = false;
+    srv.request.latitude = 0.0;
+    srv.request.longitude = 0.0;
+    srv.request.altitude = 0.0;
+    srv.request.yaw = 0.0;
+
+    if (set_home_client.call(srv)) {
+        if (srv.response.success) {
+            ROS_INFO("Home position set successfully.");
+        } else {
+            ROS_WARN("Failed to set home position.");
+        }
+    } else {
+        ROS_ERROR("Failed to call service /mavros/cmd/set_home");
+    }
+
     ROS_INFO("Enter initialize_setpoint");
 
     // set initial hover position
-    target.pose.position.x = 0;
-    target.pose.position.y = 0;
-    target.pose.position.z = 4;
+    target.pose.position.x = 2.203;
+    target.pose.position.y = 3.6498;
+    target.pose.position.z = 1;
 
     for(int i = 100; ros::ok() && i > 0; --i) {
         // publish position and velocity to vision pose for replacing GPS
@@ -116,7 +139,7 @@ void OffboardControl::main_loop() {
     ros::Time last_request = ros::Time::now();
     
     // Waypoints include landing by descending to z=0 after the last position
-    std::vector<std::vector<double>> positions = {{3, 3, 4}, {3, -3, 4}, {-3, -3, 4}, {-3, 3, 4}, {3, 3, 4}, {0, 0, 4}, {0, 0, 0}};
+    std::vector<std::vector<double>> positions = {{1, 1, 1}, {2.203, 3.6498, 0}};
 
     int count = 0;
 

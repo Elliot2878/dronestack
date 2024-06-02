@@ -283,6 +283,7 @@
 /home/cpsl/catkin_ws/build/dronestack/CMakeFiles/offb_node_sitl.dir
 /home/cpsl/catkin_ws/build/dronestack/CMakeFiles/waypoint_nav_client.dir
 /home/cpsl/catkin_ws/build/dronestack/CMakeFiles/waypoint_nav_server.dir
+/home/cpsl/catkin_ws/build/dronestack/CMakeFiles/set_home_node.dir
 /home/cpsl/catkin_ws/build/dronestack/CMakeFiles/test.dir
 /home/cpsl/catkin_ws/build/dronestack/CMakeFiles/edit_cache.dir
 /home/cpsl/catkin_ws/build/dronestack/CMakeFiles/rebuild_cache.dir

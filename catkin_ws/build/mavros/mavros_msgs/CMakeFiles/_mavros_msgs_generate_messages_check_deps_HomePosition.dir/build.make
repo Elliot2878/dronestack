@@ -67,7 +67,7 @@ include mavros/mavros_msgs/CMakeFiles/_mavros_msgs_generate_messages_check_deps_
 include mavros/mavros_msgs/CMakeFiles/_mavros_msgs_generate_messages_check_deps_HomePosition.dir/progress.make
 
 mavros/mavros_msgs/CMakeFiles/_mavros_msgs_generate_messages_check_deps_HomePosition:
-	cd /home/cpsl/catkin_ws/build/mavros/mavros_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py mavros_msgs /home/cpsl/catkin_ws/src/mavros/mavros_msgs/msg/HomePosition.msg std_msgs/Header:geographic_msgs/GeoPoint:geometry_msgs/Point:geometry_msgs/Vector3:geometry_msgs/Quaternion
+	cd /home/cpsl/catkin_ws/build/mavros/mavros_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py mavros_msgs /home/cpsl/catkin_ws/src/mavros/mavros_msgs/msg/HomePosition.msg geometry_msgs/Quaternion:geometry_msgs/Vector3:geographic_msgs/GeoPoint:std_msgs/Header:geometry_msgs/Point
 
 _mavros_msgs_generate_messages_check_deps_HomePosition: mavros/mavros_msgs/CMakeFiles/_mavros_msgs_generate_messages_check_deps_HomePosition
 _mavros_msgs_generate_messages_check_deps_HomePosition: mavros/mavros_msgs/CMakeFiles/_mavros_msgs_generate_messages_check_deps_HomePosition.dir/build.make

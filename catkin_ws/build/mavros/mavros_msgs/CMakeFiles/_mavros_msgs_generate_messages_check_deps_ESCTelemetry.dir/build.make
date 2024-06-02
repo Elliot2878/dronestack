@@ -67,7 +67,7 @@ include mavros/mavros_msgs/CMakeFiles/_mavros_msgs_generate_messages_check_deps_
 include mavros/mavros_msgs/CMakeFiles/_mavros_msgs_generate_messages_check_deps_ESCTelemetry.dir/progress.make
 
 mavros/mavros_msgs/CMakeFiles/_mavros_msgs_generate_messages_check_deps_ESCTelemetry:
-	cd /home/cpsl/catkin_ws/build/mavros/mavros_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py mavros_msgs /home/cpsl/catkin_ws/src/mavros/mavros_msgs/msg/ESCTelemetry.msg mavros_msgs/ESCTelemetryItem:std_msgs/Header
+	cd /home/cpsl/catkin_ws/build/mavros/mavros_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py mavros_msgs /home/cpsl/catkin_ws/src/mavros/mavros_msgs/msg/ESCTelemetry.msg std_msgs/Header:mavros_msgs/ESCTelemetryItem
 
 _mavros_msgs_generate_messages_check_deps_ESCTelemetry: mavros/mavros_msgs/CMakeFiles/_mavros_msgs_generate_messages_check_deps_ESCTelemetry
 _mavros_msgs_generate_messages_check_deps_ESCTelemetry: mavros/mavros_msgs/CMakeFiles/_mavros_msgs_generate_messages_check_deps_ESCTelemetry.dir/build.make

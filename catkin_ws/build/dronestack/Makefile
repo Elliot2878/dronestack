@@ -395,6 +395,20 @@ waypoint_nav_server/fast:
 	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/waypoint_nav_server.dir/build.make dronestack/CMakeFiles/waypoint_nav_server.dir/build
 .PHONY : waypoint_nav_server/fast
 
+# Convenience name for target.
+dronestack/CMakeFiles/set_home_node.dir/rule:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack/CMakeFiles/set_home_node.dir/rule
+.PHONY : dronestack/CMakeFiles/set_home_node.dir/rule
+
+# Convenience name for target.
+set_home_node: dronestack/CMakeFiles/set_home_node.dir/rule
+.PHONY : set_home_node
+
+# fast build rule for target.
+set_home_node/fast:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/set_home_node.dir/build.make dronestack/CMakeFiles/set_home_node.dir/build
+.PHONY : set_home_node/fast
+
 src/offb_node_hitl.o: src/offb_node_hitl.cpp.o
 .PHONY : src/offb_node_hitl.o
 
@@ -491,6 +505,30 @@ src/offb_node_sitl_server.cpp.s:
 	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/waypoint_nav_server.dir/build.make dronestack/CMakeFiles/waypoint_nav_server.dir/src/offb_node_sitl_server.cpp.s
 .PHONY : src/offb_node_sitl_server.cpp.s
 
+src/set_home.o: src/set_home.cpp.o
+.PHONY : src/set_home.o
+
+# target to build an object file
+src/set_home.cpp.o:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/set_home_node.dir/build.make dronestack/CMakeFiles/set_home_node.dir/src/set_home.cpp.o
+.PHONY : src/set_home.cpp.o
+
+src/set_home.i: src/set_home.cpp.i
+.PHONY : src/set_home.i
+
+# target to preprocess a source file
+src/set_home.cpp.i:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/set_home_node.dir/build.make dronestack/CMakeFiles/set_home_node.dir/src/set_home.cpp.i
+.PHONY : src/set_home.cpp.i
+
+src/set_home.s: src/set_home.cpp.s
+.PHONY : src/set_home.s
+
+# target to generate assembly for a file
+src/set_home.cpp.s:
+	cd /home/cpsl/catkin_ws/build && $(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/set_home_node.dir/build.make dronestack/CMakeFiles/set_home_node.dir/src/set_home.cpp.s
+.PHONY : src/set_home.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -518,6 +556,7 @@ help:
 	@echo "... dronestack_genpy"
 	@echo "... offb_node_hitl"
 	@echo "... offb_node_sitl"
+	@echo "... set_home_node"
 	@echo "... waypoint_nav_client"
 	@echo "... waypoint_nav_server"
 	@echo "... src/offb_node_hitl.o"
@@ -532,6 +571,9 @@ help:
 	@echo "... src/offb_node_sitl_server.o"
 	@echo "... src/offb_node_sitl_server.i"
 	@echo "... src/offb_node_sitl_server.s"
+	@echo "... src/set_home.o"
+	@echo "... src/set_home.i"
+	@echo "... src/set_home.s"
 .PHONY : help
 
 
