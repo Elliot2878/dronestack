@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "/home/cpsl/catkin_ws/devel/lib/python3/dist-packages/dronestack/msg/_OpticalFlow.py"
+  "/home/cpsl/catkin_ws/devel/lib/python3/dist-packages/dronestack/msg/__init__.py"
   "/home/cpsl/catkin_ws/devel/lib/python3/dist-packages/dronestack/srv/__init__.py"
   "/home/cpsl/catkin_ws/devel/lib/python3/dist-packages/dronestack/srv/_waypoint_nav.py"
   "CMakeFiles/dronestack_generate_messages_py"

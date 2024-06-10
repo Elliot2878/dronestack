@@ -28,7 +28,7 @@ public:
     ros::ServiceClient arming_client, set_mode_client, set_home_client;
     mavros_msgs::State current_state;
     geometry_msgs::PoseStamped target, current_pose, vision_pose_msg;
-    geometry_msgs::TwistStamped vision_twist_msg;
+    geometry_msgs::TwistStamped vision_velocity_msg;
     geometry_msgs::Pose global_position;
     geometry_msgs::TwistStamped vel_msg;
     geometry_msgs::TransformStamped vicon_pose;
@@ -49,7 +49,6 @@ public:
     bool set_waypoint(dronestack::waypoint_nav::Request &req, dronestack::waypoint_nav::Response &res);
     void handle_mode_switch(mavros_msgs::SetMode& mode_cmd, ros::Time& last_request);
     void handle_arm_command(mavros_msgs::CommandBool& arm_cmd, ros::Time& last_request);
-    void publish_clamped_velocity(ros::Publisher& vel_pub); 
     bool isAtPosition(double x, double y, double z, double xy_offset, double z_offset);
     Eigen::Vector3d transformPoint(const Eigen::Vector3d &translation, const Eigen::Quaterniond &rotation, const Eigen::Vector3d &point);
 private:

@@ -43,6 +43,10 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dronestack/msg" TYPE FILE FILES "/home/cpsl/catkin_ws/src/dronestack/msg/OpticalFlow.msg")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dronestack/srv" TYPE FILE FILES "/home/cpsl/catkin_ws/src/dronestack/srv/waypoint_nav.srv")
 endif()
 

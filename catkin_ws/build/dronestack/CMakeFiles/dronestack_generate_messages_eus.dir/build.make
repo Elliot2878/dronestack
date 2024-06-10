@@ -66,6 +66,7 @@ include dronestack/CMakeFiles/dronestack_generate_messages_eus.dir/compiler_depe
 # Include the progress variables for this target.
 include dronestack/CMakeFiles/dronestack_generate_messages_eus.dir/progress.make
 
+dronestack/CMakeFiles/dronestack_generate_messages_eus: /home/cpsl/catkin_ws/devel/share/roseus/ros/dronestack/msg/OpticalFlow.l
 dronestack/CMakeFiles/dronestack_generate_messages_eus: /home/cpsl/catkin_ws/devel/share/roseus/ros/dronestack/srv/waypoint_nav.l
 dronestack/CMakeFiles/dronestack_generate_messages_eus: /home/cpsl/catkin_ws/devel/share/roseus/ros/dronestack/manifest.l
 
@@ -73,13 +74,20 @@ dronestack/CMakeFiles/dronestack_generate_messages_eus: /home/cpsl/catkin_ws/dev
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/cpsl/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp manifest code for dronestack"
 	cd /home/cpsl/catkin_ws/build/dronestack && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/cpsl/catkin_ws/devel/share/roseus/ros/dronestack dronestack std_msgs
 
+/home/cpsl/catkin_ws/devel/share/roseus/ros/dronestack/msg/OpticalFlow.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/cpsl/catkin_ws/devel/share/roseus/ros/dronestack/msg/OpticalFlow.l: /home/cpsl/catkin_ws/src/dronestack/msg/OpticalFlow.msg
+/home/cpsl/catkin_ws/devel/share/roseus/ros/dronestack/msg/OpticalFlow.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/cpsl/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from dronestack/OpticalFlow.msg"
+	cd /home/cpsl/catkin_ws/build/dronestack && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/cpsl/catkin_ws/src/dronestack/msg/OpticalFlow.msg -Idronestack:/home/cpsl/catkin_ws/src/dronestack/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p dronestack -o /home/cpsl/catkin_ws/devel/share/roseus/ros/dronestack/msg
+
 /home/cpsl/catkin_ws/devel/share/roseus/ros/dronestack/srv/waypoint_nav.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/cpsl/catkin_ws/devel/share/roseus/ros/dronestack/srv/waypoint_nav.l: /home/cpsl/catkin_ws/src/dronestack/srv/waypoint_nav.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/cpsl/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from dronestack/waypoint_nav.srv"
-	cd /home/cpsl/catkin_ws/build/dronestack && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/cpsl/catkin_ws/src/dronestack/srv/waypoint_nav.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p dronestack -o /home/cpsl/catkin_ws/devel/share/roseus/ros/dronestack/srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/cpsl/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from dronestack/waypoint_nav.srv"
+	cd /home/cpsl/catkin_ws/build/dronestack && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/cpsl/catkin_ws/src/dronestack/srv/waypoint_nav.srv -Idronestack:/home/cpsl/catkin_ws/src/dronestack/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p dronestack -o /home/cpsl/catkin_ws/devel/share/roseus/ros/dronestack/srv
 
 dronestack_generate_messages_eus: dronestack/CMakeFiles/dronestack_generate_messages_eus
 dronestack_generate_messages_eus: /home/cpsl/catkin_ws/devel/share/roseus/ros/dronestack/manifest.l
+dronestack_generate_messages_eus: /home/cpsl/catkin_ws/devel/share/roseus/ros/dronestack/msg/OpticalFlow.l
 dronestack_generate_messages_eus: /home/cpsl/catkin_ws/devel/share/roseus/ros/dronestack/srv/waypoint_nav.l
 dronestack_generate_messages_eus: dronestack/CMakeFiles/dronestack_generate_messages_eus.dir/build.make
 .PHONY : dronestack_generate_messages_eus
