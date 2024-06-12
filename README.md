@@ -3,55 +3,55 @@ cd PX4-Autopilot
 make px4_sitl_default gazebo
 
 // open another terminal <br>
-roslaunch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14557"
+roslaunch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14557" <br>
 
-// open another terminal and run ros as usual, catkin_make and source if needed
-rosrun dronestack offb_node_sitl
+// open another terminal and run ros as usual, catkin_make and source if needed <br>
+rosrun dronestack offb_node_sitl <br>
 <br>
 <br>
 <br>
 <br>
 
 
-//HITL: commands from px4 official site
-cd PX4-Autopilot
-DONT_RUN=1 make px4_sitl_default gazebo-classic
+//HITL: commands from px4 official site <br>
+cd PX4-Autopilot <br>
+DONT_RUN=1 make px4_sitl_default gazebo-classic <br>
 
-source Tools/simulation/gazebo-classic/setup_gazebo.bash $(pwd) $(pwd)/build/px4_sitl_default
+source Tools/simulation/gazebo-classic/setup_gazebo.bash $(pwd) $(pwd)/build/px4_sitl_default <br>
 
-gazebo Tools/simulation/gazebo-classic/sitl_gazebo-classic/worlds/hitl_iris.world
+gazebo Tools/simulation/gazebo-classic/sitl_gazebo-classic/worlds/hitl_iris.world <br>
 
-start QGroundControl
+start QGroundControl <br>
 
-roslaunch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14557"
+roslaunch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14557" <br>
 
-rosrun dronestack offb_node_hitl
+rosrun dronestack offb_node_hitl <br>
 
-When the mode becomes unknown, run hitl code, and disarmt the drone by QGroundControl. Then, reboot the vehicle
+When the mode becomes unknown, run hitl code, and disarmt the drone by QGroundControl. Then, reboot the vehicle <br>
 
 <br>
 <br>
 <br>
 <br>
 
-// real aircraft flying
-Turn on the Remote Control.
-Adjust COM_ARM_EKF_YAW to a high enough number (like 1.00)
-
-cd catkin_ws/src/mavros/mavros
-source ~/catkin_ws/devel/setup.bash
-roslaunch launch/px4.launch fcu_url:="/dev/ttyACM0:115200"
-
-// Alternatively
-// source ~/catkin_ws/devel/setup.bash
-// roslaunch mavros px4.launch fcu_url:="/dev/ttyACM0:115200"
-
-roslaunch vicon_bridge vicon.launch
-
-
-cd ~/catkin_ws
-source devel/setup.bash
-rosrun dronestack offb_node_sitl
+// real aircraft flying <br>
+Turn on the Remote Control. <br>
+Adjust COM_ARM_EKF_YAW to a high enough number (like 1.00) <br>
+<br>
+cd catkin_ws/src/mavros/mavros <br>
+source ~/catkin_ws/devel/setup.bash <br>
+roslaunch launch/px4.launch fcu_url:="/dev/ttyACM0:115200" <br>
+<br>
+// Alternatively <br>
+// source ~/catkin_ws/devel/setup.bash <br>
+// roslaunch mavros px4.launch fcu_url:="/dev/ttyACM0:115200" <br>
+<br>
+roslaunch vicon_bridge vicon.launch <br>
+<br>
+<br>
+cd ~/catkin_ws <br>
+source devel/setup.bash <br>
+rosrun dronestack offb_node_sitl <br>
 
 <br>
 <br>
@@ -66,14 +66,14 @@ if sens_flow_* parameters disappear, you need to restart the onboard computer
 <br>
 <br>
 
-If arm service fails
+If arm service fails <br>
 1. Go to HITL mode. Then, you have to check QGroundControl if it has "Flight Termination Active" before running the code.
-To Solve "Flight Termination Active", you should reboot the flight control unit.
-This error might happen and prevent you from arming after you terminate your code for unknown reasons.
+To Solve "Flight Termination Active", you should reboot the flight control unit. <br>
+This error might happen and prevent you from arming after you terminate your code for unknown reasons. <br>
 
-2. You have to make sure you sent vicon data to vision_pose before switching mode and arming
+2. You have to make sure you sent vicon data to vision_pose before switching mode and arming <br>
 
-3. Turn on your remote control
+3. Turn on your remote control <br>
 
 4. Adjust COM_ARM_EKF_YAW to a high enough number (like 1.00)
 <br>
@@ -81,10 +81,10 @@ This error might happen and prevent you from arming after you terminate your cod
 <br>
 <br>
 
-// check px4 connection
+// check px4 connection <br>
 rostopic echo /mavros/state
 
-// check vicon
+// check vicon <br>
 rostopic echo /vicon/x500_1/x500_1
 <br>
 <br>
