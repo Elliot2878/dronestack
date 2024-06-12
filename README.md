@@ -1,8 +1,8 @@
-// SITL:
+// SITL: <br>
 cd PX4-Autopilot
 make px4_sitl_default gazebo
 
-// open another terminal
+// open another terminal <br>
 roslaunch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14557"
 
 // open another terminal and run ros as usual, catkin_make and source if needed
