@@ -7,7 +7,10 @@ roslaunch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14557"
 
 // open another terminal and run ros as usual, catkin_make and source if needed
 rosrun dronestack offb_node_sitl
-
+<br>
+<br>
+<br>
+<br>
 
 
 //HITL: commands from px4 official site
@@ -26,7 +29,10 @@ rosrun dronestack offb_node_hitl
 
 When the mode becomes unknown, run hitl code, and disarmt the drone by QGroundControl. Then, reboot the vehicle
 
-
+<br>
+<br>
+<br>
+<br>
 
 // real aircraft flying
 Turn on the Remote Control.
@@ -47,11 +53,18 @@ cd ~/catkin_ws
 source devel/setup.bash
 rosrun dronestack offb_node_sitl
 
-
+<br>
+<br>
+<br>
+<br>
 
 debug:
 if sens_flow_* parameters disappear, you need to restart the onboard computer
 
+<br>
+<br>
+<br>
+<br>
 
 If arm service fails
 1. Go to HITL mode. Then, you have to check QGroundControl if it has "Flight Termination Active" before running the code.
@@ -60,17 +73,32 @@ This error might happen and prevent you from arming after you terminate your cod
 
 2. You have to make sure you sent vicon data to vision_pose before switching mode and arming
 
+3. Turn on your remote control
+
+4. Adjust COM_ARM_EKF_YAW to a high enough number (like 1.00)
+<br>
+<br>
+<br>
+<br>
 
 // check px4 connection
 rostopic echo /mavros/state
 
 // check vicon
 rostopic echo /vicon/x500_1/x500_1
+<br>
+<br>
+<br>
+<br>
 
 // check optical flow
 rostopic echo /mavros/px4flow/raw/optical_flow_rad
 rostopic echo mavros/vision_speed/speed_twist
 
+<br>
+<br>
+<br>
+<br>
 
 rosrun mavros mavsafety arm
 
@@ -88,6 +116,10 @@ rqt_logger_level
 
 
 
+<br>
+<br>
+<br>
+<br>
 
 
 
