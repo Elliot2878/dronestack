@@ -162,32 +162,32 @@ void OffboardControlSITL::initialization() {
     ROS_INFO("initialize setpoint");
 
 
-    // initialze velocity setpoints
-    geometry_msgs::TwistStamped vel_msg;
-    vel_msg.twist.linear.x = 0;
-    vel_msg.twist.linear.y = 0;
-    vel_msg.twist.linear.z = 0;
-    vel_msg.twist.angular.x = 0;
-    vel_msg.twist.angular.y = 0;
-    vel_msg.twist.angular.z = 0;
+    // // initialze velocity setpoints
+    // geometry_msgs::TwistStamped vel_msg;
+    // vel_msg.twist.linear.x = 0;
+    // vel_msg.twist.linear.y = 0;
+    // vel_msg.twist.linear.z = 0;
+    // vel_msg.twist.angular.x = 0;
+    // vel_msg.twist.angular.y = 0;
+    // vel_msg.twist.angular.z = 0;
 
 
 
-    for(int i = 100; ros::ok() && i > 0; --i) {
-        // // publish position and velocity to vision pose for replacing GPS
-        // px4_vision_pose_pub.publish(pose_msg);
-        // px4_vision_vel_pub.publish(twist_msg);
+    // for(int i = 100; ros::ok() && i > 0; --i) {
+    //     // // publish position and velocity to vision pose for replacing GPS
+    //     // px4_vision_pose_pub.publish(pose_msg);
+    //     // px4_vision_vel_pub.publish(twist_msg);
 
 
 
-        //publish velocity
-        vel_pub.publish(vel_msg); // velocity controller
+    //     //publish velocity
+    //     vel_pub.publish(vel_msg); // velocity controller
 
 
 
-        ros::spinOnce();
-        ros::Rate(20.0).sleep();
-    }
+    //     ros::spinOnce();
+    //     ros::Rate(20.0).sleep();
+    // }
 
     // // initialize position setpoint
     // target.pose.position.x = 0;
@@ -255,11 +255,8 @@ void OffboardControlSITL::control() {
         // publish position to vision pose for replacing GPS (vicon) Must write this before switching mode and arming !
         px4_vision_pose_pub.publish(vision_pose_msg);
 
-        // switch mode to offb_node (need to be inside the while loop to maintain offboard mode)
-        handle_mode_switch(offb_set_mode, last_request);
+        
 
-        // arm the drone (need to be inside the while loop to maintain arming)
-        handle_arm_command(arm_cmd, last_request);
 
 
         // variable d can control the velocity of the drone
@@ -331,6 +328,13 @@ void OffboardControlSITL::control() {
         
         vel_pub.publish(vel_msg); // velocity controller
         
+        // switch mode to offb_node (need to be inside the while loop to maintain offboard mode)
+        handle_mode_switch(offb_set_mode, last_request);
+        
+        // arm the drone (need to be inside the while loop to maintain arming)
+        handle_arm_command(arm_cmd, last_request);
+
+        
         // check if the drone reaches the target position. If it is true, drone moves to next position
         if(isAtPosition(desired[0], desired[1], desired[2], 0.3, 0.1)) {
             if(state == num_of_task_to_run) {
@@ -352,10 +356,10 @@ void OffboardControlSITL::handle_mode_switch(mavros_msgs::SetMode& mode_cmd, ros
     // function to switch mode to "OFFBOARD"
     if (current_state.mode != "OFFBOARD" && (ros::Time::now() - last_request > ros::Duration(5.0))) {
         if (set_mode_client.call(mode_cmd) && mode_cmd.response.mode_sent) {
-            ROS_INFO("Offboard enabled");
+            ROS_INFO("OFFBOARD enabled");
             last_request = ros::Time::now();
         } else {
-            ROS_WARN("Failed to set Offboard mode");
+            ROS_WARN("Failed to set OFFBOARD mode");
         }
     } 
     // else {

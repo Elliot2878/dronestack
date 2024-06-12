@@ -139,7 +139,7 @@ void OffboardControl::main_loop() {
     ros::Time last_request = ros::Time::now();
     
     // Waypoints include landing by descending to z=0 after the last position
-    std::vector<std::vector<double>> positions = {{1, 1, 1}, {2.203, 3.6498, 0}};
+    std::vector<std::vector<double>> positions = {{0, 0, 0.75}, {0, 0, 0}};
 
     int count = 0;
 
