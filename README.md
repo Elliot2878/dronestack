@@ -58,8 +58,8 @@ rosrun dronestack offb_node_sitl <br>
 <br>
 <br>
 
-debug:
-if sens_flow_* parameters disappear, you need to restart the onboard computer
+debug: <br>
+if sens_flow_* parameters disappear, you need to restart the onboard computer <br>
 
 <br>
 <br>
@@ -75,68 +75,68 @@ This error might happen and prevent you from arming after you terminate your cod
 
 3. Turn on your remote control <br>
 
-4. Adjust COM_ARM_EKF_YAW to a high enough number (like 1.00)
+4. Adjust COM_ARM_EKF_YAW to a high enough number (like 1.00) <br>
 <br>
 <br>
 <br>
 <br>
 
 // check px4 connection <br>
-rostopic echo /mavros/state
+rostopic echo /mavros/state <br>
 
 // check vicon <br>
-rostopic echo /vicon/x500_1/x500_1
+rostopic echo /vicon/x500_1/x500_1 <br>
 <br>
 <br>
 <br>
 <br>
 
-// check optical flow
-rostopic echo /mavros/px4flow/raw/optical_flow_rad
-rostopic echo mavros/vision_speed/speed_twist
+// check optical flow <br>
+rostopic echo /mavros/px4flow/raw/optical_flow_rad <br>
+rostopic echo mavros/vision_speed/speed_twist <br>
+
+<br>
+<br>
+<br>
+<br>
+ 
+rosrun mavros mavsafety arm <br>
+<br>
+cd ~/.ros/log/latest <br>
+cat roslaunch-cpsl-nuc13-3307.log <br>
+<br>
+<br>
+rosservice call /mavros/cmd/arming "value: true" <br>
+rqt_console <br>
+rqt_logger_level <br>
+
+
+
+
+
+
 
 <br>
 <br>
 <br>
 <br>
 
-rosrun mavros mavsafety arm
-
-cd ~/.ros/log/latest
-cat roslaunch-cpsl-nuc13-3307.log
 
 
-rosservice call /mavros/cmd/arming "value: true"
-rqt_console
-rqt_logger_level
-
-
-
-
-
-
-
+// Other commands: <br>
+//Actuators: you must disable HITL mode, disable kill mode in Radio Controller, and connect to battery before testing actuators. Or, the motor cannot spin. <br>
+<br>
+// cd <PX4-Autopilot_clone> <br>
+// source Tools/simulation/gazebo-classic/setup_gazebo.bash $(pwd) $(pwd)/build/px4_sitl_default <br>
+// export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$(pwd)/Tools/simulation/gazebo-classic/sitl_gazebo-classic <br>
+<br>
+// roslaunch gazebo_ros empty_world.launch world_name:=$(pwd)/Tools/simulation/gazebo-classic/sitl_gazebo-classic/worlds/empty.world <br>
+<br>
+// rosrun gazebo_ros spawn_model -sdf -file $(pwd)/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/iris/iris.sdf -model iris -x 0 -y 0 -z 0 -R 0 -P 0 -Y 0 <br>
 <br>
 <br>
-<br>
-<br>
-
-
-
-// Other commands:
-//Actuators: you must disable HITL mode, disable kill mode in Radio Controller, and connect to battery before testing actuators. Or, the motor cannot spin. 
-
-// cd <PX4-Autopilot_clone>
-// source Tools/simulation/gazebo-classic/setup_gazebo.bash $(pwd) $(pwd)/build/px4_sitl_default
-// export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$(pwd)/Tools/simulation/gazebo-classic/sitl_gazebo-classic
-
-// roslaunch gazebo_ros empty_world.launch world_name:=$(pwd)/Tools/simulation/gazebo-classic/sitl_gazebo-classic/worlds/empty.world
-
-// rosrun gazebo_ros spawn_model -sdf -file $(pwd)/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/iris/iris.sdf -model iris -x 0 -y 0 -z 0 -R 0 -P 0 -Y 0
-
-
-// you can also run this to launch gazebo and spawn iris: 
-// gazebo Tools/simulation/gazebo-classic/sitl_gazebo-classic/worlds/hitl_iris.world
-// or this to send simulated gps data
-// gazebo --verbose ~/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/worlds/hitl_iris.world
+// you can also run this to launch gazebo and spawn iris:  <br>
+// gazebo Tools/simulation/gazebo-classic/sitl_gazebo-classic/worlds/hitl_iris.world <br>
+// or this to send simulated gps data <br>
+// gazebo --verbose ~/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/worlds/hitl_iris.world <br>
 
