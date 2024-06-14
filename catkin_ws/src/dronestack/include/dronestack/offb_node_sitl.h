@@ -27,7 +27,7 @@ public:
     ros::Publisher pos_pub, vel_pub, px4_vision_pose_pub, px4_vision_vel_pub;
     ros::ServiceClient arming_client, set_mode_client, set_home_client;
     mavros_msgs::State current_state;
-    geometry_msgs::PoseStamped target, current_pose, vision_pose_msg;
+    geometry_msgs::PoseStamped target_pose, current_pose, vision_pose_msg;
     geometry_msgs::TwistStamped vision_velocity_msg;
     geometry_msgs::Pose global_position;
     geometry_msgs::TwistStamped vel_msg;
@@ -35,8 +35,8 @@ public:
 
     
 
-    Eigen::Vector3d desired;
-    Eigen::Vector3d target_point;
+    Eigen::Vector3d target;
+    Eigen::Vector3d target_trans;
     std::vector<int> tasks;
     int state;
     // int task_indicator;

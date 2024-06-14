@@ -91,8 +91,7 @@ void OffboardControlSITL::viconPose_cb(const geometry_msgs::TransformStamped::Co
         vicon_posi_x = msg->transform.translation.x;
         vicon_posi_y = msg->transform.translation.y;
         vicon_posi_z = msg->transform.translation.z;
-
-
+    
         translation = Eigen::Vector3d(-vicon_posi_x, -vicon_posi_y, -vicon_posi_z);
 
         // Extract and store orientation as an Eigen quaternion
@@ -107,8 +106,12 @@ void OffboardControlSITL::viconPose_cb(const geometry_msgs::TransformStamped::Co
         
         data_stored = true;
     }
+
+    // ROS_INFO("Check stored take-off vicon_pose: x:%.2f, y:%.2f, z:%.2f", vicon_posi_x, vicon_posi_y, vicon_posi_z);
     
     vicon_pose = *msg;
+
+    // ROS_INFO("Check received vicon_pose_1: x:%.2f, y:%.2f, z:%.2f", vicon_pose.transform.translation.x, vicon_pose.transform.translation.y, vicon_pose.transform.translation.z);
 
     // Create and publish pose message to vision
     vision_pose_msg.header = msg->header;
@@ -117,8 +120,8 @@ void OffboardControlSITL::viconPose_cb(const geometry_msgs::TransformStamped::Co
     vision_pose_msg.pose.position.z = msg->transform.translation.z;
     vision_pose_msg.pose.orientation = msg->transform.rotation;
 
-    //ROS_INFO("Received Vicon position x:%.2f, y:%.2f, z:%.2f", vision_pose_msg.pose.position.x, vision_pose_msg.pose.position.y, vision_pose_msg.pose.position.z);
-    px4_vision_pose_pub.publish(vision_pose_msg);
+    // //ROS_INFO("Received Vicon position x:%.2f, y:%.2f, z:%.2f", vision_pose_msg.pose.position.x, vision_pose_msg.pose.position.y, vision_pose_msg.pose.position.z);
+    // px4_vision_pose_pub.publish(vision_pose_msg);
     
 }
 
@@ -234,7 +237,7 @@ void OffboardControlSITL::control() {
     // Waypoints include landing by descending to z=0 after the last position
     //LUO: why not just have a landing func that can land at whatever places and whatever heights?
     // Liang: solved. num_of_task_to_run variable can control how many states you want to run
-    int state = 1;
+    int state = 2;
     int num_of_task_to_run = 1;
 
 
@@ -244,10 +247,10 @@ void OffboardControlSITL::control() {
     // q = q.conjugate();
 
     // // set orientation (position controller)
-    // target.pose.orientation.x = 0;
-    // target.pose.orientation.y = 0;
-    // target.pose.orientation.z = 0;
-    // target.pose.orientation.w = 1;
+    // target_pose.pose.orientation.x = 0;
+    // target_pose.pose.orientation.y = 0;
+    // target_pose.pose.orientation.z = 0;
+    // target_pose.pose.orientation.w = 1;
 
     while(ros::ok()) {
         // control loop
@@ -264,68 +267,73 @@ void OffboardControlSITL::control() {
 
         // state 0 is landing state, state 1 is take off state, others are moving state
         if(state == 0) {
-            ROS_INFO("Position x:%.2f, y:%.2f, z:%.2f reached. End of waypoints navigations. Preparing to land.", target_point[0], target_point[1], target_point[2]);
+            ROS_INFO("Position x:%.2f, y:%.2f, z:%.2f reached. End of waypoints navigations. Preparing to land.", target[0], target[1], target[2]);
             if(set_mode_client.call(land_mode) && land_mode.response.mode_sent) {
                 ROS_INFO("Landing initiated.");
                 break; // Exit the loop to stop publishing waypoints and let the drone land.
             }
         }
         else if(state == 1) {
-            target_point = Eigen::Vector3d(vicon_posi_x, vicon_posi_y, 0.75);
-            desired = transformPoint(translation, q, target_point);
+            target = Eigen::Vector3d(vicon_posi_x, vicon_posi_y, 0.95);
+            target_trans = transformPoint(translation, q, target);
 
         }
         else if(state == 2) {
-            target_point = Eigen::Vector3d(0.75, 0.75, 0.75);
-            desired = transformPoint(translation, q, target_point);
+            target = Eigen::Vector3d(vicon_posi_x, vicon_posi_y + 0.5, 0.95);
+            target_trans = transformPoint(translation, q, target);
 
         }
         else if(state == 3) {
-            target_point = Eigen::Vector3d(0.75, -0.75, 0.75);
-            desired = transformPoint(translation, q, target_point);
+            target = Eigen::Vector3d(0.75, -0.75, 0.75);
+            target_trans = transformPoint(translation, q, target);
             
         }
         else if(state == 4) {
-            target_point = Eigen::Vector3d(-1, -1, 1);
-            desired = transformPoint(translation, q, target_point);        
+            target = Eigen::Vector3d(-1, -1, 1);
+            target_trans = transformPoint(translation, q, target);        
             
         }
         else if(state == 5) {
-            target_point = Eigen::Vector3d(-1, 1, 1);
-            desired = transformPoint(translation, q, target_point);
+            target = Eigen::Vector3d(-1, 1, 1);
+            target_trans = transformPoint(translation, q, target);
 
         }
         else if(state == 6) {
-            target_point = Eigen::Vector3d(1, 1, 1);
-            desired = transformPoint(translation, q, target_point);
+            target = Eigen::Vector3d(1, 1, 1);
+            target_trans = transformPoint(translation, q, target);
 
         }
         else if(state == 7) {
-            target_point = Eigen::Vector3d(0, 0, 1);  //LUO: landing should not be always at (0,0)
-            desired = transformPoint(translation, q, target_point);
+            target = Eigen::Vector3d(0, 0, 1);  //LUO: landing should not be always at (0,0)
+            target_trans = transformPoint(translation, q, target);
 
         }
 
         // // if using pose controller
-        // target.pose.position.x = desired[0];
-        // target.pose.position.y = desired[1];
-        // target.pose.position.z = desired[2];
+        // target_pose.pose.position.x = target_trans[0];
+        // target_pose.pose.position.y = target_trans[1];
+        // target_pose.pose.position.z = target_trans[2];
 
         // // if using gazebo and velocity controller (gazebo)
-        // vel_msg.twist.linear.x = (desired[0] - current_pose.pose.position.x) * v;
-        // vel_msg.twist.linear.y = (desired[1] - current_pose.pose.position.y) * v;
-        // vel_msg.twist.linear.z = (desired[2] - current_pose.pose.position.z) * v;
+        // vel_msg.twist.linear.x = (target_trans[0] - current_pose.pose.position.x) * v;
+        // vel_msg.twist.linear.y = (target_trans[1] - current_pose.pose.position.y) * v;
+        // vel_msg.twist.linear.z = (target_trans[2] - current_pose.pose.position.z) * v;
 
 
         // if using vicon and velocity controller (vicon)
-        vel_msg.twist.linear.x = (desired[0] - vicon_pose.transform.translation.x) * v;
-        vel_msg.twist.linear.y = (desired[1] - vicon_pose.transform.translation.y) * v;
-        vel_msg.twist.linear.z = (desired[2] - vicon_pose.transform.translation.z) * v;
+        vel_msg.twist.linear.x = (target[0] - vicon_pose.transform.translation.x) * v;
+        vel_msg.twist.linear.y = (target[1] - vicon_pose.transform.translation.y) * v;
+        vel_msg.twist.linear.z = (target[2] - vicon_pose.transform.translation.z) * v;
+        // ROS_INFO("Check received vicon_pose_2: x:%.2f, y:%.2f, z:%.2f", vicon_pose.transform.translation.x, vicon_pose.transform.translation.y, vicon_pose.transform.translation.z);
+        // ROS_INFO("Check point before trans: x:%.2f, y:%.2f, z:%.2f", target[0], target[1], target[2]);
+        // ROS_INFO("Check point after trans: x:%.2f, y:%.2f, z:%.2f", target_trans[0], target_trans[1], target_trans[2]);
         // ROS_INFO("Check vel_msg: x:%.2f, y:%.2f, z:%.2f", vel_msg.twist.linear.x, vel_msg.twist.linear.y, vel_msg.twist.linear.z);
 
         // // publish target setpoint to mavros
         // pos_pub.publish(target); // pose controller
         
+        // vel_msg.twist.linear.x = 0;
+        // vel_msg.twist.linear.y = 0;
         vel_pub.publish(vel_msg); // velocity controller
         
         // switch mode to offb_node (need to be inside the while loop to maintain offboard mode)
@@ -336,13 +344,14 @@ void OffboardControlSITL::control() {
 
         
         // check if the drone reaches the target position. If it is true, drone moves to next position
-        if(isAtPosition(desired[0], desired[1], desired[2], 0.3, 0.1)) {
+        // use target for velocity controll in vicon. use target_trans otherwise
+        if(isAtPosition(target[0], target[1], target[2], 0.1, 0.1)) {
             if(state == num_of_task_to_run) {
                 // if the state is already the last task to run, set the state to zero so that the drone can land
                 state = 0;
             }
             else {
-                ROS_INFO("Position x:%.2f, y:%.2f, z:%.2f reached. Moving to next desired position. State is:%.2d", target_point[0], target_point[1], target_point[2], state);
+                ROS_INFO("Position x:%.2f, y:%.2f, z:%.2f reached. Moving to next desired position. State is:%.2d", target[0], target[1], target[2], state);
                 state++;
             }
         }

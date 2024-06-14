@@ -129,19 +129,19 @@ int main(int argc, char **argv) {
             // }
         } else if (state == 1) {
             target_point = Eigen::Vector3d(vicon_posi_x, vicon_posi_y, 1);
-            offboard_control.desired = offboard_control.transformPoint(translation, q, target_point);
+            offboard_control.target_trans= offboard_control.transformPoint(translation, q, target_point);
         } else if (state == 2) {
             target_point = Eigen::Vector3d(target_point[0], target_point[1], target_point[2]);
-            offboard_control.desired = offboard_control.transformPoint(translation, q, target_point);
+            offboard_control.target_trans = offboard_control.transformPoint(translation, q, target_point);
         }
 
-        offboard_control.vel_msg.twist.linear.x = (offboard_control.desired[0] - offboard_control.current_pose.pose.position.x) * d;
-        offboard_control.vel_msg.twist.linear.y = (offboard_control.desired[1] - offboard_control.current_pose.pose.position.y) * d;
-        offboard_control.vel_msg.twist.linear.z = (offboard_control.desired[2] - offboard_control.current_pose.pose.position.z) * d;
+        offboard_control.vel_msg.twist.linear.x = (offboard_control.target_trans[0] - offboard_control.current_pose.pose.position.x) * d;
+        offboard_control.vel_msg.twist.linear.y = (offboard_control.target_trans[1] - offboard_control.current_pose.pose.position.y) * d;
+        offboard_control.vel_msg.twist.linear.z = (offboard_control.target_trans[2] - offboard_control.current_pose.pose.position.z) * d;
 
         offboard_control.vel_pub.publish(offboard_control.vel_msg);
 
-        if (offboard_control.isAtPosition(offboard_control.desired[0], offboard_control.desired[1], offboard_control.desired[2], 0.3, 0.5)) {
+        if (offboard_control.isAtPosition(offboard_control.target_trans[0], offboard_control.target_trans[1], offboard_control.target_trans[2], 0.3, 0.5)) {
             ROS_INFO("Position x:%.2f, y:%.2f, z:%.2f reached. Moving to next desired position. State is:%d", target_point[0], target_point[1], target_point[2], state);
             // ros::Duration(10.0).sleep();  // Adjust the duration as needed
             // ROS_INFO("0 End of 10 seconds count down");
