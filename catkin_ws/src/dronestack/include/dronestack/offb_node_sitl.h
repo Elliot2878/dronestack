@@ -50,6 +50,8 @@ public:
     void handle_mode_switch(mavros_msgs::SetMode& mode_cmd, ros::Time& last_request);
     void handle_arm_command(mavros_msgs::CommandBool& arm_cmd, ros::Time& last_request);
     bool isAtPosition(double x, double y, double z, double xy_offset, double z_offset);
+    std::tuple<float, float, float> quaternionToRpy(float x, float y, float z, float w);
+    geometry_msgs::TwistStamped limitVelocity(geometry_msgs::TwistStamped vel_msg, float max_velocity = 0.5);
     Eigen::Vector3d transformPoint(const Eigen::Vector3d &translation, const Eigen::Quaterniond &rotation, const Eigen::Vector3d &point);
 private:
 

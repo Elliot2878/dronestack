@@ -1294,6 +1294,9 @@ dronestack/CMakeFiles/offb_node_sitl.dir/src/offb_node_sitl.cpp.o: \
  /home/cpsl/catkin_ws/devel/include/dronestack/waypoint_nav.h \
  /home/cpsl/catkin_ws/devel/include/dronestack/waypoint_navRequest.h \
  /home/cpsl/catkin_ws/devel/include/dronestack/waypoint_navResponse.h \
+ /home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandTOL.h \
+ /home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandTOLRequest.h \
+ /home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandTOLResponse.h \
  /home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandHome.h \
  /home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandHomeRequest.h \
  /home/cpsl/catkin_ws/devel/include/mavros_msgs/CommandHomeResponse.h

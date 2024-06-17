@@ -1,5 +1,6 @@
 #include "dronestack/offb_node_sitl.h"
 #include <ros/ros.h>
+#include <mavros_msgs/CommandTOL.h>
 #include <geometry_msgs/PoseStamped.h>
 #include <geometry_msgs/TwistStamped.h>
 #include <gazebo_msgs/ModelStates.h>
@@ -70,6 +71,8 @@ OffboardControlSITL::OffboardControlSITL() {
     // publish position and velocity to vision pose for replacing GPS
     px4_vision_pose_pub = nh.advertise<geometry_msgs::PoseStamped>("mavros/vision_pose/pose", 1); 
     // px4_vision_vel_pub = nh.advertise<geometry_msgs::TwistStamped>("mavros/vision_speed/speed_twist", 1);
+
+    ros::Rate rate(20.0);
 }
 
 // Callback functions
@@ -230,15 +233,16 @@ void OffboardControlSITL::control() {
     mavros_msgs::SetMode land_mode;
     offb_set_mode.request.custom_mode = "OFFBOARD";
     land_mode.request.custom_mode = "AUTO.LAND";
+    // mavros_msgs::CommandTOL land_cmd;
     mavros_msgs::CommandBool arm_cmd;
     arm_cmd.request.value = true;
     ros::Time last_request = ros::Time::now();
     
-    // Waypoints include landing by descending to z=0 after the last position
-    //LUO: why not just have a landing func that can land at whatever places and whatever heights?
-    // Liang: solved. num_of_task_to_run variable can control how many states you want to run
-    int state = 2;
-    int num_of_task_to_run = 1;
+
+
+    int num_of_state_to_run = 2;
+
+    int state = 1; // should not modify
 
 
     // // obtain translation and rotation matrix (have already written it on the top)
@@ -268,10 +272,10 @@ void OffboardControlSITL::control() {
         // state 0 is landing state, state 1 is take off state, others are moving state
         if(state == 0) {
             ROS_INFO("Position x:%.2f, y:%.2f, z:%.2f reached. End of waypoints navigations. Preparing to land.", target[0], target[1], target[2]);
-            if(set_mode_client.call(land_mode) && land_mode.response.mode_sent) {
-                ROS_INFO("Landing initiated.");
-                break; // Exit the loop to stop publishing waypoints and let the drone land.
-            }
+            // if(set_mode_client.call(land_mode) && land_mode.response.mode_sent) {
+            //     ROS_INFO("Landing initiated.");
+            //     break; // Exit the loop to stop publishing waypoints and let the drone land.
+            // }
         }
         else if(state == 1) {
             target = Eigen::Vector3d(vicon_posi_x, vicon_posi_y, 0.95);
@@ -279,41 +283,43 @@ void OffboardControlSITL::control() {
 
         }
         else if(state == 2) {
-            target = Eigen::Vector3d(vicon_posi_x, vicon_posi_y + 0.5, 0.95);
+            target = Eigen::Vector3d(vicon_posi_x, vicon_posi_y + 0.7, 0.95);
             target_trans = transformPoint(translation, q, target);
 
         }
         else if(state == 3) {
-            target = Eigen::Vector3d(0.75, -0.75, 0.75);
+            target = Eigen::Vector3d(vicon_posi_x, vicon_posi_y, 1);
             target_trans = transformPoint(translation, q, target);
             
         }
         else if(state == 4) {
-            target = Eigen::Vector3d(-1, -1, 1);
+            target = Eigen::Vector3d(vicon_posi_x, vicon_posi_y, 1);
             target_trans = transformPoint(translation, q, target);        
             
         }
         else if(state == 5) {
-            target = Eigen::Vector3d(-1, 1, 1);
+            target = Eigen::Vector3d(vicon_posi_x, vicon_posi_y, 1);
             target_trans = transformPoint(translation, q, target);
 
         }
         else if(state == 6) {
-            target = Eigen::Vector3d(1, 1, 1);
+            target = Eigen::Vector3d(vicon_posi_x, vicon_posi_y, 1);
             target_trans = transformPoint(translation, q, target);
 
         }
         else if(state == 7) {
-            target = Eigen::Vector3d(0, 0, 1);  //LUO: landing should not be always at (0,0)
+            target = Eigen::Vector3d(vicon_posi_x, vicon_posi_y, 1);  //LUO: landing should not be always at (0,0)
             target_trans = transformPoint(translation, q, target);
 
         }
 
+        
         // // if using pose controller
-        // target_pose.pose.position.x = target_trans[0];
-        // target_pose.pose.position.y = target_trans[1];
-        // target_pose.pose.position.z = target_trans[2];
+        // target_pose.pose.position.x = target[0];
+        // target_pose.pose.position.y = target[1];
+        // target_pose.pose.position.z = target[2];
 
+        
         // // if using gazebo and velocity controller (gazebo)
         // vel_msg.twist.linear.x = (target_trans[0] - current_pose.pose.position.x) * v;
         // vel_msg.twist.linear.y = (target_trans[1] - current_pose.pose.position.y) * v;
@@ -324,16 +330,32 @@ void OffboardControlSITL::control() {
         vel_msg.twist.linear.x = (target[0] - vicon_pose.transform.translation.x) * v;
         vel_msg.twist.linear.y = (target[1] - vicon_pose.transform.translation.y) * v;
         vel_msg.twist.linear.z = (target[2] - vicon_pose.transform.translation.z) * v;
-        // ROS_INFO("Check received vicon_pose_2: x:%.2f, y:%.2f, z:%.2f", vicon_pose.transform.translation.x, vicon_pose.transform.translation.y, vicon_pose.transform.translation.z);
+
+        ROS_INFO("Check received vicon_pose_2: x:%.2f, y:%.2f, z:%.2f", vicon_pose.transform.translation.x, vicon_pose.transform.translation.y, vicon_pose.transform.translation.z);
         // ROS_INFO("Check point before trans: x:%.2f, y:%.2f, z:%.2f", target[0], target[1], target[2]);
         // ROS_INFO("Check point after trans: x:%.2f, y:%.2f, z:%.2f", target_trans[0], target_trans[1], target_trans[2]);
         // ROS_INFO("Check vel_msg: x:%.2f, y:%.2f, z:%.2f", vel_msg.twist.linear.x, vel_msg.twist.linear.y, vel_msg.twist.linear.z);
 
-        // // publish target setpoint to mavros
-        // pos_pub.publish(target); // pose controller
+        ROS_INFO("Check error: x:%.2f, y:%.2f, z:%.2f", (target[0] - vicon_pose.transform.translation.x), (target[1] - vicon_pose.transform.translation.y), (target[2] - vicon_pose.transform.translation.z));
         
+        // // // publish target setpoint to mavros
+        // pos_pub.publish(target_pose); // pose controller
+        
+
         // vel_msg.twist.linear.x = 0;
         // vel_msg.twist.linear.y = 0;
+
+        vel_msg = limitVelocity(vel_msg, 0.5);
+
+
+        float vicon_yaw = std::get<2>(quaternionToRpy(vicon_pose.transform.rotation.x, vicon_pose.transform.rotation.y, vicon_pose.transform.rotation.z, vicon_pose.transform.rotation.w));
+        
+        // vel_msg.twist.angular.y = (0 - vicon_yaw) * 0.1;
+        // vel_msg.twist.angular.z = (0 - vicon_yaw) * 0.1;
+        
+
+
+        // ROS_INFO("Check velocity after clamping: x:%.2f, y:%.2f, z:%.2f", vel_msg.twist.linear.x, vel_msg.twist.linear.y, vel_msg.twist.linear.z);
         vel_pub.publish(vel_msg); // velocity controller
         
         // switch mode to offb_node (need to be inside the while loop to maintain offboard mode)
@@ -345,9 +367,10 @@ void OffboardControlSITL::control() {
         
         // check if the drone reaches the target position. If it is true, drone moves to next position
         // use target for velocity controll in vicon. use target_trans otherwise
-        if(isAtPosition(target[0], target[1], target[2], 0.1, 0.1)) {
-            if(state == num_of_task_to_run) {
+        if(isAtPosition(target[0], target[1], target[2], 0.2, 0.1)) {
+            if(state >= num_of_state_to_run) {
                 // if the state is already the last task to run, set the state to zero so that the drone can land
+                // it is safer to write ">=" than "=="
                 state = 0;
             }
             else {
@@ -357,7 +380,7 @@ void OffboardControlSITL::control() {
         }
 
         ros::spinOnce();
-        ros::Rate(20.0).sleep();
+        rate.sleep();
     }
 }
 
@@ -395,6 +418,33 @@ void OffboardControlSITL::handle_arm_command(mavros_msgs::CommandBool& arm_cmd, 
 }
 
 
+geometry_msgs::TwistStamped OffboardControlSITL::limitVelocity(geometry_msgs::TwistStamped vel_msg, float max_velocity) {
+    // The default max_velocity is 0.5 m/s. You can see that in the header file
+    
+    float vel_x = vel_msg.twist.linear.x;
+    float vel_y = vel_msg.twist.linear.y;
+    float vel_z = vel_msg.twist.linear.z;
+
+    float magnitude = std::sqrt(vel_x * vel_x + vel_y * vel_y + vel_z * vel_z);
+
+    // If the magnitude exceeds the maximum allowed velocity, scale it down
+    if (magnitude > max_velocity) {
+        float scale = max_velocity / magnitude;
+        vel_x *= scale;
+        vel_y *= scale;
+        vel_z *= scale;
+    }
+
+    // Assign the limited velocity components to the message
+    vel_msg.twist.linear.x = vel_x;
+    vel_msg.twist.linear.y = vel_y;
+    vel_msg.twist.linear.z = vel_z;
+
+    return vel_msg;
+
+}
+
+
 
 Eigen::Vector3d OffboardControlSITL::transformPoint(const Eigen::Vector3d &translation,
                                const Eigen::Quaterniond &rotation,
@@ -421,6 +471,29 @@ Eigen::Quaterniond OffboardControlSITL::rpyToQuaternion(double roll, double pitc
 
     // The quaternion is now created from the RPY angles
     return q;
+}
+
+std::tuple<float, float, float> OffboardControlSITL::quaternionToRpy(float x, float y, float z, float w) {
+    // Roll (x-axis rotation)
+    float sinr_cosp = 2 * (w * x + y * z);
+    float cosr_cosp = 1 - 2 * (x * x + y * y);
+    float roll = std::atan2(sinr_cosp, cosr_cosp);
+
+    // Pitch (y-axis rotation)
+    float sinp = 2 * (w * y - z * x);
+    float pitch;
+    if (std::abs(sinp) >= 1) {
+        pitch = std::copysign(M_PI / 2, sinp); // Use 90 degrees if out of range
+    } else {
+        pitch = std::asin(sinp);
+    }
+
+    // Yaw (z-axis rotation)
+    float siny_cosp = 2 * (w * z + x * y);
+    float cosy_cosp = 1 - 2 * (y * y + z * z);
+    float yaw = std::atan2(siny_cosp, cosy_cosp);
+
+    return std::make_tuple(roll, pitch, yaw);
 }
 
 bool OffboardControlSITL::isAtPosition(double x, double y, double z, double xy_offset, double z_offset) {

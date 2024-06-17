@@ -80,5 +80,6 @@
         "typeindex": "cpp",
         "typeinfo": "cpp",
         "variant": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "/home/cpsl/catkin_ws/src/dronestack"
 }
