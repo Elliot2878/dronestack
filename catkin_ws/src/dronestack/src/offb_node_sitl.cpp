@@ -11,29 +11,29 @@
 #include <Eigen/Dense>
 
 
-// // hardcode initial position and orientation from gazebo (gazebo)
-// double vicon_posi_x = 1.010000;
-// double vicon_posi_y = 0.979938;
-// double vicon_posi_z = 0.104262;
-// double vicon_orient_r = 0.000912;
-// double vicon_orient_p = 0.0;
-// double vicon_orient_y = 0.0;
+// hardcode initial position and orientation from gazebo (gazebo)
+double vicon_posi_x = 1.010000;
+double vicon_posi_y = 0.979938;
+double vicon_posi_z = 0.104262;
+double vicon_orient_r = 0.000912;
+double vicon_orient_p = 0.0;
+double vicon_orient_y = 0.0;
 
 // define translation and rotation matrix
 // Eigen::Vector3d translation; // (deleted)
-// Eigen::Quaterniond q; // (gazebo)
+Eigen::Quaterniond q; // (gazebo)
 
-// hardcode position and orientation in case callback has not executed immediately (vicon)
-// (I recommand to read the vicon data first and hardcode the values since the origin is in the corner of the vicon room)
-double vicon_posi_x = 2.40;
-double vicon_posi_y = 3.55;
-double vicon_posi_z = 0.4180;
+// // hardcode position and orientation in case callback has not executed immediately (vicon)
+// // (I recommand to read the vicon data first and hardcode the values since the origin is in the corner of the vicon room)
+// double vicon_posi_x = 2.40;
+// double vicon_posi_y = 3.55;
+// double vicon_posi_z = 0.4180;
 
 // (vicon) and (gazebo)
 Eigen::Vector3d translation(-vicon_posi_x, -vicon_posi_y, -vicon_posi_z);
 
-// Extract and store orientation as an Eigen quaternion (vicon)
-Eigen::Quaterniond q = Eigen::Quaterniond(0.0022, -0.00278, 0.0068, 0.99997).conjugate();
+// // Extract and store orientation as an Eigen quaternion (vicon)
+// Eigen::Quaterniond q = Eigen::Quaterniond(0.0022, -0.00278, 0.0068, 0.99997).conjugate();
 
 
 bool data_stored = false;
@@ -43,8 +43,8 @@ int main(int argc, char **argv) {
     ros::init(argc, argv, "offb_node");
     OffboardControlSITL offboard_control;
 
-    // // (gazebo)
-    // q = offboard_control.rpyToQuaternion(vicon_orient_r, vicon_orient_p, vicon_orient_y).conjugate();
+    // (gazebo)
+    q = offboard_control.rpyToQuaternion(vicon_orient_r, vicon_orient_p, vicon_orient_y).conjugate();
     
     offboard_control.initialization();
     offboard_control.control();
@@ -125,7 +125,7 @@ void OffboardControlSITL::viconPose_cb(const geometry_msgs::TransformStamped::Co
 
     // //ROS_INFO("Received Vicon position x:%.2f, y:%.2f, z:%.2f", vision_pose_msg.pose.position.x, vision_pose_msg.pose.position.y, vision_pose_msg.pose.position.z);
     // px4_vision_pose_pub.publish(vision_pose_msg);
-    
+
 }
 
 // void OffboardControlSITL::currentVelocity_cb(const geometry_msgs::TwistStamped::ConstPtr& msg) {
@@ -320,16 +320,16 @@ void OffboardControlSITL::control() {
         // target_pose.pose.position.z = target[2];
 
         
-        // // if using gazebo and velocity controller (gazebo)
-        // vel_msg.twist.linear.x = (target_trans[0] - current_pose.pose.position.x) * v;
-        // vel_msg.twist.linear.y = (target_trans[1] - current_pose.pose.position.y) * v;
-        // vel_msg.twist.linear.z = (target_trans[2] - current_pose.pose.position.z) * v;
+        // if using gazebo and velocity controller (gazebo)
+        vel_msg.twist.linear.x = (target_trans[0] - current_pose.pose.position.x) * v;
+        vel_msg.twist.linear.y = (target_trans[1] - current_pose.pose.position.y) * v;
+        vel_msg.twist.linear.z = (target_trans[2] - current_pose.pose.position.z) * v;
 
 
-        // if using vicon and velocity controller (vicon)
-        vel_msg.twist.linear.x = (target[0] - vicon_pose.transform.translation.x) * v;
-        vel_msg.twist.linear.y = (target[1] - vicon_pose.transform.translation.y) * v;
-        vel_msg.twist.linear.z = (target[2] - vicon_pose.transform.translation.z) * v;
+        // // if using vicon and velocity controller (vicon)
+        // vel_msg.twist.linear.x = (target[0] - vicon_pose.transform.translation.x) * v;
+        // vel_msg.twist.linear.y = (target[1] - vicon_pose.transform.translation.y) * v;
+        // vel_msg.twist.linear.z = (target[2] - vicon_pose.transform.translation.z) * v;
 
         ROS_INFO("Check received vicon_pose_2: x:%.2f, y:%.2f, z:%.2f", vicon_pose.transform.translation.x, vicon_pose.transform.translation.y, vicon_pose.transform.translation.z);
         // ROS_INFO("Check point before trans: x:%.2f, y:%.2f, z:%.2f", target[0], target[1], target[2]);
@@ -501,13 +501,13 @@ bool OffboardControlSITL::isAtPosition(double x, double y, double z, double xy_o
     // ROS_INFO("current position | x:%.2f, y:%.2f, z:%.2f", local_position.pose.position.x, local_position.pose.position.y, local_position.pose.position.z);
     Eigen::Vector2d desired_posi_xy(x, y);
 
-    // (vicon)     
-    Eigen::Vector2d current_posi_xy(vicon_pose.transform.translation.x, vicon_pose.transform.translation.y);
-    return ((desired_posi_xy - current_posi_xy).norm() < xy_offset && abs(z - vicon_pose.transform.translation.z) < z_offset);
+    // // (vicon)     
+    // Eigen::Vector2d current_posi_xy(vicon_pose.transform.translation.x, vicon_pose.transform.translation.y);
+    // return ((desired_posi_xy - current_posi_xy).norm() < xy_offset && abs(z - vicon_pose.transform.translation.z) < z_offset);
 
-    // // (gazebo)
-    // Eigen::Vector2d current_posi_xy(current_pose.pose.position.x, current_pose.pose.position.y);
-    // return ((desired_posi_xy - current_posi_xy).norm() < xy_offset && abs(z - current_pose.pose.position.z) < z_offset);
+    // (gazebo)
+    Eigen::Vector2d current_posi_xy(current_pose.pose.position.x, current_pose.pose.position.y);
+    return ((desired_posi_xy - current_posi_xy).norm() < xy_offset && abs(z - current_pose.pose.position.z) < z_offset);
 }
 
 
