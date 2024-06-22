@@ -1,8 +1,0 @@
-prefix=/home/cpsl/SDK_ws/devel
-
-Name: quat2euler
-Description: Description of quat2euler
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
