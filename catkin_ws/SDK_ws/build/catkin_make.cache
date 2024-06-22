@@ -1,0 +1,2 @@
+offboard:quat2euler
+-DCATKIN_DEVEL_PREFIX=/home/cpsl/SDK_ws/devel -DCMAKE_INSTALL_PREFIX=/home/cpsl/SDK_ws/install -G Unix Makefiles
