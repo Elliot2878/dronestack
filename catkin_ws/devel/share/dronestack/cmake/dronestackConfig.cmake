@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(dronestack_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/cpsl/catkin_ws/devel/include " STREQUAL " ")
+if(NOT " " STREQUAL " ")
   set(dronestack_INCLUDE_DIRS "")
-  set(_include_dirs "/home/cpsl/catkin_ws/devel/include")
+  set(_include_dirs "")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/cpsl/catkin_ws/devel/lib;/home/cpsl/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/cpsl/catkin_ws/devel/lib;/home/cpsl/SDK_ws/devel/lib;/home/cpsl/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -177,7 +177,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(dronestack_EXPORTED_TARGETS "dronestack_generate_messages_cpp;dronestack_generate_messages_eus;dronestack_generate_messages_lisp;dronestack_generate_messages_nodejs;dronestack_generate_messages_py")
+set(dronestack_EXPORTED_TARGETS "")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${dronestack_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -185,7 +185,7 @@ foreach(t ${dronestack_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "roscpp;rospy;std_msgs;geometry_msgs;mavros_msgs;tf2_geometry_msgs;message_runtime")
+set(depends "roscpp;rospy;std_msgs;geometry_msgs;mavros_msgs;tf2_geometry_msgs")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls
@@ -214,7 +214,7 @@ foreach(depend ${depends})
   _list_append_deduplicate(dronestack_EXPORTED_TARGETS ${${dronestack_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "dronestack-msg-extras.cmake")
+set(pkg_cfg_extras "")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${dronestack_DIR}/${extra})

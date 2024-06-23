@@ -14,7 +14,7 @@ find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
   mavros_msgs
   tf2_geometry_msgs
-  message_generation
+  # message_generation
 )
 
 ## System dependencies are found with CMake's conventions
@@ -50,11 +50,11 @@ find_package(catkin REQUIRED COMPONENTS
 ##   * uncomment the generate_messages entry below
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
-# Generate messages in the 'msg' folder
-add_message_files(
-  FILES
-  OpticalFlow.msg
-)
+## Generate messages in the 'msg' folder
+#add_message_files(
+#  FILES
+#  file.msg
+#)
 
 # Generate services in the 'srv' folder
 add_service_files(
@@ -69,11 +69,11 @@ add_service_files(
 #   Action2.action
 # )
 
-# Generate added messages and services with any dependencies listed here
-generate_messages(
-  DEPENDENCIES
-  std_msgs
-)
+## Generate added messages and services with any dependencies listed here
+#generate_messages(
+#  DEPENDENCIES
+#  std_msgs
+#)
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -107,7 +107,7 @@ generate_messages(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES dronestack
-   CATKIN_DEPENDS roscpp rospy std_msgs geometry_msgs mavros_msgs tf2_geometry_msgs message_runtime
+   CATKIN_DEPENDS roscpp rospy std_msgs geometry_msgs mavros_msgs tf2_geometry_msgs # message_runtime
 #  DEPENDS system_lib
 )
 
@@ -227,14 +227,6 @@ include_directories(
 # catkin_add_nosetests(test)
 
 
-add_executable(offb_node_hitl src/offb_node_hitl.cpp)
-add_dependencies(offb_node_hitl ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-target_link_libraries(offb_node_hitl ${catkin_LIBRARIES})
-
-add_executable(offb_node_sitl src/offb_node_sitl.cpp)
-add_dependencies(offb_node_sitl ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-target_link_libraries(offb_node_sitl ${catkin_LIBRARIES})
-
 add_executable(waypoint_nav_client src/offb_node_sitl_client.cpp)
 add_dependencies(waypoint_nav_client ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(waypoint_nav_client ${catkin_LIBRARIES})
@@ -243,7 +235,7 @@ add_executable(waypoint_nav_server src/offb_node_sitl_server.cpp)
 add_dependencies(waypoint_nav_server ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(waypoint_nav_server ${catkin_LIBRARIES})
 
-add_executable(set_home_node src/set_home.cpp)
-add_dependencies(set_home_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-target_link_libraries(set_home_node ${catkin_LIBRARIES})
+add_executable(offboard_ctrl src/offboard_ctrl.cpp)
+add_dependencies(offboard_ctrl ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(offboard_ctrl ${catkin_LIBRARIES})
 

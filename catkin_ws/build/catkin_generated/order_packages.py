@@ -2,4 +2,4 @@
 source_root_dir = '/home/cpsl/catkin_ws/src'
 whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
-underlay_workspaces = '/home/cpsl/catkin_ws/devel;/opt/ros/noetic'.split(';') if '/home/cpsl/catkin_ws/devel;/opt/ros/noetic' != '' else []
+underlay_workspaces = '/home/cpsl/SDK_ws/devel;/home/cpsl/catkin_ws/devel;/opt/ros/noetic'.split(';') if '/home/cpsl/SDK_ws/devel;/home/cpsl/catkin_ws/devel;/opt/ros/noetic' != '' else []

@@ -3032,201 +3032,6 @@ _run_tests_mavros_gtest_libmavros-quaternion-utils-test/fast:
 .PHONY : _run_tests_mavros_gtest_libmavros-quaternion-utils-test/fast
 
 #=============================================================================
-# Target rules for targets named dronestack_generate_messages
-
-# Build rule for target.
-dronestack_generate_messages: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack_generate_messages
-.PHONY : dronestack_generate_messages
-
-# fast build rule for target.
-dronestack_generate_messages/fast:
-	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_generate_messages.dir/build.make dronestack/CMakeFiles/dronestack_generate_messages.dir/build
-.PHONY : dronestack_generate_messages/fast
-
-#=============================================================================
-# Target rules for targets named _dronestack_generate_messages_check_deps_OpticalFlow
-
-# Build rule for target.
-_dronestack_generate_messages_check_deps_OpticalFlow: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _dronestack_generate_messages_check_deps_OpticalFlow
-.PHONY : _dronestack_generate_messages_check_deps_OpticalFlow
-
-# fast build rule for target.
-_dronestack_generate_messages_check_deps_OpticalFlow/fast:
-	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/_dronestack_generate_messages_check_deps_OpticalFlow.dir/build.make dronestack/CMakeFiles/_dronestack_generate_messages_check_deps_OpticalFlow.dir/build
-.PHONY : _dronestack_generate_messages_check_deps_OpticalFlow/fast
-
-#=============================================================================
-# Target rules for targets named _dronestack_generate_messages_check_deps_waypoint_nav
-
-# Build rule for target.
-_dronestack_generate_messages_check_deps_waypoint_nav: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _dronestack_generate_messages_check_deps_waypoint_nav
-.PHONY : _dronestack_generate_messages_check_deps_waypoint_nav
-
-# fast build rule for target.
-_dronestack_generate_messages_check_deps_waypoint_nav/fast:
-	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/_dronestack_generate_messages_check_deps_waypoint_nav.dir/build.make dronestack/CMakeFiles/_dronestack_generate_messages_check_deps_waypoint_nav.dir/build
-.PHONY : _dronestack_generate_messages_check_deps_waypoint_nav/fast
-
-#=============================================================================
-# Target rules for targets named dronestack_generate_messages_cpp
-
-# Build rule for target.
-dronestack_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack_generate_messages_cpp
-.PHONY : dronestack_generate_messages_cpp
-
-# fast build rule for target.
-dronestack_generate_messages_cpp/fast:
-	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_generate_messages_cpp.dir/build.make dronestack/CMakeFiles/dronestack_generate_messages_cpp.dir/build
-.PHONY : dronestack_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named dronestack_gencpp
-
-# Build rule for target.
-dronestack_gencpp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack_gencpp
-.PHONY : dronestack_gencpp
-
-# fast build rule for target.
-dronestack_gencpp/fast:
-	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_gencpp.dir/build.make dronestack/CMakeFiles/dronestack_gencpp.dir/build
-.PHONY : dronestack_gencpp/fast
-
-#=============================================================================
-# Target rules for targets named dronestack_generate_messages_eus
-
-# Build rule for target.
-dronestack_generate_messages_eus: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack_generate_messages_eus
-.PHONY : dronestack_generate_messages_eus
-
-# fast build rule for target.
-dronestack_generate_messages_eus/fast:
-	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_generate_messages_eus.dir/build.make dronestack/CMakeFiles/dronestack_generate_messages_eus.dir/build
-.PHONY : dronestack_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named dronestack_geneus
-
-# Build rule for target.
-dronestack_geneus: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack_geneus
-.PHONY : dronestack_geneus
-
-# fast build rule for target.
-dronestack_geneus/fast:
-	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_geneus.dir/build.make dronestack/CMakeFiles/dronestack_geneus.dir/build
-.PHONY : dronestack_geneus/fast
-
-#=============================================================================
-# Target rules for targets named dronestack_generate_messages_lisp
-
-# Build rule for target.
-dronestack_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack_generate_messages_lisp
-.PHONY : dronestack_generate_messages_lisp
-
-# fast build rule for target.
-dronestack_generate_messages_lisp/fast:
-	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_generate_messages_lisp.dir/build.make dronestack/CMakeFiles/dronestack_generate_messages_lisp.dir/build
-.PHONY : dronestack_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named dronestack_genlisp
-
-# Build rule for target.
-dronestack_genlisp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack_genlisp
-.PHONY : dronestack_genlisp
-
-# fast build rule for target.
-dronestack_genlisp/fast:
-	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_genlisp.dir/build.make dronestack/CMakeFiles/dronestack_genlisp.dir/build
-.PHONY : dronestack_genlisp/fast
-
-#=============================================================================
-# Target rules for targets named dronestack_generate_messages_nodejs
-
-# Build rule for target.
-dronestack_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack_generate_messages_nodejs
-.PHONY : dronestack_generate_messages_nodejs
-
-# fast build rule for target.
-dronestack_generate_messages_nodejs/fast:
-	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_generate_messages_nodejs.dir/build.make dronestack/CMakeFiles/dronestack_generate_messages_nodejs.dir/build
-.PHONY : dronestack_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named dronestack_gennodejs
-
-# Build rule for target.
-dronestack_gennodejs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack_gennodejs
-.PHONY : dronestack_gennodejs
-
-# fast build rule for target.
-dronestack_gennodejs/fast:
-	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_gennodejs.dir/build.make dronestack/CMakeFiles/dronestack_gennodejs.dir/build
-.PHONY : dronestack_gennodejs/fast
-
-#=============================================================================
-# Target rules for targets named dronestack_generate_messages_py
-
-# Build rule for target.
-dronestack_generate_messages_py: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack_generate_messages_py
-.PHONY : dronestack_generate_messages_py
-
-# fast build rule for target.
-dronestack_generate_messages_py/fast:
-	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_generate_messages_py.dir/build.make dronestack/CMakeFiles/dronestack_generate_messages_py.dir/build
-.PHONY : dronestack_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named dronestack_genpy
-
-# Build rule for target.
-dronestack_genpy: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dronestack_genpy
-.PHONY : dronestack_genpy
-
-# fast build rule for target.
-dronestack_genpy/fast:
-	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/dronestack_genpy.dir/build.make dronestack/CMakeFiles/dronestack_genpy.dir/build
-.PHONY : dronestack_genpy/fast
-
-#=============================================================================
-# Target rules for targets named offb_node_hitl
-
-# Build rule for target.
-offb_node_hitl: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 offb_node_hitl
-.PHONY : offb_node_hitl
-
-# fast build rule for target.
-offb_node_hitl/fast:
-	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/offb_node_hitl.dir/build.make dronestack/CMakeFiles/offb_node_hitl.dir/build
-.PHONY : offb_node_hitl/fast
-
-#=============================================================================
-# Target rules for targets named offb_node_sitl
-
-# Build rule for target.
-offb_node_sitl: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 offb_node_sitl
-.PHONY : offb_node_sitl
-
-# fast build rule for target.
-offb_node_sitl/fast:
-	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/offb_node_sitl.dir/build.make dronestack/CMakeFiles/offb_node_sitl.dir/build
-.PHONY : offb_node_sitl/fast
-
-#=============================================================================
 # Target rules for targets named waypoint_nav_client
 
 # Build rule for target.
@@ -3253,17 +3058,17 @@ waypoint_nav_server/fast:
 .PHONY : waypoint_nav_server/fast
 
 #=============================================================================
-# Target rules for targets named set_home_node
+# Target rules for targets named offboard_ctrl
 
 # Build rule for target.
-set_home_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 set_home_node
-.PHONY : set_home_node
+offboard_ctrl: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 offboard_ctrl
+.PHONY : offboard_ctrl
 
 # fast build rule for target.
-set_home_node/fast:
-	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/set_home_node.dir/build.make dronestack/CMakeFiles/set_home_node.dir/build
-.PHONY : set_home_node/fast
+offboard_ctrl/fast:
+	$(MAKE) $(MAKESILENT) -f dronestack/CMakeFiles/offboard_ctrl.dir/build.make dronestack/CMakeFiles/offboard_ctrl.dir/build
+.PHONY : offboard_ctrl/fast
 
 #=============================================================================
 # Target rules for targets named tf_generate_messages_cpp
@@ -3981,8 +3786,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... _catkin_empty_exported_target"
-	@echo "... _dronestack_generate_messages_check_deps_OpticalFlow"
-	@echo "... _dronestack_generate_messages_check_deps_waypoint_nav"
 	@echo "... _mavros_msgs_generate_messages_check_deps_ADSBVehicle"
 	@echo "... _mavros_msgs_generate_messages_check_deps_ActuatorControl"
 	@echo "... _mavros_msgs_generate_messages_check_deps_Altitude"
@@ -4129,17 +3932,6 @@ help:
 	@echo "... diagnostic_msgs_generate_messages_py"
 	@echo "... download_extra_data"
 	@echo "... doxygen"
-	@echo "... dronestack_gencpp"
-	@echo "... dronestack_generate_messages"
-	@echo "... dronestack_generate_messages_cpp"
-	@echo "... dronestack_generate_messages_eus"
-	@echo "... dronestack_generate_messages_lisp"
-	@echo "... dronestack_generate_messages_nodejs"
-	@echo "... dronestack_generate_messages_py"
-	@echo "... dronestack_geneus"
-	@echo "... dronestack_genlisp"
-	@echo "... dronestack_gennodejs"
-	@echo "... dronestack_genpy"
 	@echo "... dynamic_reconfigure_gencfg"
 	@echo "... dynamic_reconfigure_generate_messages_cpp"
 	@echo "... dynamic_reconfigure_generate_messages_eus"
@@ -4260,10 +4052,8 @@ help:
 	@echo "... mavros_node"
 	@echo "... mavros_plugins"
 	@echo "... mavros_sitl_test"
-	@echo "... offb_node_hitl"
-	@echo "... offb_node_sitl"
+	@echo "... offboard_ctrl"
 	@echo "... servo_state_publisher"
-	@echo "... set_home_node"
 	@echo "... sitl_test_node"
 	@echo "... testclient"
 	@echo "... tf_distort"
