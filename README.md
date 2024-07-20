@@ -1,3 +1,5 @@
+We used and modified Mavros, Mavlink, and PX4-Autopilot packages
+
 // SITL: <br>
 cd PX4-Autopilot
 make px4_sitl_default gazebo
