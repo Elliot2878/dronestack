@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "vrpn_Tracker.C": "cpp",
+        "vrpn_BaseClass.C": "cpp"
+    }
+}

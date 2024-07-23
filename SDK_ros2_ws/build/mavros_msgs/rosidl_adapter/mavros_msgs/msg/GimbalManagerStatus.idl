@@ -1,0 +1,57 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mavros_msgs/msg/GimbalManagerStatus.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module mavros_msgs {
+  module msg {
+    module GimbalManagerStatus_Constants {
+      @verbatim (language="comment", text=
+        "GIMBAL_MANAGER_FLAGS" "\n"        " Based on GIMBAL_DEVICE_FLAGS_RETRACT")
+      const uint32 GIMBAL_MANAGER_FLAGS_RETRACT = 1;
+      @verbatim (language="comment", text=
+        "Based on GIMBAL_DEVICE_FLAGS_NEUTRAL")
+      const uint32 GIMBAL_MANAGER_FLAGS_NEUTRAL = 2;
+      @verbatim (language="comment", text=
+        "Based on GIMBAL_DEVICE_FLAGS_ROLL_LOCK")
+      const uint32 GIMBAL_MANAGER_FLAGS_ROLL_LOCK = 4;
+      @verbatim (language="comment", text=
+        "Based on GIMBAL_DEVICE_FLAGS_PITCH_LOCK")
+      const uint32 GIMBAL_MANAGER_FLAGS_PITCH_LOCK = 8;
+      @verbatim (language="comment", text=
+        "Based on GIMBAL_DEVICE_FLAGS_YAW_LOCK")
+      const uint32 GIMBAL_MANAGER_FLAGS_YAW_LOCK = 16;
+    };
+    @verbatim (language="comment", text=
+      "MAVLink message: GIMBAL_MANAGER_STATUS" "\n"
+      "https://mavlink.io/en/messages/common.html#GIMBAL_MANAGER_STATUS")
+    struct GimbalManagerStatus {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "High level gimbal manager flags to use - See GIMBAL_MANAGER_FLAGS")
+      uint32 flags;
+
+      @verbatim (language="comment", text=
+        "Gimbal device ID that this gimbal manager is responsible for.")
+      uint8 gimbal_device_id;
+
+      @verbatim (language="comment", text=
+        "System ID of MAVLink component with primary control, 0 for none.")
+      uint8 sysid_primary;
+
+      @verbatim (language="comment", text=
+        "Component ID of MAVLink component with primary control, 0 for none.")
+      uint8 compid_primary;
+
+      @verbatim (language="comment", text=
+        "System ID of MAVLink component with secondary control, 0 for none.")
+      uint8 sysid_secondary;
+
+      @verbatim (language="comment", text=
+        "Component ID of MAVLink component with secondary control, 0 for none.")
+      uint8 compid_secondary;
+    };
+  };
+};

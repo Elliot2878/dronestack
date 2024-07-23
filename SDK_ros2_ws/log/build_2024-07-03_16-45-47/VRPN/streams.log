@@ -1,0 +1,733 @@
+[0.153s] Invoking command in '/home/orinnano/SDK_ros2_ws/build/VRPN': /usr/bin/cmake /home/orinnano/SDK_ros2_ws/src/vrpn -DCMAKE_INSTALL_PREFIX=/home/orinnano/SDK_ros2_ws/install/VRPN
+[0.364s] -- The C compiler identification is GNU 11.4.0
+[0.522s] -- The CXX compiler identification is GNU 11.4.0
+[0.542s] -- Detecting C compiler ABI info
+[0.808s] -- Detecting C compiler ABI info - done
+[0.824s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.825s] -- Detecting C compile features
+[0.825s] -- Detecting C compile features - done
+[0.832s] -- Detecting CXX compiler ABI info
+[1.114s] -- Detecting CXX compiler ABI info - done
+[1.142s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.143s] -- Detecting CXX compile features
+[1.145s] -- Detecting CXX compile features - done
+[1.504s] -- Git's description of the current revision indicates this is a prerelease of 07.36: version_07.35-105-ge60f13f0
+[1.504s] 
+[1.505s] -- Configuring the VRPN suite version 07.36.0~prerelease-git-07.35-105-ge60f13f0 using the CMake-based build system
+[1.505s] 
+[1.509s] -- Looking for pthread.h
+[1.793s] -- Looking for pthread.h - found
+[1.794s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.074s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.075s] -- Found Threads: TRUE  
+[2.076s] -- Now searching for auto-configurable optional packages...
+[2.076s] 
+[2.109s] -- Checking for module 'libusb-1.0'
+[2.201s] --   Found libusb-1.0, version 1.0.25
+[2.412s] -- Found Libusb1: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  
+[2.440s] -- Local HIDAPI submodule not found. To download with Git, run git submodule update --init
+[2.441s] -- Local JSONCPP submodule not found. To download with Git, run git submodule update --init
+[2.482s] -- Could NOT find SWIG (missing: SWIG_EXECUTABLE SWIG_DIR) 
+[5.155s] -- Found Python: /usr/include/python3.10 (found version "3.10.12") found components: Development Development.Module Development.Embed 
+[5.302s] -- Could NOT find Java (missing: Java_JAVA_EXECUTABLE Java_JAVAC_EXECUTABLE Java_JAR_EXECUTABLE Java_JAVADOC_EXECUTABLE Java_JAVAH_EXECUTABLE Development) 
+[5.396s] -- Could NOT find JNI (missing: JAVA_AWT_LIBRARY JAVA_JVM_LIBRARY JAVA_INCLUDE_PATH JAVA_INCLUDE_PATH2 JAVA_AWT_INCLUDE_PATH) 
+[6.550s] -- Found MPI_C: /usr/lib/aarch64-linux-gnu/openmpi/lib/libmpi.so (found version "3.1") 
+[10.984s] -- Found MPI_CXX: /usr/lib/aarch64-linux-gnu/openmpi/lib/libmpi_cxx.so (found version "3.1") 
+[10.984s] -- Found MPI: TRUE (found version "3.1")  
+[11.048s] -- Could NOT find Modbus (missing: MODBUS_LIBRARY MODBUS_INCLUDE_DIR) 
+[11.094s] -- Could NOT find HIDAPI (missing: HIDAPI_LIBRARY HIDAPI_INCLUDE_DIR) 
+[11.357s] -- Could NOT find OpenHaptics (missing: HDAPI_LIBRARY HDAPI_INCLUDE_DIR HDAPI_HDU_INCLUDE_DIR HDAPI_HDU_LIBRARY HLAPI_INCLUDE_DIR HLAPI_LIBRARY HLAPI_HLU_INCLUDE_DIR HLAPI_HLU_LIBRARY HDAPI_PHANToMIO_LIBRARY HDAPI_HDU_SOURCE_DIR HLAPI_HLU_SOURCE_DIR) 
+[11.389s] -- Could NOT find GHOST (missing: GHOST_LIBRARY GHOST_INCLUDE_DIR) 
+[11.398s] -- Found I2CDEV: /usr/include  
+[11.430s] -- Could NOT find WiiUse (missing: WIIUSE_LIBRARY WIIUSE_INCLUDE_DIR) 
+[11.607s] -- Could NOT find JsonCpp (missing: JsonCpp_INCLUDE_DIR JsonCpp_LIBRARY) 
+[11.662s] -- Could NOT find LibNifalcon (missing: LIBNIFALCON_LIBRARY LIBNIFALCON_INCLUDE_DIR) 
+[11.680s] -- Could NOT find GPM (missing: GPM_LIBRARY GPM_INCLUDE_DIR) 
+[11.726s] -- Could NOT find InterSense (missing: INTERSENSE_LIBRARY INTERSENSE_INCLUDE_DIR) 
+[11.744s] -- Could NOT find NIDAQmx (missing: NIDAQMX_LIBRARY NIDAQMX_INCLUDE_DIR) 
+[11.768s] -- Could NOT find ViewPoint (missing: VIEWPOINT_LIBRARY VIEWPOINT_INCLUDE_DIR) 
+[11.769s] -- Looking for C++ include linux/joystick.h
+[12.087s] -- Looking for C++ include linux/joystick.h - found
+[12.088s] -- Looking for C++ include linux/input.h
+[12.388s] -- Looking for C++ include linux/input.h - found
+[12.434s] -- Found Perl: /usr/bin/perl (found version "5.34.0") 
+[12.435s] -- Checking for perl module Parse::RecDescent
+[12.449s] -- Checking for perl module Parse::RecDescent - failed
+[12.453s] -- Could NOT find PerlModules (missing: PERLMODULES_PARSE_RECDESCENT_MODULE) 
+[12.487s] -- Could NOT find LibFreespace (missing: LIBFREESPACE_LIBRARY LIBFREESPACE_INCLUDE_DIR) 
+[12.521s] -- Found quatlib: quat  
+[12.525s] -- Could NOT find ColibriApi (missing: COLIBRIAPI_LIBRARY COLIBRIAPI_INCLUDE_DIR) 
+[12.563s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[12.565s] -- Checking for module 'glut'
+[12.577s] --   No package 'glut' found
+[12.610s] -- Could NOT find GLUT (missing: GLUT_glut_LIBRARY GLUT_INCLUDE_DIR) 
+[12.684s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindOpenGL.cmake:315 (message):
+[12.684s]   Policy CMP0072 is not set: FindOpenGL prefers GLVND by default when
+[12.684s]   available.  Run "cmake --help-policy CMP0072" for policy details.  Use the
+[12.685s]   cmake_policy command to set the policy and suppress this warning.
+[12.685s] 
+[12.685s]   FindOpenGL found both a legacy GL library:
+[12.685s] 
+[12.685s]     OPENGL_gl_LIBRARY: /usr/lib/aarch64-linux-gnu/libGL.so
+[12.685s] 
+[12.685s]   and GLVND libraries for OpenGL and GLX:
+[12.685s] 
+[12.686s]     OPENGL_opengl_LIBRARY: /usr/lib/aarch64-linux-gnu/libOpenGL.so
+[12.686s]     OPENGL_glx_LIBRARY: /usr/lib/aarch64-linux-gnu/libGLX.so
+[12.686s] 
+[12.686s]   OpenGL_GL_PREFERENCE has not been set to "GLVND" or "LEGACY", so for
+[12.686s]   compatibility with CMake 3.10 and below the legacy GL library will be used.
+[12.686s] Call Stack (most recent call first):
+[12.686s]   client_src/CMakeLists.txt:25 (find_package)
+[12.686s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[12.687s] [0m
+[12.687s] -- Found OpenGL: /usr/lib/aarch64-linux-gnu/libOpenGL.so   
+[12.700s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindOpenGL.cmake:315 (message):
+[12.700s]   Policy CMP0072 is not set: FindOpenGL prefers GLVND by default when
+[12.700s]   available.  Run "cmake --help-policy CMP0072" for policy details.  Use the
+[12.700s]   cmake_policy command to set the policy and suppress this warning.
+[12.700s] 
+[12.700s]   FindOpenGL found both a legacy GL library:
+[12.700s] 
+[12.700s]     OPENGL_gl_LIBRARY: /usr/lib/aarch64-linux-gnu/libGL.so
+[12.701s] 
+[12.701s]   and GLVND libraries for OpenGL and GLX:
+[12.701s] 
+[12.701s]     OPENGL_opengl_LIBRARY: /usr/lib/aarch64-linux-gnu/libOpenGL.so
+[12.701s]     OPENGL_glx_LIBRARY: /usr/lib/aarch64-linux-gnu/libGLX.so
+[12.701s] 
+[12.701s]   OpenGL_GL_PREFERENCE has not been set to "GLVND" or "LEGACY", so for
+[12.701s]   compatibility with CMake 3.10 and below the legacy GL library will be used.
+[12.701s] Call Stack (most recent call first):
+[12.702s]   server_src/CMakeLists.txt:27 (find_package)
+[12.702s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[12.702s] [0m
+[13.089s] -- Dashboard scripts have been generated for automatic nightly and continuous builds.
+[13.089s] -- You can add these sample lines to your crontab:
+[13.091s] -- 
+[13.091s] 
+[13.091s] 15 0 * * * "/usr/bin/ctest" -S "/home/orinnano/SDK_ros2_ws/build/VRPN/Dashboards-ubuntu-orinnano/runNightly.cmake" 
+[13.091s] 15 * * * * "/usr/bin/ctest" -S "/home/orinnano/SDK_ros2_ws/build/VRPN/Dashboards-ubuntu-orinnano/runContinuous.cmake" 
+[13.092s] 
+[13.092s] or run this command for an one-off experimental test build:
+[13.092s] "/usr/bin/ctest" -S "/home/orinnano/SDK_ros2_ws/build/VRPN/Dashboards-ubuntu-orinnano/runExperimental.cmake" -VV
+[13.092s] 
+[13.092s] -- 
+[13.114s] -- Configuring done
+[13.325s] -- Generating done
+[13.341s] -- Build files have been written to: /home/orinnano/SDK_ros2_ws/build/VRPN
+[13.382s] Invoked command in '/home/orinnano/SDK_ros2_ws/build/VRPN' returned '0': /usr/bin/cmake /home/orinnano/SDK_ros2_ws/src/vrpn -DCMAKE_INSTALL_PREFIX=/home/orinnano/SDK_ros2_ws/install/VRPN
+[13.385s] Invoking command in '/home/orinnano/SDK_ros2_ws/build/VRPN': /usr/bin/cmake --build /home/orinnano/SDK_ros2_ws/build/VRPN -- -j6 -l6
+[13.657s] [  0%] [32mBuilding CXX object server_src/timecode_generator_server/CMakeFiles/vrpn_timecode_generator.dir/vrpn_timecode_generator.cpp.o[0m
+[13.664s] [  0%] [32mBuilding C object quat/CMakeFiles/quat.dir/matrix.c.o[0m
+[13.675s] [  1%] [32mBuilding CXX object gpsnmealib/CMakeFiles/gpsnmea.dir/nmeaParser.C.o[0m
+[13.686s] [  1%] [32mBuilding C object quat/CMakeFiles/quat.dir/quat.c.o[0m
+[13.690s] [  1%] [32mBuilding CXX object gpsnmealib/CMakeFiles/gpsnmea.dir/latLonCoord.C.o[0m
+[13.712s] [  1%] [32mBuilding CXX object atmellib/CMakeFiles/vrpn_atmel.dir/vrpn_atmellib_helper.C.o[0m
+[13.827s] [  1%] [32m[1mLinking CXX static library libvrpn_timecode_generator.a[0m
+[14.050s] [  2%] [32mBuilding CXX object atmellib/CMakeFiles/vrpn_atmel.dir/vrpn_atmellib_iobasic.C.o[0m
+[14.108s] [  3%] [32mBuilding C object quat/CMakeFiles/quat.dir/vector.c.o[0m
+[14.289s] [  3%] Built target vrpn_timecode_generator
+[14.305s] [  3%] [32mBuilding C object quat/CMakeFiles/quat.dir/xyzquat.c.o[0m
+[14.353s] [  3%] [32mBuilding CXX object atmellib/CMakeFiles/vrpn_atmel.dir/vrpn_atmellib_openclose.C.o[0m
+[14.400s] [  3%] [32mBuilding CXX object gpsnmealib/CMakeFiles/gpsnmea.dir/typedCoord.C.o[0m
+[14.520s] [  3%] [32mBuilding CXX object atmellib/CMakeFiles/vrpn_atmel.dir/vrpn_atmellib_register.C.o[0m
+[14.526s] [  3%] [32m[1mLinking C static library libquat.a[0m
+[14.618s] [  3%] [32mBuilding CXX object gpsnmealib/CMakeFiles/gpsnmea.dir/utmCoord.C.o[0m
+[14.635s] [  4%] [32mBuilding CXX object atmellib/CMakeFiles/vrpn_atmel.dir/vrpn_atmellib_tester.C.o[0m
+[14.837s] [  4%] [32m[1mLinking CXX static library libvrpn_atmel.a[0m
+[14.892s] [  4%] Built target quat
+[15.068s] [  4%] [32mBuilding CXX object CMakeFiles/vrpn.dir/vrpn_Analog.C.o[0m
+[15.105s] [  4%] [32mBuilding CXX object CMakeFiles/vrpn.dir/vrpn_Assert.C.o[0m
+[15.106s] [  5%] [32mBuilding CXX object CMakeFiles/vrpn.dir/vrpn_Analog_Output.C.o[0m
+[15.244s] [  5%] Built target vrpn_atmel
+[15.314s] [  5%] [32mBuilding CXX object CMakeFiles/vrpn.dir/vrpn_Auxiliary_Logger.C.o[0m
+[15.336s] [  6%] [32mBuilding CXX object CMakeFiles/vrpn.dir/vrpn_BaseClass.C.o[0m
+[15.527s] [  6%] [32mBuilding CXX object CMakeFiles/vrpn.dir/vrpn_Button.C.o[0m
+[15.894s] [  7%] [32m[1mLinking CXX static library libgpsnmea.a[0m
+[15.975s] [  7%] [32mBuilding CXX object CMakeFiles/vrpn.dir/vrpn_Connection.C.o[0m
+[16.040s] [  8%] [32mBuilding CXX object CMakeFiles/vrpn.dir/vrpn_Dial.C.o[0m
+[16.075s] [  8%] [32mBuilding CXX object CMakeFiles/vrpn.dir/vrpn_EndpointContainer.C.o[0m
+[16.149s] [  8%] [32mBuilding CXX object CMakeFiles/vrpn.dir/vrpn_FileConnection.C.o[0m
+[16.428s] [  8%] Built target gpsnmea
+[16.608s] [  9%] [32mBuilding CXX object CMakeFiles/vrpn.dir/vrpn_FileController.C.o[0m
+[16.664s] [ 10%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Analog.C.o[0m
+[16.732s] [ 10%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Analog_Output.C.o[0m
+[16.918s] [ 10%] [32mBuilding CXX object CMakeFiles/vrpn.dir/vrpn_ForceDevice.C.o[0m
+[17.103s] [ 10%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Assert.C.o[0m
+[17.176s] [ 10%] [32mBuilding CXX object CMakeFiles/vrpn.dir/vrpn_Forwarder.C.o[0m
+[17.333s] [ 11%] [32mBuilding CXX object CMakeFiles/vrpn.dir/vrpn_ForwarderController.C.o[0m
+[17.614s] [ 12%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Auxiliary_Logger.C.o[0m
+[17.670s] [ 12%] [32mBuilding CXX object CMakeFiles/vrpn.dir/vrpn_FunctionGenerator.C.o[0m
+[17.817s] [ 12%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_BaseClass.C.o[0m
+[17.959s] [ 12%] [32mBuilding CXX object CMakeFiles/vrpn.dir/vrpn_Imager.C.o[0m
+[18.626s] [ 13%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Connection.C.o[0m
+[18.668s] [ 13%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Button.C.o[0m
+[20.155s] [ 14%] [32mBuilding CXX object CMakeFiles/vrpn.dir/vrpn_LamportClock.C.o[0m
+[20.307s] [ 14%] [32mBuilding CXX object CMakeFiles/vrpn.dir/vrpn_Mutex.C.o[0m
+[20.524s] [ 14%] [32mBuilding CXX object CMakeFiles/vrpn.dir/vrpn_Poser.C.o[0m
+[20.649s] [ 15%] [32mBuilding CXX object CMakeFiles/vrpn.dir/vrpn_RedundantTransmission.C.o[0m
+[20.682s] [ 15%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Dial.C.o[0m
+[20.745s] [ 15%] [32mBuilding CXX object CMakeFiles/vrpn.dir/vrpn_Serial.C.o[0m
+[21.212s] [ 15%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_EndpointContainer.C.o[0m
+[21.454s] [ 16%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_FileConnection.C.o[0m
+[21.556s] [ 16%] [32mBuilding CXX object CMakeFiles/vrpn.dir/vrpn_SerialPort.C.o[0m
+[21.648s] [ 17%] [32mBuilding CXX object CMakeFiles/vrpn.dir/vrpn_Shared.C.o[0m
+[21.725s] [ 17%] [32mBuilding CXX object CMakeFiles/vrpn.dir/vrpn_SharedObject.C.o[0m
+[22.127s] [ 17%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_FileController.C.o[0m
+[22.333s] [ 17%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_ForceDevice.C.o[0m
+[22.453s] [ 18%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Forwarder.C.o[0m
+[22.977s] [ 18%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_ForwarderController.C.o[0m
+[23.010s] [ 18%] [32mBuilding CXX object CMakeFiles/vrpn.dir/vrpn_Sound.C.o[0m
+[23.399s] [ 18%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_FunctionGenerator.C.o[0m
+[23.587s] [ 19%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Imager.C.o[0m
+[23.760s] [ 20%] [32mBuilding CXX object CMakeFiles/vrpn.dir/vrpn_Text.C.o[0m
+[23.872s] [ 20%] [32mBuilding CXX object CMakeFiles/vrpn.dir/vrpn_Thread.C.o[0m
+[24.305s] [ 20%] [32mBuilding CXX object CMakeFiles/vrpn.dir/vrpn_Tracker.C.o[0m
+[24.582s] [ 20%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_LamportClock.C.o[0m
+[25.134s] [ 20%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Mutex.C.o[0m
+[25.627s] [ 21%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Poser.C.o[0m
+[25.882s] [ 21%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_RedundantTransmission.C.o[0m
+[26.604s] [ 21%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Serial.C.o[0m
+[26.906s] [ 22%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_SerialPort.C.o[0m
+[26.981s] [ 22%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Shared.C.o[0m
+[27.042s] [ 22%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_SharedObject.C.o[0m
+[27.098s] [ 23%] [32m[1mLinking CXX static library libvrpn.a[0m
+[27.115s] [ 24%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Sound.C.o[0m
+[27.180s] [ 24%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Text.C.o[0m
+[27.716s] [ 24%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Thread.C.o[0m
+[27.781s] [ 24%] Built target vrpn
+[28.056s] [ 24%] [32mBuilding CXX object client_src/CMakeFiles/add_vrpn_cookie.dir/add_vrpn_cookie.C.o[0m
+[28.743s] [ 24%] [32m[1mLinking CXX executable add_vrpn_cookie[0m
+[28.785s] [ 25%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker.C.o[0m
+[28.857s] [ 26%] [32mBuilding CXX object client_src/CMakeFiles/bdbox_client.dir/bdbox_client.C.o[0m
+[29.515s] [ 26%] Built target add_vrpn_cookie
+[29.583s] [ 26%] [32m[1mLinking CXX executable bdbox_client[0m
+[29.724s] [ 26%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_3DConnexion.C.o[0m
+[29.724s] [ 26%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_3DMicroscribe.C.o[0m
+[29.865s] [ 27%] [32mBuilding CXX object client_src/CMakeFiles/clock_drift_estimator.dir/clock_drift_estimator.C.o[0m
+[30.475s] [ 27%] Built target bdbox_client
+[30.789s] [ 28%] [32mBuilding CXX object client_src/CMakeFiles/ff_client.dir/ff_client.C.o[0m
+[31.612s] [ 29%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_3Space.C.o[0m
+[31.779s] [ 29%] [32m[1mLinking CXX executable clock_drift_estimator[0m
+[31.790s] [ 29%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_5DT16.C.o[0m
+[32.340s] [ 29%] [32m[1mLinking CXX executable ff_client[0m
+[32.449s] [ 29%] Built target clock_drift_estimator
+[32.848s] [ 29%] [32mBuilding CXX object client_src/CMakeFiles/forcedevice_test_client.dir/forcedevice_test_client.cpp.o[0m
+[33.167s] [ 29%] Built target ff_client
+[33.250s] [ 29%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Adafruit.C.o[0m
+[33.526s] [ 30%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_ADBox.C.o[0m
+[33.537s] [ 31%] [32mBuilding CXX object client_src/CMakeFiles/forwarderClient.dir/forwarderClient.C.o[0m
+[34.193s] [ 31%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Analog_5dt.C.o[0m
+[34.226s] [ 31%] [32m[1mLinking CXX executable forwarderClient[0m
+[34.354s] [ 31%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Analog_5dtUSB.C.o[0m
+[34.705s] [ 32%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Analog_Radamec_SPI.C.o[0m
+[34.996s] [ 33%] [32m[1mLinking CXX executable forcedevice_test_client[0m
+[35.059s] [ 33%] Built target forwarderClient
+[35.257s] [ 33%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Analog_USDigital_A2.C.o[0m
+[35.420s] [ 33%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Atmel.C.o[0m
+[35.422s] [ 33%] [32mBuilding CXX object client_src/CMakeFiles/phan_client.dir/phan_client.C.o[0m
+[35.657s] [ 33%] Built target forcedevice_test_client
+[35.765s] [ 34%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_BiosciencesTools.C.o[0m
+[36.063s] [ 34%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Button_NI_DIO24.C.o[0m
+[36.087s] [ 34%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Button_USB.cpp.o[0m
+[36.226s] [ 34%] [32m[1mLinking CXX executable phan_client[0m
+[36.433s] [ 35%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_CerealBox.C.o[0m
+[36.658s] [ 35%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_CHProducts_Controller_Raw.C.o[0m
+[36.823s] [ 35%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Contour.C.o[0m
+[36.836s] [ 36%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_DevInput.C.o[0m
+[37.025s] [ 36%] Built target phan_client
+[37.202s] [ 37%] [32mBuilding CXX object client_src/CMakeFiles/printcereal.dir/printcereal.C.o[0m
+[37.451s] [ 37%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_DirectXFFJoystick.C.o[0m
+[37.685s] [ 37%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_DirectXRumblePad.C.o[0m
+[37.775s] [ 38%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_DreamCheeky.C.o[0m
+[37.940s] [ 38%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Dyna.C.o[0m
+[38.126s] [ 38%] [32m[1mLinking CXX executable printcereal[0m
+[38.522s] [ 38%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Event_Analog.C.o[0m
+[38.651s] [ 39%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Event.C.o[0m
+[38.827s] [ 39%] Built target printcereal
+[38.929s] [ 39%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Event_Mouse.C.o[0m
+[39.066s] [ 39%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Flock.C.o[0m
+[41.576s] [ 39%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_GlobalHapticsOrb.C.o[0m
+[42.482s] [ 40%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Futaba.C.o[0m
+[44.052s] [ 40%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Freespace.C.o[0m
+[44.272s] [ 40%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_ForceDeviceServer.C.o[0m
+[45.284s] [ 41%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Flock_Parallel.C.o[0m
+[45.939s] [ 41%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Griffin.C.o[0m
+[46.926s] [ 42%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_HumanInterface.C.o[0m
+[47.636s] [ 42%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_IDEA.C.o[0m
+[48.635s] [ 42%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Imager_Stream_Buffer.C.o[0m
+[49.829s] [ 43%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_ImmersionBox.C.o[0m
+[50.698s] [ 43%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_inertiamouse.C.o[0m
+[51.444s] [ 43%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_JoyFly.C.o[0m
+[52.170s] [ 44%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Joylin.C.o[0m
+[52.558s] [ 44%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Joywin32.C.o[0m
+[52.660s] [ 44%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Keyboard.C.o[0m
+[52.936s] [ 45%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Laputa.C.o[0m
+[53.688s] [ 45%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_LUDL.C.o[0m
+[54.408s] [ 45%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Logitech_Controller_Raw.C.o[0m
+[55.348s] [ 46%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Magellan.C.o[0m
+[55.757s] [ 46%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Microsoft_Controller_Raw.C.o[0m
+[56.684s] [ 46%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Mouse.C.o[0m
+[57.106s] [ 47%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_NationalInstruments.C.o[0m
+[57.657s] [ 47%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Nidaq.C.o[0m
+[57.752s] [ 47%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_nikon_controls.C.o[0m
+[58.318s] [ 48%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_nVidia_shield_controller.C.o[0m
+[59.249s] [ 48%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Oculus.C.o[0m
+[59.287s] [ 48%] [32mBuilding CXX object client_src/CMakeFiles/test_Zaber.dir/test_Zaber.C.o[0m
+[59.641s] [ 49%] [32m[1mLinking CXX executable test_Zaber[0m
+[59.947s] [ 49%] Built target test_Zaber
+[60.017s] [ 49%] [32mBuilding CXX object client_src/CMakeFiles/testSharedObject.dir/testSharedObject.C.o[0m
+[60.021s] [ 50%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_OmegaTemperature.C.o[0m
+[60.030s] [ 50%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_OzzMaker.C.o[0m
+[60.078s] [ 50%] [32mBuilding CXX object client_src/CMakeFiles/sphere_client.dir/sphere_client.C.o[0m
+[60.285s] [ 50%] [32m[1mLinking CXX executable testSharedObject[0m
+[60.607s] [ 50%] Built target testSharedObject
+[60.719s] [ 50%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Poser_Analog.C.o[0m
+[60.767s] [ 50%] [32mBuilding CXX object client_src/CMakeFiles/test_imager.dir/test_imager.C.o[0m
+[60.804s] [ 51%] [32mBuilding CXX object client_src/CMakeFiles/sound_client.dir/sound_client.C.o[0m
+[60.824s] [ 52%] [32m[1mLinking CXX executable sphere_client[0m
+[61.249s] [ 52%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Poser_Tek4662.C.o[0m
+[61.304s] [01m[K/home/orinnano/SDK_ros2_ws/src/vrpn/client_src/sound_client.C:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[61.304s] [01m[K/home/orinnano/SDK_ros2_ws/src/vrpn/client_src/sound_client.C:196:30:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kint scanf(const char*, ...)[m[K’ declared with attribute ‘[01m[Kwarn_unused_result[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+[61.304s]   196 |                         [01;35m[Kscanf("%lf %lf %lf", &position[0], &position[1], &position[2])[m[K;
+[61.304s]       |                         [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[61.305s] [01m[K/home/orinnano/SDK_ros2_ws/src/vrpn/client_src/sound_client.C:207:30:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kint scanf(const char*, ...)[m[K’ declared with attribute ‘[01m[Kwarn_unused_result[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+[61.305s]   207 |                         [01;35m[Kscanf("%lf %lf %lf %lf", &orientation[0], &orientation[1], &orientation[2], &orientation[3])[m[K;
+[61.305s]       |                         [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[61.352s] [ 52%] Built target sphere_client
+[61.461s] [ 53%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_raw_sgibox.C.o[0m
+[61.539s] [ 53%] [32mBuilding CXX object client_src/CMakeFiles/printvals.dir/printvals.C.o[0m
+[61.672s] [ 53%] [32m[1mLinking CXX executable sound_client[0m
+[61.765s] [ 53%] [32m[1mLinking CXX executable test_imager[0m
+[62.162s] [ 53%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Retrolink.C.o[0m
+[62.167s] [ 53%] Built target sound_client
+[62.197s] [ 54%] [32m[1mLinking CXX executable printvals[0m
+[62.268s] [ 54%] Built target test_imager
+[62.303s] [ 54%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Saitek_Controller_Raw.C.o[0m
+[62.330s] [ 55%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_sgibox.C.o[0m
+[62.351s] [ 55%] [32mBuilding CXX object client_src/CMakeFiles/test_mutex.dir/test_mutex.C.o[0m
+[62.493s] [ 55%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Spaceball.C.o[0m
+[62.526s] [ 56%] [32mBuilding CXX object client_src/CMakeFiles/text.dir/text.C.o[0m
+[62.638s] [ 56%] Built target printvals
+[62.800s] [ 56%] [32m[1mLinking CXX executable test_mutex[0m
+[62.822s] [ 57%] [32mBuilding CXX object client_src/CMakeFiles/tracker_to_poser.dir/tracker_to_poser.cpp.o[0m
+[63.109s] [ 57%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Streaming_Arduino.C.o[0m
+[63.172s] [ 57%] Built target test_mutex
+[63.284s] [ 57%] [32m[1mLinking CXX executable text[0m
+[63.417s] [ 58%] [32mBuilding CXX object client_src/CMakeFiles/vrpn_LamportClock.dir/vrpn_LamportClock.t.C.o[0m
+[63.439s] [ 58%] [32m[1mLinking CXX executable tracker_to_poser[0m
+[63.507s] [ 59%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tng3.C.o[0m
+[63.740s] [ 59%] Built target text
+[63.822s] [ 59%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_3DMouse.C.o[0m
+[63.942s] [ 59%] Built target tracker_to_poser
+[64.011s] [ 59%] [32mBuilding CXX object client_src/CMakeFiles/vrpn_ping.dir/vrpn_ping.C.o[0m
+[64.236s] [ 60%] [32mBuilding CXX object client_src/CMakeFiles/logfilesenders.dir/logfilesenders.C.o[0m
+[64.573s] [ 60%] [32m[1mLinking CXX executable vrpn_ping[0m
+[64.593s] [ 60%] [32m[1mLinking CXX executable vrpn_LamportClock[0m
+[64.667s] [ 60%] [32m[1mLinking CXX executable logfilesenders[0m
+[64.867s] [ 60%] Built target vrpn_LamportClock
+[64.878s] [ 60%] Built target logfilesenders
+[64.891s] [ 60%] Built target vrpn_ping
+[65.122s] [ 61%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_ButtonFly.C.o[0m
+[66.101s] [ 61%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_AnalogFly.C.o[0m
+[67.075s] [ 61%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_Crossbow.C.o[0m
+[67.803s] [ 61%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_DTrack.C.o[0m
+[69.268s] [ 62%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_Fastrak.C.o[0m
+[69.960s] [ 62%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_Filter.C.o[0m
+[70.169s] [ 62%] [32mBuilding CXX object client_src/CMakeFiles/vrpn_log_devices.dir/vrpn_log_devices.C.o[0m
+[70.616s] [ 63%] [32m[1mLinking CXX executable vrpn_log_devices[0m
+[70.890s] [ 63%] Built target vrpn_log_devices
+[70.945s] [ 63%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_GameTrak.C.o[0m
+[71.580s] [ 64%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_GPS.C.o[0m
+[71.953s] [ 64%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_IMU.C.o[0m
+[72.004s] [ 65%] [32mBuilding CXX object client_src/CMakeFiles/vrpn_print_devices.dir/vrpn_print_devices.C.o[0m
+[72.434s] [ 65%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_isense.C.o[0m
+[72.546s] [ 66%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_Isotrak.C.o[0m
+[72.857s] [ 66%] [32m[1mLinking CXX executable vrpn_print_devices[0m
+[73.156s] [ 66%] Built target vrpn_print_devices
+[73.164s] [ 66%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_JsonNet.C.o[0m
+[73.278s] [ 66%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_Liberty.C.o[0m
+[73.328s] [ 67%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_MotionNode.C.o[0m
+[73.521s] [ 67%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_NDI_Polaris.C.o[0m
+[73.990s] [ 67%] [32mBuilding CXX object client_src/CMakeFiles/vrpn_print_messages.dir/vrpn_print_messages.C.o[0m
+[73.996s] [ 67%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_NovintFalcon.C.o[0m
+[74.096s] [ 68%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_OSVRHackerDevKit.C.o[0m
+[74.227s] [ 69%] [32m[1mLinking CXX executable vrpn_print_messages[0m
+[74.507s] [ 69%] Built target vrpn_print_messages
+[75.088s] [ 69%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_PDI.C.o[0m
+[75.304s] [ 69%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_PhaseSpace.C.o[0m
+[75.629s] [ 69%] [32mBuilding C object client_src/CMakeFiles/c_interface_example.dir/c_interface_example.c.o[0m
+[75.777s] [ 70%] [32mBuilding CXX object client_src/CMakeFiles/c_interface_example.dir/c_interface.cpp.o[0m
+[76.034s] [ 70%] [32m[1mLinking CXX executable c_interface_example[0m
+[76.314s] [ 70%] Built target c_interface_example
+[76.584s] [ 71%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_RazerHydra.C.o[0m
+[76.797s] [ 71%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_ThalmicLabsMyo.C.o[0m
+[76.900s] [ 71%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_SpacePoint.C.o[0m
+[77.432s] [ 72%] [32mBuilding CXX object client_src/CMakeFiles/run_auxiliary_logger.dir/run_auxiliary_logger.C.o[0m
+[77.701s] [ 73%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_Wintracker.C.o[0m
+[77.755s] [ 73%] [32m[1mLinking CXX executable run_auxiliary_logger[0m
+[78.023s] [ 73%] Built target run_auxiliary_logger
+[78.074s] [ 73%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_Colibri.C.o[0m
+[78.137s] [ 73%] [32mBuilding CXX object client_src/CMakeFiles/vrpn_print_performance.dir/vrpn_print_performance.C.o[0m
+[78.482s] [ 73%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_TrivisioColibri.C.o[0m
+[78.593s] [ 74%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_WiimoteHead.C.o[0m
+[78.964s] [ 74%] [32m[1mLinking CXX executable vrpn_print_performance[0m
+[79.236s] [ 74%] Built target vrpn_print_performance
+[79.288s] [ 74%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_zSight.C.o[0m
+[79.345s] [ 74%] [32mBuilding CXX object util/printStream/CMakeFiles/vrpn_streamPrint.dir/vrpn_streamPrint.cpp.o[0m
+[79.412s] [ 74%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_ViewPoint.C.o[0m
+[79.530s] [ 75%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_UNC_Joystick.C.o[0m
+[79.686s] [ 76%] [32m[1mLinking CXX executable vrpn_streamPrint[0m
+[79.942s] [ 76%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_VPJoystick.C.o[0m
+[79.985s] [ 76%] Built target vrpn_streamPrint
+[80.137s] [ 77%] [32mBuilding CXX object client_src/CMakeFiles/vrpn_average_analogs.dir/vrpn_average_analogs.C.o[0m
+[80.310s] [ 78%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_WiiMote.C.o[0m
+[80.314s] [ 78%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Wanda.C.o[0m
+[80.394s] [ 78%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_XInputGamepad.C.o[0m
+[80.498s] [ 78%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Xkeys.C.o[0m
+[80.579s] [ 79%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Tracker_LibertyHS.C.o[0m
+[80.845s] [ 79%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Vality.C.o[0m
+[80.877s] [ 79%] [32m[1mLinking CXX executable vrpn_average_analogs[0m
+[81.183s] [ 79%] Built target vrpn_average_analogs
+[81.351s] [ 79%] [32mBuilding CXX object client_src/CMakeFiles/checklogfile.dir/checklogfile.C.o[0m
+[81.367s] [ 79%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_YEI_3Space.C.o[0m
+[81.519s] [ 80%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/vrpn_Zaber.C.o[0m
+[81.794s] [ 81%] [32m[1mLinking CXX executable checklogfile[0m
+[81.985s] [ 81%] [32mBuilding CXX object CMakeFiles/vrpnserver.dir/server_src/vrpn_Generic_server_object.C.o[0m
+[82.199s] [ 81%] Built target checklogfile
+[82.364s] [ 81%] [32mBuilding CXX object client_src/CMakeFiles/logfiletypes.dir/logfiletypes.C.o[0m
+[82.641s] [ 82%] [32m[1mLinking CXX executable logfiletypes[0m
+[82.830s] [ 82%] Built target logfiletypes
+[96.796s] [ 83%] [32m[1mLinking CXX static library libvrpnserver.a[0m
+[97.380s] [ 83%] Built target vrpnserver
+[97.529s] [ 84%] [32mBuilding CXX object server_src/CMakeFiles/vrpn_server.dir/vrpn.C.o[0m
+[97.568s] [ 84%] [32mBuilding CXX object CMakeFiles/time_test.dir/time_test.cpp.o[0m
+[97.607s] [ 84%] [32mBuilding CXX object server_src/CMakeFiles/client_and_server.dir/client_and_server.C.o[0m
+[97.864s] [ 84%] [32m[1mLinking CXX executable time_test[0m
+[97.993s] [ 84%] [32m[1mLinking CXX executable client_and_server[0m
+[98.343s] [ 84%] Built target time_test
+[98.432s] [ 84%] Built target client_and_server
+[98.550s] [ 84%] [32mBuilding CXX object server_src/CMakeFiles/sample_analog.dir/sample_analog.C.o[0m
+[98.584s] [ 84%] [32mBuilding CXX object server_src/CMakeFiles/last_of_sequence.dir/last_of_sequence.C.o[0m
+[98.701s] [ 84%] [32mBuilding CXX object server_src/CMakeFiles/sample_server.dir/sample_server.C.o[0m
+[98.827s] [ 84%] [32m[1mLinking CXX executable vrpn_server[0m
+[99.054s] [ 84%] [32m[1mLinking CXX executable last_of_sequence[0m
+[99.067s] [ 84%] [32m[1mLinking CXX executable sample_server[0m
+[99.416s] [ 85%] [32m[1mLinking CXX executable sample_analog[0m
+[99.531s] [ 85%] Built target last_of_sequence
+[99.550s] [ 85%] Built target sample_server
+[99.624s] [ 85%] Built target vrpn_server
+[99.757s] [ 85%] Built target sample_analog
+[99.871s] [ 85%] [32mBuilding CXX object server_src/CMakeFiles/test_freespace.dir/test_freespace.C.o[0m
+[100.003s] [ 86%] [32m[1mLinking CXX executable test_freespace[0m
+[100.170s] [ 86%] Built target test_freespace
+[100.285s] [ 87%] [32mBuilding CXX object server_src/CMakeFiles/test_logging.dir/test_logging.C.o[0m
+[100.784s] [ 87%] [32m[1mLinking CXX executable test_logging[0m
+[101.049s] [ 87%] Built target test_logging
+[101.108s] [ 87%] [32mBuilding CXX object server_src/CMakeFiles/test_loopback.dir/test_loopback.C.o[0m
+[101.163s] [ 88%] [32mBuilding CXX object server_src/CMakeFiles/test_auxiliary_logger.dir/test_auxiliary_logger.C.o[0m
+[101.495s] [ 88%] [32m[1mLinking CXX executable test_auxiliary_logger[0m
+[101.785s] [ 88%] Built target test_auxiliary_logger
+[101.834s] [ 89%] [32m[1mLinking CXX executable test_loopback[0m
+[101.853s] [ 90%] [32mBuilding CXX object server_src/CMakeFiles/test_mutexServer.dir/test_mutexServer.C.o[0m
+[101.905s] [ 90%] [32mBuilding CXX object server_src/CMakeFiles/test_analogfly.dir/test_analogfly.C.o[0m
+[102.099s] [ 90%] [32m[1mLinking CXX executable test_mutexServer[0m
+[102.193s] [ 90%] Built target test_loopback
+[102.309s] [ 90%] [32m[1mLinking CXX executable test_analogfly[0m
+[102.320s] [ 90%] [32mBuilding CXX object server_src/CMakeFiles/test_peerMutex.dir/test_peerMutex.C.o[0m
+[102.397s] [ 90%] Built target test_mutexServer
+[102.541s] [ 90%] [32mBuilding CXX object server_src/CMakeFiles/test_radamec_spi.dir/test_radamec_spi.C.o[0m
+[102.564s] [ 91%] [32mBuilding CXX object server_src/CMakeFiles/testSharedObjectServer.dir/testSharedObjectServer.C.o[0m
+[102.610s] [ 92%] [32m[1mLinking CXX executable test_peerMutex[0m
+[102.677s] [ 92%] Built target test_analogfly
+[102.838s] [ 93%] [32mBuilding CXX object server_src/CMakeFiles/test_rumble.dir/test_rumble.C.o[0m
+[102.870s] [ 93%] [32m[1mLinking CXX executable testSharedObjectServer[0m
+[102.931s] [ 93%] [32m[1mLinking CXX executable test_radamec_spi[0m
+[102.999s] [ 93%] Built target test_peerMutex
+[103.116s] [ 93%] [32mBuilding CXX object server_src/CMakeFiles/test_vrpn.dir/test_vrpn.C.o[0m
+[103.173s] [ 93%] [32m[1mLinking CXX executable test_rumble[0m
+[103.260s] [ 93%] Built target testSharedObjectServer
+[103.310s] [ 93%] Built target test_radamec_spi
+[103.460s] [ 93%] [32mBuilding CXX object server_src/CMakeFiles/testimager_server.dir/testimager_server.cpp.o[0m
+[103.494s] [ 93%] [32mBuilding CXX object server_src/CMakeFiles/textServer.dir/textServer.C.o[0m
+[103.512s] [ 93%] Built target test_rumble
+[103.765s] [ 93%] [32mBuilding CXX object python/CMakeFiles/vrpn-python.dir/Base.cpp.o[0m
+[103.777s] [ 93%] [32mBuilding CXX object python/CMakeFiles/vrpn-python.dir/Connection.cpp.o[0m
+[103.866s] [ 93%] [32m[1mLinking CXX executable testimager_server[0m
+[103.929s] [ 94%] [32m[1mLinking CXX executable textServer[0m
+[104.348s] [ 94%] Built target testimager_server
+[104.525s] [ 94%] Built target textServer
+[104.827s] [ 95%] [32m[1mLinking CXX executable test_vrpn[0m
+[105.041s] [ 95%] [32mBuilding CXX object python/CMakeFiles/vrpn-python.dir/interface.cpp.o[0m
+[105.160s] [ 95%] Built target test_vrpn
+[106.113s] [ 95%] [32mBuilding CXX object python/CMakeFiles/vrpn-python.dir/receiver/Analog.cpp.o[0m
+[107.455s] [ 95%] [32mBuilding CXX object python/CMakeFiles/vrpn-python.dir/receiver/Button.cpp.o[0m
+[108.803s] [ 96%] [32mBuilding CXX object python/CMakeFiles/vrpn-python.dir/receiver/Dial.cpp.o[0m
+[109.854s] [ 96%] [32mBuilding CXX object python/CMakeFiles/vrpn-python.dir/receiver/Text_Receiver.cpp.o[0m
+[110.180s] [ 97%] [32mBuilding CXX object python/CMakeFiles/vrpn-python.dir/quaternion/quaternion.cpp.o[0m
+[111.182s] [ 97%] [32mBuilding CXX object python/CMakeFiles/vrpn-python.dir/receiver/Tracker.cpp.o[0m
+[111.298s] [ 98%] [32mBuilding CXX object python/CMakeFiles/vrpn-python.dir/receiver/receiver.cpp.o[0m
+[111.353s] [ 98%] [32mBuilding CXX object python/CMakeFiles/vrpn-python.dir/sender/Poser.cpp.o[0m
+[112.462s] [ 98%] [32mBuilding CXX object python/CMakeFiles/vrpn-python.dir/callback.cpp.o[0m
+[113.142s] [ 99%] [32mBuilding CXX object python/CMakeFiles/vrpn-python.dir/Device.cpp.o[0m
+[113.224s] [ 99%] [32mBuilding CXX object python/CMakeFiles/vrpn-python.dir/sender/Text_Sender.cpp.o[0m
+[113.445s] [100%] [32mBuilding CXX object python/CMakeFiles/vrpn-python.dir/sender/sender.cpp.o[0m
+[115.254s] [100%] [32mBuilding CXX object python/CMakeFiles/vrpn-python.dir/tools.cpp.o[0m
+[116.253s] [100%] [32m[1mLinking CXX shared module vrpn.so[0m
+[116.587s] [100%] Built target vrpn-python
+[116.706s] [100%] [32mBuilding CXX object server_src/CMakeFiles/forward.dir/forward.C.o[0m
+[116.987s] [100%] [32m[1mLinking CXX executable forward[0m
+[117.245s] [100%] Built target forward
+[117.303s] Invoked command in '/home/orinnano/SDK_ros2_ws/build/VRPN' returned '0': /usr/bin/cmake --build /home/orinnano/SDK_ros2_ws/build/VRPN -- -j6 -l6
+[120.691s] Invoking command in '/home/orinnano/SDK_ros2_ws/build/VRPN': /usr/bin/cmake --install /home/orinnano/SDK_ros2_ws/build/VRPN
+[120.728s] -- Install configuration: "RelWithDebInfo"
+[120.729s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/lib/libvrpnserver.a
+[120.769s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Configure.h
+[120.770s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Analog.h
+[120.770s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Analog_Output.h
+[120.770s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Assert.h
+[120.770s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Auxiliary_Logger.h
+[120.770s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_BaseClass.h
+[120.770s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Button.h
+[120.771s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Connection.h
+[120.771s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_ConnectionPtr.h
+[120.772s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Dial.h
+[120.772s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_EndpointContainer.h
+[120.772s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_FileConnection.h
+[120.772s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_FileController.h
+[120.772s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_ForceDevice.h
+[120.772s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_ForwarderController.h
+[120.773s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Forwarder.h
+[120.773s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_FunctionGenerator.h
+[120.773s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Imager.h
+[120.773s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_LamportClock.h
+[120.773s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Log.h
+[120.774s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_MainloopContainer.h
+[120.774s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_MainloopObject.h
+[120.774s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Mutex.h
+[120.774s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_OwningPtr.h
+[120.775s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_RedundantTransmission.h
+[120.775s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_SendTextMessageStreamProxy.h
+[120.775s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Serial.h
+[120.775s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_SerialPort.h
+[120.775s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Shared.h
+[120.775s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_SharedObject.h
+[120.775s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Sound.h
+[120.775s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Text.h
+[120.776s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Thread.h
+[120.776s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker.h
+[120.776s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Types.h
+[120.776s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_WindowsH.h
+[120.776s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_3DConnexion.h
+[120.776s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_3DMicroscribe.h
+[120.776s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_3Space.h
+[120.777s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_5DT16.h
+[120.777s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Adafruit.h
+[120.777s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_ADBox.h
+[120.777s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Analog_5dt.h
+[120.777s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Analog_5dtUSB.h
+[120.778s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Analog_Radamec_SPI.h
+[120.778s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Analog_USDigital_A2.h
+[120.778s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Atmel.h
+[120.778s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_BiosciencesTools.h
+[120.778s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Button_NI_DIO24.h
+[120.779s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Button_USB.h
+[120.779s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_CerealBox.h
+[120.779s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_CHProducts_Controller_Raw.h
+[120.779s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Contour.h
+[120.779s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_DevInput.h
+[120.779s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_DirectXFFJoystick.h
+[120.779s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_DirectXRumblePad.h
+[120.780s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_DreamCheeky.h
+[120.780s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Dyna.h
+[120.780s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Event_Analog.h
+[120.780s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Event.h
+[120.781s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Event_Mouse.h
+[120.781s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Flock.h
+[120.781s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Flock_Parallel.h
+[120.781s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_ForceDeviceServer.h
+[120.781s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Freespace.h
+[120.782s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_FunctionGenerator.h
+[120.782s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Futaba.h
+[120.782s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_GlobalHapticsOrb.h
+[120.782s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Griffin.h
+[120.782s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_HashST.h
+[120.782s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_HumanInterface.h
+[120.783s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_IDEA.h
+[120.783s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Imager_Stream_Buffer.h
+[120.783s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_ImmersionBox.h
+[120.783s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_inertiamouse.h
+[120.783s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_JoyFly.h
+[120.784s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Joylin.h
+[120.784s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Joywin32.h
+[120.784s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Keyboard.h
+[120.784s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Logitech_Controller_Raw.h
+[120.784s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Laputa.h
+[120.784s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_LUDL.h
+[120.785s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Magellan.h
+[120.785s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_MessageMacros.h
+[120.785s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Microsoft_Controller_Raw.h
+[120.785s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Mouse.h
+[120.785s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_NationalInstruments.h
+[120.786s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Nidaq.h
+[120.786s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_nikon_controls.h
+[120.786s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_nVidia_shield_controller.h
+[120.786s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Oculus.h
+[120.786s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_OmegaTemperature.h
+[120.787s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_OneEuroFilter.h
+[120.787s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_OzzMaker.h
+[120.787s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Poser_Analog.h
+[120.787s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Poser.h
+[120.787s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Poser_Tek4662.h
+[120.788s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_raw_sgibox.h
+[120.788s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Retrolink.h
+[120.788s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Saitek_Controller_Raw.h
+[120.788s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_sgibox.h
+[120.788s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Spaceball.h
+[120.789s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Streaming_Arduino.h
+[120.789s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tng3.h
+[120.789s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_3DMouse.h
+[120.789s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_AnalogFly.h
+[120.790s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_ButtonFly.h
+[120.790s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_Crossbow.h
+[120.790s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_DTrack.h
+[120.790s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_Fastrak.h
+[120.790s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_Filter.h
+[120.790s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_GameTrak.h
+[120.791s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_GPS.h
+[120.791s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_IMU.h
+[120.791s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_isense.h
+[120.791s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_Isotrak.h
+[120.791s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_JsonNet.h
+[120.792s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_Liberty.h
+[120.792s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_MotionNode.h
+[120.792s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_NDI_Polaris.h
+[120.792s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_NovintFalcon.h
+[120.792s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_OSVRHackerDevKit.h
+[120.792s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_PDI.h
+[120.793s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_PhaseSpace.h
+[120.793s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_RazerHydra.h
+[120.793s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_ThalmicLabsMyo.h
+[120.793s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_SpacePoint.h
+[120.793s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_Wintracker.h
+[120.793s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_Colibri.h
+[120.794s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_TrivisioColibri.h
+[120.794s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_WiimoteHead.h
+[120.794s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_zSight.h
+[120.795s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_ViewPoint.h
+[120.795s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_UNC_Joystick.h
+[120.795s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_VPJoystick.h
+[120.796s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Wanda.h
+[120.796s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_WiiMote.h
+[120.796s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_XInputGamepad.h
+[120.796s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Xkeys.h
+[120.796s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_LibertyHS.h
+[120.797s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Vality.h
+[120.797s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_YEI_3Space.h
+[120.797s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Zaber.h
+[120.797s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Generic_server_object.h
+[120.797s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/lib/libvrpn.a
+[120.809s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Configure.h
+[120.809s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Analog.h
+[120.810s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Analog_Output.h
+[120.810s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Assert.h
+[120.810s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Auxiliary_Logger.h
+[120.811s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_BaseClass.h
+[120.812s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Button.h
+[120.812s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Connection.h
+[120.812s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_ConnectionPtr.h
+[120.812s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Dial.h
+[120.812s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_EndpointContainer.h
+[120.812s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_FileConnection.h
+[120.813s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_FileController.h
+[120.813s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_ForceDevice.h
+[120.813s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_ForwarderController.h
+[120.813s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Forwarder.h
+[120.813s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_FunctionGenerator.h
+[120.813s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Imager.h
+[120.813s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_LamportClock.h
+[120.813s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Log.h
+[120.814s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_MainloopContainer.h
+[120.814s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_MainloopObject.h
+[120.814s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Mutex.h
+[120.814s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_OwningPtr.h
+[120.814s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_RedundantTransmission.h
+[120.814s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_SendTextMessageStreamProxy.h
+[120.814s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Serial.h
+[120.814s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_SerialPort.h
+[120.815s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Shared.h
+[120.815s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_SharedObject.h
+[120.815s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Sound.h
+[120.815s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Text.h
+[120.815s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Thread.h
+[120.815s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker.h
+[120.815s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Types.h
+[120.815s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_WindowsH.h
+[120.816s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/time_test
+[120.816s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/lib/libquat.a
+[120.816s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/quat.h
+[120.816s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/lib/libquat.a
+[120.816s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/quat.h
+[120.816s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/lib/libvrpn_atmel.a
+[120.816s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_atmellib_errno.h
+[120.816s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_atmellib.h
+[120.816s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/lib/libgpsnmea.a
+[120.817s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/nmeaParser.h
+[120.817s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/utmCoord.h
+[120.817s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/latLonCoord.h
+[120.817s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/add_vrpn_cookie
+[120.818s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/bdbox_client
+[120.820s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/clock_drift_estimator
+[120.823s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/ff_client
+[120.826s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/forcedevice_test_client
+[120.829s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/forwarderClient
+[120.830s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/phan_client
+[120.833s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/printcereal
+[120.836s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/printvals
+[120.838s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/sound_client
+[120.840s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/sphere_client
+[120.843s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/testSharedObject
+[120.845s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/test_Zaber
+[120.847s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/test_imager
+[120.849s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/test_mutex
+[120.851s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/text
+[120.853s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/tracker_to_poser
+[120.855s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/vrpn_LamportClock
+[120.855s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/vrpn_ping
+[120.857s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/logfilesenders
+[120.858s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/logfiletypes
+[120.858s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/checklogfile
+[120.858s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/vrpn_average_analogs
+[120.860s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/vrpn_print_devices
+[120.863s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/vrpn_log_devices
+[120.865s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/vrpn_print_performance
+[120.868s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/vrpn_print_messages
+[120.870s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/run_auxiliary_logger
+[120.872s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/vrpn_server
+[120.886s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/etc/vrpn.cfg
+[120.887s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/share/vrpn-07.36/vrpn.cfg.sample
+[120.887s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/client_and_server
+[120.890s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/forward
+[120.891s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/last_of_sequence
+[120.893s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/sample_analog
+[120.895s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/sample_server
+[120.897s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/testSharedObjectServer
+[120.899s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/test_analogfly
+[120.902s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/test_auxiliary_logger
+[120.904s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/test_freespace
+[120.904s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/test_logging
+[120.906s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/test_loopback
+[120.912s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/test_mutexServer
+[120.912s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/test_peerMutex
+[120.913s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/test_radamec_spi
+[120.915s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/test_rumble
+[120.917s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/test_vrpn
+[120.921s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/testimager_server
+[120.923s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/textServer
+[120.925s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/lib/libvrpn_timecode_generator.a
+[120.926s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_timecode_generator.h
+[120.926s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/vrpn_streamPrint
+[120.928s] -- Skipping (build 'doc' to create): /home/orinnano/SDK_ros2_ws/build/VRPN/doxygen/docs-generated/html
+[120.928s] -- Installing: /home/orinnano/SDK_ros2_ws/install/VRPN/lib/pythondist-packages/vrpn.so
+[120.942s] Invoked command in '/home/orinnano/SDK_ros2_ws/build/VRPN' returned '0': /usr/bin/cmake --install /home/orinnano/SDK_ros2_ws/build/VRPN

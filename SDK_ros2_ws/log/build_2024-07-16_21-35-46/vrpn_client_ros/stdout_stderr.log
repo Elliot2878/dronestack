@@ -1,0 +1,30 @@
+[35m[1mConsolidate compiler generated dependencies of target vrpn_client_ros[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/vrpn_client_ros.dir/src/vrpn_client_ros.cpp.o[0m
+In file included from [01m[K/home/orinnano/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/home/orinnano/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/home/orinnano/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/home/orinnano/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/home/orinnano/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/home/orinnano/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/home/orinnano/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/home/orinnano/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/home/orinnano/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/home/orinnano/ros2_humble/install/rclcpp/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/orinnano/SDK_ros2_ws/src/vrpn_client_ros/include/vrpn_client_ros/vrpn_client_ros.h:37[m[K,
+                 from [01m[K/home/orinnano/SDK_ros2_ws/src/vrpn_client_ros/src/vrpn_client_ros.cpp:32[m[K:
+[01m[K/home/orinnano/SDK_ros2_ws/src/vrpn_client_ros/src/vrpn_client_ros.cpp:[m[K In static member function ‘[01m[Kstatic void vrpn_client_ros::VrpnTrackerRos::handle_pose(void*, vrpn_TRACKERCB)[m[K’:
+[01m[K/home/orinnano/SDK_ros2_ws/src/vrpn_client_ros/src/vrpn_client_ros.cpp:149:24:[m[K [01;31m[Kerror: [m[K‘[01m[Knh[m[K’ was not declared in this scope
+  149 |     RCLCPP_INFO_STREAM([01;31m[Knh[m[K->get_logger(), "Start to run handle_pose function.");
+      |                        [01;31m[K^~[m[K
+[01m[K/home/orinnano/SDK_ros2_ws/src/vrpn_client_ros/src/vrpn_client_ros.cpp:149:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  149 |     [01;31m[KRCLCPP_INFO_STREAM[m[K(nh->get_logger(), "Start to run handle_pose function.");
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/orinnano/SDK_ros2_ws/src/vrpn_client_ros/src/vrpn_client_ros.cpp:149:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  149 |     [01;31m[KRCLCPP_INFO_STREAM[m[K(nh->get_logger(), "Start to run handle_pose function.");
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/orinnano/SDK_ros2_ws/src/vrpn_client_ros/src/vrpn_client_ros.cpp:149:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  149 |     [01;31m[KRCLCPP_INFO_STREAM[m[K(nh->get_logger(), "Start to run handle_pose function.");
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/vrpn_client_ros.dir/build.make:76: CMakeFiles/vrpn_client_ros.dir/src/vrpn_client_ros.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/vrpn_client_ros.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

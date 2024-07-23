@@ -1,0 +1,4 @@
+Invoking command in '/home/orinnano/SDK_ros2_ws/build/VRPN': NX_CONNECTION=192.168.0.100 65359 192.168.0.104 4000 /usr/bin/cmake --build /home/orinnano/SDK_ros2_ws/build/VRPN -- -j6 -l6
+Invoked command in '/home/orinnano/SDK_ros2_ws/build/VRPN' returned '0': NX_CONNECTION=192.168.0.100 65359 192.168.0.104 4000 /usr/bin/cmake --build /home/orinnano/SDK_ros2_ws/build/VRPN -- -j6 -l6
+Invoking command in '/home/orinnano/SDK_ros2_ws/build/VRPN': NX_CONNECTION=192.168.0.100 65359 192.168.0.104 4000 /usr/bin/cmake --install /home/orinnano/SDK_ros2_ws/build/VRPN
+Invoked command in '/home/orinnano/SDK_ros2_ws/build/VRPN' returned '0': NX_CONNECTION=192.168.0.100 65359 192.168.0.104 4000 /usr/bin/cmake --install /home/orinnano/SDK_ros2_ws/build/VRPN

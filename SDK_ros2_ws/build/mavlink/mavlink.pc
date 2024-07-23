@@ -1,0 +1,8 @@
+prefix=/home/orinnano/SDK_ros2_ws/install/mavlink
+exec_prefix=/home/orinnano/SDK_ros2_ws/install/mavlink
+includedir=${prefix}/include
+
+Name: mavlink
+Description: MAVLink micro air vehicle marshalling / communication library
+Version: 2024.6.6
+Cflags: -I${includedir}

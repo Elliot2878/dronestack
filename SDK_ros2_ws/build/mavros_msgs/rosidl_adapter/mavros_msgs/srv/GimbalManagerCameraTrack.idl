@@ -1,0 +1,67 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from mavros_msgs/srv/GimbalManagerCameraTrack.srv
+// generated code does not contain a copyright notice
+
+
+module mavros_msgs {
+  module srv {
+    module GimbalManagerCameraTrack_Request_Constants {
+      @verbatim (language="comment", text=
+        "CAMERA_TRACK_MODE" "\n"        " If the camera supports point visual tracking (CAMERA_CAP_FLAGS_HAS_TRACKING_POINT is set), this command allows to initiate the tracking.")
+      const uint8 CAMERA_TRACK_MODE_POINT = 0;
+      @verbatim (language="comment", text=
+        "If the camera supports rectangle visual tracking (CAMERA_CAP_FLAGS_HAS_TRACKING_RECTANGLE is set), this command allows to initiate the tracking.")
+      const uint8 CAMERA_TRACK_MODE_RECTANGLE = 1;
+      @verbatim (language="comment", text=
+        "Stops ongoing tracking.")
+      const uint8 CAMERA_TRACK_MODE_STOP_TRACKING = 2;
+    };
+    @verbatim (language="comment", text=
+      "MAVLink commands: CAMERA_TRACK_POINT, CAMERA_TRACK_RECTANGLE, CAMERA_STOP_TRACKING" "\n"
+      "https://mavlink.io/en/messages/common.html#MAV_CMD_CAMERA_TRACK_POINT" "\n"
+      "https://mavlink.io/en/messages/common.html#MAV_CMD_CAMERA_TRACK_RECTANGLE" "\n"
+      "https://mavlink.io/en/messages/common.html#MAV_CMD_CAMERA_STOP_TRACKING")
+    struct GimbalManagerCameraTrack_Request {
+      @verbatim (language="comment", text=
+        "enumerator to indicate camera track mode setting - see CAMERA_TRACK_MODE")
+      uint8 mode;
+
+      @verbatim (language="comment", text=
+        "For CAMERA_TRACK_POINT" "\n"
+        " Point to track x value (normalized 0..1, 0 is left, 1 is right).")
+      float x;
+
+      @verbatim (language="comment", text=
+        "Point to track y value (normalized 0..1, 0 is top, 1 is bottom).")
+      float y;
+
+      @verbatim (language="comment", text=
+        "Point radius (normalized 0..1, 0 is image left, 1 is image right).")
+      float radius;
+
+      @verbatim (language="comment", text=
+        "For CAMERA_TRACK_RECTANGLE" "\n"
+        " Top left corner of rectangle x value (normalized 0..1, 0 is left, 1 is right).")
+      float top_left_x;
+
+      @verbatim (language="comment", text=
+        "Top left corner of rectangle y value (normalized 0..1, 0 is top, 1 is bottom).")
+      float top_left_y;
+
+      @verbatim (language="comment", text=
+        "Bottom right corner of rectangle x value (normalized 0..1, 0 is left, 1 is right).")
+      float bottom_right_x;
+
+      @verbatim (language="comment", text=
+        "Bottom right corner of rectangle y value (normalized 0..1, 0 is top, 1 is bottom).")
+      float bottom_right_y;
+    };
+    struct GimbalManagerCameraTrack_Response {
+      boolean success;
+
+      @verbatim (language="comment", text=
+        "raw result returned by COMMAND_ACK")
+      uint8 result;
+    };
+  };
+};

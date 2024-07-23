@@ -1,0 +1,39 @@
+/usr/bin/cmake -S/home/orinnano/SDK_ros2_ws/src/vicon -B/home/orinnano/SDK_ros2_ws/build/vicon --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/orinnano/SDK_ros2_ws/build/vicon/CMakeFiles /home/orinnano/SDK_ros2_ws/build/vicon//CMakeFiles/progress.marks
+/usr/bin/gmake  -f CMakeFiles/Makefile2 all
+gmake[1]: Entering directory '/home/orinnano/SDK_ros2_ws/build/vicon'
+/usr/bin/gmake  -f CMakeFiles/vicon_lib.dir/build.make CMakeFiles/vicon_lib.dir/depend
+gmake[2]: Entering directory '/home/orinnano/SDK_ros2_ws/build/vicon'
+cd /home/orinnano/SDK_ros2_ws/build/vicon && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/orinnano/SDK_ros2_ws/src/vicon /home/orinnano/SDK_ros2_ws/src/vicon /home/orinnano/SDK_ros2_ws/build/vicon /home/orinnano/SDK_ros2_ws/build/vicon /home/orinnano/SDK_ros2_ws/build/vicon/CMakeFiles/vicon_lib.dir/DependInfo.cmake --color=
+gmake[2]: Leaving directory '/home/orinnano/SDK_ros2_ws/build/vicon'
+/usr/bin/gmake  -f CMakeFiles/vicon_lib.dir/build.make CMakeFiles/vicon_lib.dir/build
+gmake[2]: Entering directory '/home/orinnano/SDK_ros2_ws/build/vicon'
+gmake[2]: Nothing to be done for 'CMakeFiles/vicon_lib.dir/build'.
+gmake[2]: Leaving directory '/home/orinnano/SDK_ros2_ws/build/vicon'
+[ 60%] Built target vicon_lib
+/usr/bin/gmake  -f CMakeFiles/tranform_publisher.dir/build.make CMakeFiles/tranform_publisher.dir/depend
+gmake[2]: Entering directory '/home/orinnano/SDK_ros2_ws/build/vicon'
+cd /home/orinnano/SDK_ros2_ws/build/vicon && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/orinnano/SDK_ros2_ws/src/vicon /home/orinnano/SDK_ros2_ws/src/vicon /home/orinnano/SDK_ros2_ws/build/vicon /home/orinnano/SDK_ros2_ws/build/vicon /home/orinnano/SDK_ros2_ws/build/vicon/CMakeFiles/tranform_publisher.dir/DependInfo.cmake --color=
+gmake[2]: Leaving directory '/home/orinnano/SDK_ros2_ws/build/vicon'
+/usr/bin/gmake  -f CMakeFiles/tranform_publisher.dir/build.make CMakeFiles/tranform_publisher.dir/build
+gmake[2]: Entering directory '/home/orinnano/SDK_ros2_ws/build/vicon'
+gmake[2]: Nothing to be done for 'CMakeFiles/tranform_publisher.dir/build'.
+gmake[2]: Leaving directory '/home/orinnano/SDK_ros2_ws/build/vicon'
+[100%] Built target tranform_publisher
+gmake[1]: Leaving directory '/home/orinnano/SDK_ros2_ws/build/vicon'
+/usr/bin/cmake -E cmake_progress_start /home/orinnano/SDK_ros2_ws/build/vicon/CMakeFiles 0
+-- Install configuration: ""
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vicon/lib/vicon/tranform_publisher
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vicon/share/ament_index/resource_index/package_run_dependencies/vicon
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vicon/share/ament_index/resource_index/parent_prefix_path/vicon
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vicon/share/vicon/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vicon/share/vicon/environment/path.dsv
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vicon/share/vicon/local_setup.bash
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vicon/share/vicon/local_setup.sh
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vicon/share/vicon/local_setup.zsh
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vicon/share/vicon/local_setup.dsv
+-- Installing: /home/orinnano/SDK_ros2_ws/install/vicon/share/vicon/package.dsv
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vicon/share/ament_index/resource_index/packages/vicon
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vicon/share/vicon/cmake/viconConfig.cmake
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vicon/share/vicon/cmake/viconConfig-version.cmake
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vicon/share/vicon/package.xml

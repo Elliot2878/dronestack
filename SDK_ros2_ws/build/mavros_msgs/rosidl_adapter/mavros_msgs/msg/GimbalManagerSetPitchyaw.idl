@@ -1,0 +1,69 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mavros_msgs/msg/GimbalManagerSetPitchyaw.msg
+// generated code does not contain a copyright notice
+
+
+module mavros_msgs {
+  module msg {
+    module GimbalManagerSetPitchyaw_Constants {
+      @verbatim (language="comment", text=
+        "GIMBAL_MANAGER_FLAGS" "\n"        " Based on GIMBAL_DEVICE_FLAGS_RETRACT")
+      const uint32 GIMBAL_MANAGER_FLAGS_RETRACT = 1;
+      @verbatim (language="comment", text=
+        "Based on GIMBAL_DEVICE_FLAGS_NEUTRAL")
+      const uint32 GIMBAL_MANAGER_FLAGS_NEUTRAL = 2;
+      @verbatim (language="comment", text=
+        "Based on GIMBAL_DEVICE_FLAGS_ROLL_LOCK")
+      const uint32 GIMBAL_MANAGER_FLAGS_ROLL_LOCK = 4;
+      @verbatim (language="comment", text=
+        "Based on GIMBAL_DEVICE_FLAGS_PITCH_LOCK")
+      const uint32 GIMBAL_MANAGER_FLAGS_PITCH_LOCK = 8;
+      @verbatim (language="comment", text=
+        "Based on GIMBAL_DEVICE_FLAGS_YAW_LOCK")
+      const uint32 GIMBAL_MANAGER_FLAGS_YAW_LOCK = 16;
+    };
+    @verbatim (language="comment", text=
+      "MAVLink message: GIMBAL_MANAGER_SET_PITCHYAW" "\n"
+      "https://mavlink.io/en/messages/common.html#GIMBAL_MANAGER_SET_PITCHYAW" "\n"
+      "Note that this message structure is identical also to GIMBAL_MANAGER_SET_MANUAL_CONTROL and is " "\n"
+      "reused as such by the plugin" "\n"
+      "https://mavlink.io/en/messages/common.html#GIMBAL_MANAGER_SET_MANUAL_CONTROL")
+    struct GimbalManagerSetPitchyaw {
+      @verbatim (language="comment", text=
+        "System ID")
+      uint8 target_system;
+
+      @verbatim (language="comment", text=
+        "Component ID")
+      uint8 target_component;
+
+      @verbatim (language="comment", text=
+        "High level gimbal manager flags to use - See GIMBAL_MANAGER_FLAGS")
+      uint32 flags;
+
+      @verbatim (language="comment", text=
+        "Component ID of gimbal device to address" "\n"
+        "(or 1-6 for non-MAVLink gimbal), 0 for all gimbal device" "\n"
+        "components. Send command multiple times for more than" "\n"
+        "one gimbal (but not all gimbals).  Default Mavlink gimbal" "\n"
+        "device ids: 154, 171-175")
+      uint8 gimbal_device_id;
+
+      @verbatim (language="comment", text=
+        "Pitch angle (positive: up, negative: down, NaN to be ignored).")
+      float pitch;
+
+      @verbatim (language="comment", text=
+        "Yaw angle (positive: to the right, negative: to the left, NaN to be ignored).")
+      float yaw;
+
+      @verbatim (language="comment", text=
+        "Pitch angular rate (positive: up, negative: down, NaN to be ignored).")
+      float pitch_rate;
+
+      @verbatim (language="comment", text=
+        "Yaw angular rate (positive: to the right, negative: to the left, NaN to be ignored).")
+      float yaw_rate;
+    };
+  };
+};

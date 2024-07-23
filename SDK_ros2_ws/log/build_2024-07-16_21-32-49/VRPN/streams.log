@@ -1,0 +1,310 @@
+[0.153s] Invoking command in '/home/orinnano/SDK_ros2_ws/build/VRPN': /usr/bin/cmake --build /home/orinnano/SDK_ros2_ws/build/VRPN -- -j6 -l6
+[0.555s] [  0%] Built target vrpn_timecode_generator
+[0.604s] [  1%] Built target quat
+[0.631s] [  3%] Built target vrpn_atmel
+[0.668s] [  5%] Built target gpsnmea
+[0.851s] [ 15%] Built target vrpn
+[1.070s] [ 60%] Built target vrpnserver
+[1.142s] [ 61%] Built target bdbox_client
+[1.329s] [ 62%] Built target ff_client
+[1.330s] [ 63%] Built target forcedevice_test_client
+[1.333s] [ 64%] Built target clock_drift_estimator
+[1.377s] [ 64%] Built target add_vrpn_cookie
+[1.433s] [ 65%] Built target forwarderClient
+[1.690s] [ 65%] Built target phan_client
+[1.771s] [ 66%] Built target sphere_client
+[1.821s] [ 67%] Built target printcereal
+[1.878s] [ 68%] Built target printvals
+[1.893s] [ 69%] Built target sound_client
+[1.933s] [ 69%] Built target testSharedObject
+[2.199s] [ 70%] Built target test_Zaber
+[2.208s] [ 70%] Built target test_imager
+[2.243s] [ 71%] Built target tracker_to_poser
+[2.264s] [ 72%] Built target vrpn_LamportClock
+[2.268s] [ 72%] Built target test_mutex
+[2.272s] [ 73%] Built target text
+[2.519s] [ 73%] Built target vrpn_ping
+[2.519s] [ 74%] Built target logfilesenders
+[2.554s] [ 75%] Built target vrpn_print_devices
+[2.560s] [ 76%] Built target vrpn_average_analogs
+[2.562s] [ 77%] Built target logfiletypes
+[2.582s] [ 78%] Built target checklogfile
+[2.760s] [ 79%] Built target vrpn_print_messages
+[2.789s] [ 80%] Built target vrpn_log_devices
+[2.880s] [ 80%] Built target vrpn_print_performance
+[2.888s] [ 81%] Built target c_interface_example
+[2.896s] [ 82%] Built target run_auxiliary_logger
+[2.927s] [ 83%] Built target vrpn_server
+[2.995s] [ 83%] Built target client_and_server
+[3.021s] [ 83%] Built target forward
+[3.120s] [ 83%] Built target last_of_sequence
+[3.161s] [ 84%] Built target testSharedObjectServer
+[3.180s] [ 85%] Built target sample_analog
+[3.184s] [ 85%] Built target sample_server
+[3.279s] [ 85%] Built target test_analogfly
+[3.319s] [ 86%] Built target test_auxiliary_logger
+[3.383s] [ 87%] Built target test_logging
+[3.445s] [ 88%] Built target test_freespace
+[3.728s] [ 89%] Built target test_mutexServer
+[3.728s] [ 90%] Built target test_peerMutex
+[3.815s] [ 91%] Built target test_loopback
+[3.847s] [ 91%] Built target test_radamec_spi
+[3.879s] [ 92%] Built target test_rumble
+[3.879s] [ 93%] Built target test_vrpn
+[3.879s] [ 93%] Built target testimager_server
+[3.879s] [ 94%] Built target textServer
+[3.879s] [ 95%] Built target vrpn_streamPrint
+[3.879s] [100%] Built target vrpn-python
+[3.900s] [100%] Built target time_test
+[3.961s] Invoked command in '/home/orinnano/SDK_ros2_ws/build/VRPN' returned '0': /usr/bin/cmake --build /home/orinnano/SDK_ros2_ws/build/VRPN -- -j6 -l6
+[7.780s] Invoking command in '/home/orinnano/SDK_ros2_ws/build/VRPN': /usr/bin/cmake --install /home/orinnano/SDK_ros2_ws/build/VRPN
+[7.823s] -- Install configuration: "RelWithDebInfo"
+[7.823s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/lib/libvrpnserver.a
+[7.824s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Configure.h
+[7.824s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Analog.h
+[7.824s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Analog_Output.h
+[7.824s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Assert.h
+[7.824s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Auxiliary_Logger.h
+[7.824s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_BaseClass.h
+[7.824s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Button.h
+[7.824s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Connection.h
+[7.825s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_ConnectionPtr.h
+[7.825s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Dial.h
+[7.825s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_EndpointContainer.h
+[7.825s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_FileConnection.h
+[7.825s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_FileController.h
+[7.825s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_ForceDevice.h
+[7.825s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_ForwarderController.h
+[7.826s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Forwarder.h
+[7.826s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_FunctionGenerator.h
+[7.827s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Imager.h
+[7.827s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_LamportClock.h
+[7.827s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Log.h
+[7.827s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_MainloopContainer.h
+[7.828s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_MainloopObject.h
+[7.828s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Mutex.h
+[7.828s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_OwningPtr.h
+[7.829s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_RedundantTransmission.h
+[7.829s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_SendTextMessageStreamProxy.h
+[7.829s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Serial.h
+[7.830s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_SerialPort.h
+[7.830s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Shared.h
+[7.830s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_SharedObject.h
+[7.830s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Sound.h
+[7.830s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Text.h
+[7.831s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Thread.h
+[7.831s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker.h
+[7.831s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Types.h
+[7.831s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_WindowsH.h
+[7.831s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_3DConnexion.h
+[7.831s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_3DMicroscribe.h
+[7.831s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_3Space.h
+[7.832s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_5DT16.h
+[7.832s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Adafruit.h
+[7.832s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_ADBox.h
+[7.832s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Analog_5dt.h
+[7.832s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Analog_5dtUSB.h
+[7.832s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Analog_Radamec_SPI.h
+[7.832s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Analog_USDigital_A2.h
+[7.833s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Atmel.h
+[7.833s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_BiosciencesTools.h
+[7.833s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Button_NI_DIO24.h
+[7.833s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Button_USB.h
+[7.833s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_CerealBox.h
+[7.833s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_CHProducts_Controller_Raw.h
+[7.833s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Contour.h
+[7.834s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_DevInput.h
+[7.834s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_DirectXFFJoystick.h
+[7.834s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_DirectXRumblePad.h
+[7.834s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_DreamCheeky.h
+[7.834s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Dyna.h
+[7.834s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Event_Analog.h
+[7.835s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Event.h
+[7.835s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Event_Mouse.h
+[7.835s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Flock.h
+[7.835s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Flock_Parallel.h
+[7.835s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_ForceDeviceServer.h
+[7.835s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Freespace.h
+[7.835s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_FunctionGenerator.h
+[7.835s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Futaba.h
+[7.836s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_GlobalHapticsOrb.h
+[7.836s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Griffin.h
+[7.836s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_HashST.h
+[7.836s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_HumanInterface.h
+[7.836s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_IDEA.h
+[7.836s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Imager_Stream_Buffer.h
+[7.836s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_ImmersionBox.h
+[7.837s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_inertiamouse.h
+[7.837s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_JoyFly.h
+[7.837s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Joylin.h
+[7.837s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Joywin32.h
+[7.837s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Keyboard.h
+[7.837s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Logitech_Controller_Raw.h
+[7.838s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Laputa.h
+[7.838s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_LUDL.h
+[7.838s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Magellan.h
+[7.838s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_MessageMacros.h
+[7.838s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Microsoft_Controller_Raw.h
+[7.838s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Mouse.h
+[7.839s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_NationalInstruments.h
+[7.839s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Nidaq.h
+[7.839s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_nikon_controls.h
+[7.839s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_nVidia_shield_controller.h
+[7.839s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Oculus.h
+[7.839s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_OmegaTemperature.h
+[7.839s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_OneEuroFilter.h
+[7.840s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_OzzMaker.h
+[7.840s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Poser_Analog.h
+[7.840s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Poser.h
+[7.840s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Poser_Tek4662.h
+[7.840s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_raw_sgibox.h
+[7.840s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Retrolink.h
+[7.841s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Saitek_Controller_Raw.h
+[7.841s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_sgibox.h
+[7.841s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Spaceball.h
+[7.841s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Streaming_Arduino.h
+[7.841s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tng3.h
+[7.841s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_3DMouse.h
+[7.841s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_AnalogFly.h
+[7.842s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_ButtonFly.h
+[7.842s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_Crossbow.h
+[7.843s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_DTrack.h
+[7.843s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_Fastrak.h
+[7.843s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_Filter.h
+[7.843s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_GameTrak.h
+[7.843s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_GPS.h
+[7.844s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_IMU.h
+[7.844s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_isense.h
+[7.844s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_Isotrak.h
+[7.844s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_JsonNet.h
+[7.844s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_Liberty.h
+[7.844s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_MotionNode.h
+[7.844s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_NDI_Polaris.h
+[7.845s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_NovintFalcon.h
+[7.845s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_OSVRHackerDevKit.h
+[7.845s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_PDI.h
+[7.845s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_PhaseSpace.h
+[7.846s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_RazerHydra.h
+[7.846s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_ThalmicLabsMyo.h
+[7.846s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_SpacePoint.h
+[7.846s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_Wintracker.h
+[7.846s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_Colibri.h
+[7.846s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_TrivisioColibri.h
+[7.846s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_WiimoteHead.h
+[7.846s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_zSight.h
+[7.847s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_ViewPoint.h
+[7.847s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_UNC_Joystick.h
+[7.847s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_VPJoystick.h
+[7.847s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Wanda.h
+[7.847s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_WiiMote.h
+[7.847s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_XInputGamepad.h
+[7.847s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Xkeys.h
+[7.848s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker_LibertyHS.h
+[7.848s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Vality.h
+[7.848s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_YEI_3Space.h
+[7.848s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Zaber.h
+[7.848s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Generic_server_object.h
+[7.848s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/lib/libvrpn.a
+[7.848s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Configure.h
+[7.849s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Analog.h
+[7.849s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Analog_Output.h
+[7.849s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Assert.h
+[7.849s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Auxiliary_Logger.h
+[7.849s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_BaseClass.h
+[7.849s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Button.h
+[7.849s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Connection.h
+[7.849s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_ConnectionPtr.h
+[7.850s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Dial.h
+[7.850s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_EndpointContainer.h
+[7.850s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_FileConnection.h
+[7.850s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_FileController.h
+[7.850s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_ForceDevice.h
+[7.851s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_ForwarderController.h
+[7.851s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Forwarder.h
+[7.851s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_FunctionGenerator.h
+[7.851s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Imager.h
+[7.851s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_LamportClock.h
+[7.851s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Log.h
+[7.851s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_MainloopContainer.h
+[7.852s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_MainloopObject.h
+[7.852s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Mutex.h
+[7.852s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_OwningPtr.h
+[7.852s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_RedundantTransmission.h
+[7.852s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_SendTextMessageStreamProxy.h
+[7.852s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Serial.h
+[7.852s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_SerialPort.h
+[7.853s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Shared.h
+[7.853s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_SharedObject.h
+[7.853s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Sound.h
+[7.853s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Text.h
+[7.853s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Thread.h
+[7.853s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Tracker.h
+[7.853s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_Types.h
+[7.853s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_WindowsH.h
+[7.854s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/time_test
+[7.854s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/lib/libquat.a
+[7.854s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/quat.h
+[7.854s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/lib/libquat.a
+[7.854s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/quat.h
+[7.854s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/lib/libvrpn_atmel.a
+[7.855s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_atmellib_errno.h
+[7.855s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_atmellib.h
+[7.855s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/lib/libgpsnmea.a
+[7.855s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/nmeaParser.h
+[7.855s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/utmCoord.h
+[7.855s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/latLonCoord.h
+[7.855s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/add_vrpn_cookie
+[7.855s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/bdbox_client
+[7.856s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/clock_drift_estimator
+[7.856s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/ff_client
+[7.856s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/forcedevice_test_client
+[7.856s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/forwarderClient
+[7.856s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/phan_client
+[7.856s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/printcereal
+[7.857s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/printvals
+[7.857s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/sound_client
+[7.857s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/sphere_client
+[7.857s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/testSharedObject
+[7.857s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/test_Zaber
+[7.858s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/test_imager
+[7.858s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/test_mutex
+[7.858s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/text
+[7.859s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/tracker_to_poser
+[7.860s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/vrpn_LamportClock
+[7.861s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/vrpn_ping
+[7.861s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/logfilesenders
+[7.862s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/logfiletypes
+[7.863s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/checklogfile
+[7.864s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/vrpn_average_analogs
+[7.864s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/vrpn_print_devices
+[7.865s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/vrpn_log_devices
+[7.866s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/vrpn_print_performance
+[7.868s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/vrpn_print_messages
+[7.871s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/run_auxiliary_logger
+[7.872s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/vrpn_server
+[7.872s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/etc/vrpn.cfg
+[7.872s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/share/vrpn-07.36/vrpn.cfg.sample
+[7.875s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/client_and_server
+[7.876s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/forward
+[7.877s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/last_of_sequence
+[7.878s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/sample_analog
+[7.878s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/sample_server
+[7.879s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/testSharedObjectServer
+[7.880s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/test_analogfly
+[7.881s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/test_auxiliary_logger
+[7.881s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/test_freespace
+[7.883s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/test_logging
+[7.883s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/test_loopback
+[7.886s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/test_mutexServer
+[7.886s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/test_peerMutex
+[7.886s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/test_radamec_spi
+[7.887s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/test_rumble
+[7.887s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/test_vrpn
+[7.888s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/testimager_server
+[7.889s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/textServer
+[7.891s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/lib/libvrpn_timecode_generator.a
+[7.891s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/include/vrpn_timecode_generator.h
+[7.891s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/bin/vrpn_streamPrint
+[7.891s] -- Skipping (build 'doc' to create): /home/orinnano/SDK_ros2_ws/build/VRPN/doxygen/docs-generated/html
+[7.893s] -- Up-to-date: /home/orinnano/SDK_ros2_ws/install/VRPN/lib/pythondist-packages/vrpn.so
+[7.899s] Invoked command in '/home/orinnano/SDK_ros2_ws/build/VRPN' returned '0': /usr/bin/cmake --install /home/orinnano/SDK_ros2_ws/build/VRPN

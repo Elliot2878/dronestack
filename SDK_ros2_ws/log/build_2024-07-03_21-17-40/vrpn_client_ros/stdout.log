@@ -1,0 +1,3 @@
+-- Found ament_cmake: 1.3.9 (/home/orinnano/ros2_humble/install/ament_cmake/share/ament_cmake/cmake)
+-- Configuring incomplete, errors occurred!
+See also "/home/orinnano/SDK_ros2_ws/build/vrpn_client_ros/CMakeFiles/CMakeOutput.log".

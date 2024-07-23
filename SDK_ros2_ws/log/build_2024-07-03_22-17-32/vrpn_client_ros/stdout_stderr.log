@@ -1,0 +1,27 @@
+[35m[1mConsolidate compiler generated dependencies of target vrpn_client_ros[0m
+[ 33%] Built target vrpn_client_ros
+[35m[1mConsolidate compiler generated dependencies of target vrpn_client_node[0m
+[35m[1mConsolidate compiler generated dependencies of target vrpn_tracker_node[0m
+[ 66%] Built target vrpn_client_node
+[100%] Built target vrpn_tracker_node
+-- Install configuration: ""
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vrpn_client_ros/share/vrpn_client_ros//launch
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vrpn_client_ros/share/vrpn_client_ros//launch/sample.launch.py
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vrpn_client_ros/share/vrpn_client_ros//config
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vrpn_client_ros/share/vrpn_client_ros//config/sample.params.yaml
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vrpn_client_ros/lib/libvrpn_client_ros.a
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vrpn_client_ros/lib/vrpn_client_ros/vrpn_tracker_node
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vrpn_client_ros/lib/vrpn_client_ros/vrpn_client_node
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vrpn_client_ros/share/ament_index/resource_index/package_run_dependencies/vrpn_client_ros
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vrpn_client_ros/share/ament_index/resource_index/parent_prefix_path/vrpn_client_ros
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vrpn_client_ros/share/vrpn_client_ros/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vrpn_client_ros/share/vrpn_client_ros/environment/path.dsv
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vrpn_client_ros/share/vrpn_client_ros/local_setup.bash
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vrpn_client_ros/share/vrpn_client_ros/local_setup.sh
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vrpn_client_ros/share/vrpn_client_ros/local_setup.zsh
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vrpn_client_ros/share/vrpn_client_ros/local_setup.dsv
+-- Installing: /home/orinnano/SDK_ros2_ws/install/vrpn_client_ros/share/vrpn_client_ros/package.dsv
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vrpn_client_ros/share/ament_index/resource_index/packages/vrpn_client_ros
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vrpn_client_ros/share/vrpn_client_ros/cmake/vrpn_client_rosConfig.cmake
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vrpn_client_ros/share/vrpn_client_ros/cmake/vrpn_client_rosConfig-version.cmake
+-- Up-to-date: /home/orinnano/SDK_ros2_ws/install/vrpn_client_ros/share/vrpn_client_ros/package.xml

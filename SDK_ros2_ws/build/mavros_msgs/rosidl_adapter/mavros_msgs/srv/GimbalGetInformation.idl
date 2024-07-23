@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from mavros_msgs/srv/GimbalGetInformation.srv
+// generated code does not contain a copyright notice
+
+
+module mavros_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "MAVLink command: MAV_CMD_REQUEST_MESSAGE" "\n"
+      "https://mavlink.io/en/messages/common.html#MAV_CMD_REQUEST_MESSAGE" "\n"
+      "Specifically used to request Information messages from Gimbal Device and Gimbal Manager" "\n"
+      "https://mavlink.io/en/messages/common.html#GIMBAL_MANAGER_INFORMATION" "\n"
+      "https://mavlink.io/en/messages/common.html#GIMBAL_DEVICE_INFORMATION")
+    struct GimbalGetInformation_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct GimbalGetInformation_Response {
+      boolean success;
+
+      @verbatim (language="comment", text=
+        "raw result returned by COMMAND_ACK")
+      uint8 result;
+    };
+  };
+};

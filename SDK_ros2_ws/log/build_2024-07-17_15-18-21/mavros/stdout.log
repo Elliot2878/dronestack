@@ -1,0 +1,269 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.9 (/home/orinnano/ros2_humble/install/ament_cmake/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rclcpp: 16.0.9 (/home/orinnano/ros2_humble/install/rclcpp/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/home/orinnano/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/home/orinnano/ros2_humble/install/rosidl_adapter/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/home/orinnano/ros2_humble/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/home/orinnano/ros2_humble/install/rmw_implementation_cmake/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.6 (/home/orinnano/ros2_humble/install/rmw_fastrtps_cpp/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /home/orinnano/ros2_humble/install/fastrtps/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found rclcpp_components: 16.0.9 (/home/orinnano/ros2_humble/install/rclcpp_components/share/rclcpp_components/cmake)
+-- Found pluginlib: 5.1.0 (/home/orinnano/ros2_humble/install/pluginlib/share/pluginlib/cmake)
+-- Found message_filters: 4.3.4 (/home/orinnano/ros2_humble/install/message_filters/share/message_filters/cmake)
+-- Found libmavconn: 2.8.0 (/home/orinnano/SDK_ros2_ws/install/libmavconn/share/libmavconn/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/home/orinnano/ros2_humble/install/eigen3_cmake_module/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Found GeographicLib: /usr/lib/aarch64-linux-gnu  
+-- Found angles: 1.15.0 (/opt/ros/humble/share/angles/cmake)
+-- Found eigen_stl_containers: 1.0.0 (/opt/ros/humble/share/eigen_stl_containers/cmake)
+-- Found tf2_eigen: 0.25.7 (/home/orinnano/ros2_humble/install/tf2_eigen/share/tf2_eigen/cmake)
+-- Found diagnostic_msgs: 4.2.4 (/home/orinnano/ros2_humble/install/diagnostic_msgs/share/diagnostic_msgs/cmake)
+-- Found diagnostic_updater: 3.1.2 (/opt/ros/humble/share/diagnostic_updater/cmake)
+-- Found geographic_msgs: 1.0.6 (/opt/ros/humble/share/geographic_msgs/cmake)
+-- Found mavros_msgs: 2.8.0 (/home/orinnano/SDK_ros2_ws/install/mavros_msgs/share/mavros_msgs/cmake)
+-- Found nav_msgs: 4.2.4 (/home/orinnano/ros2_humble/install/nav_msgs/share/nav_msgs/cmake)
+-- Found std_srvs: 4.2.4 (/home/orinnano/ros2_humble/install/std_srvs/share/std_srvs/cmake)
+-- Found trajectory_msgs: 4.2.4 (/home/orinnano/ros2_humble/install/trajectory_msgs/share/trajectory_msgs/cmake)
+-- Geoid model datasets found in: /usr/share/GeographicLib/geoid
+-- Gravity Field model datasets found in: /usr/share/GeographicLib/gravity
+-- Magnetic Field model datasets found in: /usr/share/GeographicLib/magnetic
+-- Found ament_cmake_gtest: 1.3.9 (/home/orinnano/ros2_humble/install/ament_cmake_gtest/share/ament_cmake_gtest/cmake)
+-- Found ament_cmake_gmock: 1.3.9 (/home/orinnano/ros2_humble/install/ament_cmake_gmock/share/ament_cmake_gmock/cmake)
+-- Found ament_cmake_pytest: 1.3.9 (/home/orinnano/ros2_humble/install/ament_cmake_pytest/share/ament_cmake_pytest/cmake)
+-- Found ament_lint_auto: 0.12.11 (/home/orinnano/ros2_humble/install/ament_lint_auto/share/ament_lint_auto/cmake)
+-- Found gtest sources under '/home/orinnano/ros2_humble/install/gtest_vendor/src/gtest_vendor': C++ tests using 'Google Test' will be built
+-- Found gmock sources under '/home/orinnano/ros2_humble/install/gmock_vendor/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/orinnano/SDK_ros2_ws/src/mavros/mavros/include>
+-- Configured cppcheck exclude dirs and/or files: ./test/*.cpp
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/orinnano/SDK_ros2_ws/build/mavros
+[  3%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/enum_sensor_orientation.cpp.o[0m
+[  3%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[  4%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[  6%] [32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[  6%] Built target ament_cmake_python_copy_mavros_setup
+[  6%] Built target ament_cmake_python_copy_mavros
+[  8%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/home/orinnano/ros2_humble/install/gtest_vendor/src/gtest_vendor/src/gtest-all.cc.o[0m
+running egg_info
+creating mavros.egg-info
+writing mavros.egg-info/PKG-INFO
+writing dependency_links to mavros.egg-info/dependency_links.txt
+writing entry points to mavros.egg-info/entry_points.txt
+writing top-level names to mavros.egg-info/top_level.txt
+writing manifest file 'mavros.egg-info/SOURCES.txt'
+reading manifest file 'mavros.egg-info/SOURCES.txt'
+writing manifest file 'mavros.egg-info/SOURCES.txt'
+[  8%] Built target ament_cmake_python_build_mavros_egg
+[  9%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[ 11%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[ 11%] Built target gtest_main
+[ 12%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/enum_to_string.cpp.o[0m
+[ 14%] [32m[1mLinking CXX static library libgmock_main.a[0m
+[ 14%] Built target gmock_main
+[ 16%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/ftf_frame_conversions.cpp.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/ftf_quaternion_utils.cpp.o[0m
+[ 19%] [32m[1mLinking CXX static library libgmock.a[0m
+[ 19%] Built target gmock
+[ 20%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/mavros_router.cpp.o[0m
+[ 22%] [32m[1mLinking CXX static library libgtest.a[0m
+[ 22%] Built target gtest
+[ 24%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/mavros_uas.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/plugin.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/uas_ap.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/uas_data.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/uas_executor.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/uas_stringify.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/uas_tf.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/uas_timesync.cpp.o[0m
+[ 37%] [32m[1mLinking CXX shared library libmavros.so[0m
+[ 37%] Built target mavros
+[ 41%] [32mBuilding CXX object CMakeFiles/libmavros-frame-conversions-test.dir/test/test_frame_conversions.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/mavros_node.dir/src/mavros_node.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/actuator_control.cpp.o[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/mavros-router-test.dir/test/test_router.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/libmavros-sensor-orientation-test.dir/test/test_sensor_orientation.cpp.o[0m
+[ 46%] [32mBuilding CXX object CMakeFiles/libmavros-quaternion-utils-test.dir/test/test_quaternion_utils.cpp.o[0m
+[ 48%] [32m[1mLinking CXX executable libmavros-frame-conversions-test[0m
+[ 50%] [32m[1mLinking CXX executable libmavros-quaternion-utils-test[0m
+[ 50%] Built target libmavros-frame-conversions-test
+[ 50%] Built target libmavros-quaternion-utils-test
+[ 51%] [32m[1mLinking CXX executable libmavros-sensor-orientation-test[0m
+[ 51%] Built target libmavros-sensor-orientation-test
+[ 53%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/command.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/altitude.cpp.o[0m
+[ 56%] [32m[1mLinking CXX executable mavros_node[0m
+[ 56%] Built target mavros_node
+[ 58%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/dummy.cpp.o[0m
+[ 59%] [32mBuilding CXX object CMakeFiles/mavros-uas-test.dir/test/test_uas.cpp.o[0m
+[ 61%] [32m[1mLinking CXX executable mavros-router-test[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/ftp.cpp.o[0m
+[ 62%] Built target mavros-router-test
+[ 64%] [32m[1mLinking CXX executable mavros-uas-test[0m
+[ 64%] Built target mavros-uas-test
+[ 66%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/local_position.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/imu.cpp.o[0m
+[ 69%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/home_position.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/global_position.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/geofence.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/manual_control.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/rc_io.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/rallypoint.cpp.o[0m
+[ 79%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/param.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/nav_controller_output.cpp.o[0m
+[ 82%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/mission_protocol_base.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/setpoint_accel.cpp.o[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/setpoint_position.cpp.o[0m
+[ 87%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/setpoint_attitude.cpp.o[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/setpoint_raw.cpp.o[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/sys_status.cpp.o[0m
+[ 91%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/setpoint_velocity.cpp.o[0m
+[ 93%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/setpoint_trajectory.cpp.o[0m
+[ 95%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/wind_estimation.cpp.o[0m
+[ 96%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/waypoint.cpp.o[0m
+[ 98%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/sys_time.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libmavros_plugins.so[0m
+[100%] Built target mavros_plugins
+-- Install configuration: ""
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/mavros_plugins.xml
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/environment/pythonpath.sh
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/environment/pythonpath.dsv
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros-2.8.0-py3.10.egg-info
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros-2.8.0-py3.10.egg-info/dependency_links.txt
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros-2.8.0-py3.10.egg-info/PKG-INFO
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros-2.8.0-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros-2.8.0-py3.10.egg-info/entry_points.txt
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros-2.8.0-py3.10.egg-info/top_level.txt
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/base.py
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/global_position.py
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/mission.py
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/param.py
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/local_position.py
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/cmd
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/cmd/cmd.py
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/cmd/mission.py
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/cmd/param.py
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/cmd/checkid.py
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/cmd/__init__.py
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/cmd/ftp.py
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/cmd/safety.py
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/cmd/system.py
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/cmd/utils.py
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/cmd/__main__.py
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/__init__.py
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/mavlink.py
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/nuttx_crc32.py
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/ftp.py
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/system.py
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/utils.py
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/setpoint.py
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/command.py
+Listing '/home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros'...
+Compiling '/home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/__init__.py'...
+Compiling '/home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/base.py'...
+Listing '/home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/cmd'...
+Compiling '/home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/cmd/__init__.py'...
+Compiling '/home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/cmd/__main__.py'...
+Compiling '/home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/cmd/checkid.py'...
+Compiling '/home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/cmd/cmd.py'...
+Compiling '/home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/cmd/ftp.py'...
+Compiling '/home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/cmd/mission.py'...
+Compiling '/home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/cmd/param.py'...
+Compiling '/home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/cmd/safety.py'...
+Compiling '/home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/cmd/system.py'...
+Compiling '/home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/cmd/utils.py'...
+Compiling '/home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/command.py'...
+Compiling '/home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/ftp.py'...
+Compiling '/home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/global_position.py'...
+Compiling '/home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/local_position.py'...
+Compiling '/home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/mavlink.py'...
+Compiling '/home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/mission.py'...
+Compiling '/home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/nuttx_crc32.py'...
+Compiling '/home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/param.py'...
+Compiling '/home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/setpoint.py'...
+Compiling '/home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/system.py'...
+Compiling '/home/orinnano/SDK_ros2_ws/install/mavros/local/lib/python3.10/dist-packages/mavros/utils.py'...
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/lib/mavros/mav
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/lib/libmavros.so
+-- Set runtime path of "/home/orinnano/SDK_ros2_ws/install/mavros/lib/libmavros.so" to ""
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/lib/mavros/mavros_node
+-- Set runtime path of "/home/orinnano/SDK_ros2_ws/install/mavros/lib/mavros/mavros_node" to ""
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/lib/libmavros_plugins.so
+-- Set runtime path of "/home/orinnano/SDK_ros2_ws/install/mavros/lib/libmavros_plugins.so" to ""
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/lib/mavros/install_geographiclib_datasets.sh
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/include
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/include/mavros
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/include/mavros/px4_custom_mode.hpp
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/include/mavros/mavros_uas.hpp
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/include/mavros/mavros_plugin_register_macro.hpp
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/include/mavros/plugin.hpp
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/include/mavros/frame_tf.hpp
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/include/mavros/utils.hpp
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/include/mavros/setpoint_mixin.hpp
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/include/mavros/mission_protocol_base.hpp
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/include/mavros/plugin_filter.hpp
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/include/mavros/mavros_router.hpp
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/include/mavros/uas_executor.hpp
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/launch
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/launch/apm_pluginlists.yaml
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/launch/apm_config.yaml
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/launch/px4.launch
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/launch/px4_config.yaml
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/launch/px4_launch.py
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/launch/apm.launch
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/launch/multi_uas.launch
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/launch/node.launch
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/launch/px4_pluginlists.yaml
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/environment/library_path.sh
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/environment/library_path.dsv
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/ament_index/resource_index/package_run_dependencies/mavros
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/ament_index/resource_index/parent_prefix_path/mavros
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/environment/ament_prefix_path.sh
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/environment/ament_prefix_path.dsv
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/environment/path.sh
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/environment/path.dsv
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/local_setup.bash
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/local_setup.sh
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/local_setup.zsh
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/local_setup.dsv
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/package.dsv
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/ament_index/resource_index/packages/mavros
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/ament_index/resource_index/mavros__pluginlib__plugin/mavros
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/ament_index/resource_index/rclcpp_components/mavros
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/cmake/mavrosConfig.cmake
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/cmake/mavrosConfig-version.cmake
+-- Installing: /home/orinnano/SDK_ros2_ws/install/mavros/share/mavros/package.xml

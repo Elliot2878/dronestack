@@ -1,0 +1,349 @@
+// generated from rosidl_generator_cpp/resource/idl__struct.hpp.em
+// with input from mavros_msgs:msg/PositionTarget.idl
+// generated code does not contain a copyright notice
+
+#ifndef MAVROS_MSGS__MSG__DETAIL__POSITION_TARGET__STRUCT_HPP_
+#define MAVROS_MSGS__MSG__DETAIL__POSITION_TARGET__STRUCT_HPP_
+
+#include <algorithm>
+#include <array>
+#include <memory>
+#include <string>
+#include <vector>
+
+#include "rosidl_runtime_cpp/bounded_vector.hpp"
+#include "rosidl_runtime_cpp/message_initialization.hpp"
+
+
+// Include directives for member types
+// Member 'header'
+#include "std_msgs/msg/detail/header__struct.hpp"
+// Member 'position'
+#include "geometry_msgs/msg/detail/point__struct.hpp"
+// Member 'velocity'
+// Member 'acceleration_or_force'
+#include "geometry_msgs/msg/detail/vector3__struct.hpp"
+
+#ifndef _WIN32
+# define DEPRECATED__mavros_msgs__msg__PositionTarget __attribute__((deprecated))
+#else
+# define DEPRECATED__mavros_msgs__msg__PositionTarget __declspec(deprecated)
+#endif
+
+namespace mavros_msgs
+{
+
+namespace msg
+{
+
+// message struct
+template<class ContainerAllocator>
+struct PositionTarget_
+{
+  using Type = PositionTarget_<ContainerAllocator>;
+
+  explicit PositionTarget_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : header(_init),
+    position(_init),
+    velocity(_init),
+    acceleration_or_force(_init)
+  {
+    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
+      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
+    {
+      this->coordinate_frame = 0;
+      this->type_mask = 0;
+      this->yaw = 0.0f;
+      this->yaw_rate = 0.0f;
+    }
+  }
+
+  explicit PositionTarget_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : header(_alloc, _init),
+    position(_alloc, _init),
+    velocity(_alloc, _init),
+    acceleration_or_force(_alloc, _init)
+  {
+    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
+      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
+    {
+      this->coordinate_frame = 0;
+      this->type_mask = 0;
+      this->yaw = 0.0f;
+      this->yaw_rate = 0.0f;
+    }
+  }
+
+  // field types and members
+  using _header_type =
+    std_msgs::msg::Header_<ContainerAllocator>;
+  _header_type header;
+  using _coordinate_frame_type =
+    uint8_t;
+  _coordinate_frame_type coordinate_frame;
+  using _type_mask_type =
+    uint16_t;
+  _type_mask_type type_mask;
+  using _position_type =
+    geometry_msgs::msg::Point_<ContainerAllocator>;
+  _position_type position;
+  using _velocity_type =
+    geometry_msgs::msg::Vector3_<ContainerAllocator>;
+  _velocity_type velocity;
+  using _acceleration_or_force_type =
+    geometry_msgs::msg::Vector3_<ContainerAllocator>;
+  _acceleration_or_force_type acceleration_or_force;
+  using _yaw_type =
+    float;
+  _yaw_type yaw;
+  using _yaw_rate_type =
+    float;
+  _yaw_rate_type yaw_rate;
+
+  // setters for named parameter idiom
+  Type & set__header(
+    const std_msgs::msg::Header_<ContainerAllocator> & _arg)
+  {
+    this->header = _arg;
+    return *this;
+  }
+  Type & set__coordinate_frame(
+    const uint8_t & _arg)
+  {
+    this->coordinate_frame = _arg;
+    return *this;
+  }
+  Type & set__type_mask(
+    const uint16_t & _arg)
+  {
+    this->type_mask = _arg;
+    return *this;
+  }
+  Type & set__position(
+    const geometry_msgs::msg::Point_<ContainerAllocator> & _arg)
+  {
+    this->position = _arg;
+    return *this;
+  }
+  Type & set__velocity(
+    const geometry_msgs::msg::Vector3_<ContainerAllocator> & _arg)
+  {
+    this->velocity = _arg;
+    return *this;
+  }
+  Type & set__acceleration_or_force(
+    const geometry_msgs::msg::Vector3_<ContainerAllocator> & _arg)
+  {
+    this->acceleration_or_force = _arg;
+    return *this;
+  }
+  Type & set__yaw(
+    const float & _arg)
+  {
+    this->yaw = _arg;
+    return *this;
+  }
+  Type & set__yaw_rate(
+    const float & _arg)
+  {
+    this->yaw_rate = _arg;
+    return *this;
+  }
+
+  // constant declarations
+  static constexpr uint8_t FRAME_LOCAL_NED =
+    1u;
+  static constexpr uint8_t FRAME_LOCAL_OFFSET_NED =
+    7u;
+  static constexpr uint8_t FRAME_BODY_NED =
+    8u;
+  static constexpr uint8_t FRAME_BODY_OFFSET_NED =
+    9u;
+  static constexpr uint16_t IGNORE_PX =
+    1u;
+  static constexpr uint16_t IGNORE_PY =
+    2u;
+  static constexpr uint16_t IGNORE_PZ =
+    4u;
+  static constexpr uint16_t IGNORE_VX =
+    8u;
+  static constexpr uint16_t IGNORE_VY =
+    16u;
+  static constexpr uint16_t IGNORE_VZ =
+    32u;
+  static constexpr uint16_t IGNORE_AFX =
+    64u;
+  static constexpr uint16_t IGNORE_AFY =
+    128u;
+  static constexpr uint16_t IGNORE_AFZ =
+    256u;
+  static constexpr uint16_t FORCE =
+    512u;
+  static constexpr uint16_t IGNORE_YAW =
+    1024u;
+  static constexpr uint16_t IGNORE_YAW_RATE =
+    2048u;
+
+  // pointer types
+  using RawPtr =
+    mavros_msgs::msg::PositionTarget_<ContainerAllocator> *;
+  using ConstRawPtr =
+    const mavros_msgs::msg::PositionTarget_<ContainerAllocator> *;
+  using SharedPtr =
+    std::shared_ptr<mavros_msgs::msg::PositionTarget_<ContainerAllocator>>;
+  using ConstSharedPtr =
+    std::shared_ptr<mavros_msgs::msg::PositionTarget_<ContainerAllocator> const>;
+
+  template<typename Deleter = std::default_delete<
+      mavros_msgs::msg::PositionTarget_<ContainerAllocator>>>
+  using UniquePtrWithDeleter =
+    std::unique_ptr<mavros_msgs::msg::PositionTarget_<ContainerAllocator>, Deleter>;
+
+  using UniquePtr = UniquePtrWithDeleter<>;
+
+  template<typename Deleter = std::default_delete<
+      mavros_msgs::msg::PositionTarget_<ContainerAllocator>>>
+  using ConstUniquePtrWithDeleter =
+    std::unique_ptr<mavros_msgs::msg::PositionTarget_<ContainerAllocator> const, Deleter>;
+  using ConstUniquePtr = ConstUniquePtrWithDeleter<>;
+
+  using WeakPtr =
+    std::weak_ptr<mavros_msgs::msg::PositionTarget_<ContainerAllocator>>;
+  using ConstWeakPtr =
+    std::weak_ptr<mavros_msgs::msg::PositionTarget_<ContainerAllocator> const>;
+
+  // pointer types similar to ROS 1, use SharedPtr / ConstSharedPtr instead
+  // NOTE: Can't use 'using' here because GNU C++ can't parse attributes properly
+  typedef DEPRECATED__mavros_msgs__msg__PositionTarget
+    std::shared_ptr<mavros_msgs::msg::PositionTarget_<ContainerAllocator>>
+    Ptr;
+  typedef DEPRECATED__mavros_msgs__msg__PositionTarget
+    std::shared_ptr<mavros_msgs::msg::PositionTarget_<ContainerAllocator> const>
+    ConstPtr;
+
+  // comparison operators
+  bool operator==(const PositionTarget_ & other) const
+  {
+    if (this->header != other.header) {
+      return false;
+    }
+    if (this->coordinate_frame != other.coordinate_frame) {
+      return false;
+    }
+    if (this->type_mask != other.type_mask) {
+      return false;
+    }
+    if (this->position != other.position) {
+      return false;
+    }
+    if (this->velocity != other.velocity) {
+      return false;
+    }
+    if (this->acceleration_or_force != other.acceleration_or_force) {
+      return false;
+    }
+    if (this->yaw != other.yaw) {
+      return false;
+    }
+    if (this->yaw_rate != other.yaw_rate) {
+      return false;
+    }
+    return true;
+  }
+  bool operator!=(const PositionTarget_ & other) const
+  {
+    return !this->operator==(other);
+  }
+};  // struct PositionTarget_
+
+// alias to use template instance with default allocator
+using PositionTarget =
+  mavros_msgs::msg::PositionTarget_<std::allocator<void>>;
+
+// constant definitions
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint8_t PositionTarget_<ContainerAllocator>::FRAME_LOCAL_NED;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint8_t PositionTarget_<ContainerAllocator>::FRAME_LOCAL_OFFSET_NED;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint8_t PositionTarget_<ContainerAllocator>::FRAME_BODY_NED;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint8_t PositionTarget_<ContainerAllocator>::FRAME_BODY_OFFSET_NED;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint16_t PositionTarget_<ContainerAllocator>::IGNORE_PX;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint16_t PositionTarget_<ContainerAllocator>::IGNORE_PY;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint16_t PositionTarget_<ContainerAllocator>::IGNORE_PZ;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint16_t PositionTarget_<ContainerAllocator>::IGNORE_VX;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint16_t PositionTarget_<ContainerAllocator>::IGNORE_VY;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint16_t PositionTarget_<ContainerAllocator>::IGNORE_VZ;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint16_t PositionTarget_<ContainerAllocator>::IGNORE_AFX;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint16_t PositionTarget_<ContainerAllocator>::IGNORE_AFY;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint16_t PositionTarget_<ContainerAllocator>::IGNORE_AFZ;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint16_t PositionTarget_<ContainerAllocator>::FORCE;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint16_t PositionTarget_<ContainerAllocator>::IGNORE_YAW;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint16_t PositionTarget_<ContainerAllocator>::IGNORE_YAW_RATE;
+#endif  // __cplusplus < 201703L
+
+}  // namespace msg
+
+}  // namespace mavros_msgs
+
+#endif  // MAVROS_MSGS__MSG__DETAIL__POSITION_TARGET__STRUCT_HPP_

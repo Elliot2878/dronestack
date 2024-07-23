@@ -1,0 +1,77 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from mavros_msgs/srv/GimbalManagerSetRoi.srv
+// generated code does not contain a copyright notice
+
+
+module mavros_msgs {
+  module srv {
+    module GimbalManagerSetRoi_Request_Constants {
+      @verbatim (language="comment", text=
+        "ROI_MODE" "\n"        " Sets the region of interest (ROI) to a location.")
+      const uint8 ROI_MODE_LOCATION = 0;
+      @verbatim (language="comment", text=
+        "Sets the region of interest (ROI) to be toward next waypoint, with optional pitch/roll/yaw offset.")
+      const uint8 ROI_MODE_WP_NEXT_OFFSET = 1;
+      @verbatim (language="comment", text=
+        "Mount tracks system with specified system ID")
+      const uint8 ROI_MODE_SYSID = 2;
+      @verbatim (language="comment", text=
+        "Cancels any previous ROI setting and returns vehicle to defaults")
+      const uint8 ROI_MODE_NONE = 3;
+    };
+    @verbatim (language="comment", text=
+      "MAVLink commands: DO_SET_ROI_LOCATION, DO_SET_ROI_WPNEXT_OFFSET, DO_SET_ROI_SYSID, DO_SET_ROI_NONE" "\n"
+      "https://mavlink.io/en/messages/common.html#MAV_CMD_DO_SET_ROI_LOCATION" "\n"
+      "https://mavlink.io/en/messages/common.html#MAV_CMD_DO_SET_ROI_WPNEXT_OFFSET" "\n"
+      "https://mavlink.io/en/messages/common.html#MAV_CMD_DO_SET_ROI_SYSID" "\n"
+      "https://mavlink.io/en/messages/common.html#MAV_CMD_DO_SET_ROI_NONE")
+    struct GimbalManagerSetRoi_Request {
+      @verbatim (language="comment", text=
+        "enumerator to indicate ROI mode setting - see ROI_MODE")
+      uint8 mode;
+
+      @verbatim (language="comment", text=
+        "Component ID of gimbal device to address" "\n"
+        "(or 1-6 for non-MAVLink gimbal), 0 for all gimbal device" "\n"
+        "components. Send command multiple times for more than" "\n"
+        "one gimbal (but not all gimbals).  Default Mavlink gimbal" "\n"
+        "device ids: 154, 171-175")
+      uint8 gimbal_device_id;
+
+      @verbatim (language="comment", text=
+        "For ROI_MODE_LOCATION")
+      float latitude;
+
+      float longitude;
+
+      @verbatim (language="comment", text=
+        "Meters")
+      float altitude;
+
+      @verbatim (language="comment", text=
+        "For ROI_MODE_WP_NEXT_OFFSET" "\n"
+        " Pitch offset from next waypoint, positive pitching up")
+      float pitch_offset;
+
+      @verbatim (language="comment", text=
+        "Roll offset from next waypoint, positive rolling to the right")
+      float roll_offset;
+
+      @verbatim (language="comment", text=
+        "Yaw offset from next waypoint, positive yawing to the right")
+      float yaw_offset;
+
+      @verbatim (language="comment", text=
+        "For ROI_MODE_SYSID" "\n"
+        " System ID to track (min: 1, max: 255)")
+      uint8 sysid;
+    };
+    struct GimbalManagerSetRoi_Response {
+      boolean success;
+
+      @verbatim (language="comment", text=
+        "raw result returned by COMMAND_ACK")
+      uint8 result;
+    };
+  };
+};

@@ -1,0 +1,65 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from mavros_msgs/srv/GimbalManagerPitchyaw.srv
+// generated code does not contain a copyright notice
+
+
+module mavros_msgs {
+  module srv {
+    module GimbalManagerPitchyaw_Request_Constants {
+      @verbatim (language="comment", text=
+        "GIMBAL_MANAGER_FLAGS" "\n"        " Based on GIMBAL_DEVICE_FLAGS_RETRACT")
+      const uint32 GIMBAL_MANAGER_FLAGS_RETRACT = 1;
+      @verbatim (language="comment", text=
+        "Based on GIMBAL_DEVICE_FLAGS_NEUTRAL")
+      const uint32 GIMBAL_MANAGER_FLAGS_NEUTRAL = 2;
+      @verbatim (language="comment", text=
+        "Based on GIMBAL_DEVICE_FLAGS_ROLL_LOCK")
+      const uint32 GIMBAL_MANAGER_FLAGS_ROLL_LOCK = 4;
+      @verbatim (language="comment", text=
+        "Based on GIMBAL_DEVICE_FLAGS_PITCH_LOCK")
+      const uint32 GIMBAL_MANAGER_FLAGS_PITCH_LOCK = 8;
+      @verbatim (language="comment", text=
+        "Based on GIMBAL_DEVICE_FLAGS_YAW_LOCK")
+      const uint32 GIMBAL_MANAGER_FLAGS_YAW_LOCK = 16;
+    };
+    @verbatim (language="comment", text=
+      "MAVLink commands: DO_GIMBAL_MANAGER_PITCHYAW" "\n"
+      "https://mavlink.io/en/messages/common.html#MAV_CMD_DO_GIMBAL_MANAGER_PITCHYAW")
+    struct GimbalManagerPitchyaw_Request {
+      @verbatim (language="comment", text=
+        "Pitch angle (positive to pitch up, relative to vehicle for FOLLOW mode, relative to world horizon for LOCK mode). (-180 to 180 deg)")
+      float pitch;
+
+      @verbatim (language="comment", text=
+        "Yaw angle (positive to yaw to the right, relative to vehicle for FOLLOW mode, absolute to North for LOCK mode). (-180 to 180 deg)")
+      float yaw;
+
+      @verbatim (language="comment", text=
+        "Pitch rate (positive to pitch up). (deg/s)")
+      float pitch_rate;
+
+      @verbatim (language="comment", text=
+        "Yaw rate (positive to yaw to the right). (deg/s)")
+      float yaw_rate;
+
+      @verbatim (language="comment", text=
+        "High level gimbal manager flags to use - See GIMBAL_MANAGER_FLAGS")
+      uint32 flags;
+
+      @verbatim (language="comment", text=
+        "Component ID of gimbal device to address" "\n"
+        "(or 1-6 for non-MAVLink gimbal), 0 for all gimbal device" "\n"
+        "components. Send command multiple times for more than" "\n"
+        "one gimbal (but not all gimbals).  Default Mavlink gimbal" "\n"
+        "device ids: 154, 171-175")
+      uint8 gimbal_device_id;
+    };
+    struct GimbalManagerPitchyaw_Response {
+      boolean success;
+
+      @verbatim (language="comment", text=
+        "raw result returned by COMMAND_ACK")
+      uint8 result;
+    };
+  };
+};
